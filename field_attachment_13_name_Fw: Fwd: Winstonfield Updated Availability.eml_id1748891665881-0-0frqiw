@@ -1,0 +1,901 @@
+Delivered-To: investiaprop@gmail.com
+Received: by 2002:a05:6f02:212:b0:84:c707:c888 with SMTP id 18csp286598rcn;
+        Thu, 8 May 2025 00:50:16 -0700 (PDT)
+X-Received: by 2002:a05:6000:18a9:b0:39a:c9fe:f069 with SMTP id ffacd0b85a97d-3a0ba0b6190mr1301916f8f.30.1746690615595;
+        Thu, 08 May 2025 00:50:15 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IEgXUkKOK0tL58VvvZMlHwfrIduWf65bfjGzpZFwIumBTqchCsuO7QsengZ99GFDfZJe8ao
+X-Received: by 2002:a05:6000:18a9:b0:39a:c9fe:f069 with SMTP id ffacd0b85a97d-3a0ba0b6190mr1301857f8f.30.1746690614521;
+        Thu, 08 May 2025 00:50:14 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1746690614; cv=none;
+        d=google.com; s=arc-20240605;
+        b=YsapICdJOUUMj19qTNAXh4b4/0ilbHV4SDeaz1euF//aOXJ7Wx+mmRu+/dL3bGt8lY
+         JX+zhMiQrF+6YDPZ8SSYtZe9Re2oe2HuTG/Hu1axr2TojONeLdBKlesvku+IOsKQHrP8
+         +d1FqUJX2DCvsXTKaEkoPujgq/Jbwp12fhWWD/jYxDWaLOTfGaUubrlaypejfDEAAaBA
+         +q/EunYje6Gk8frS44Eq2RtVFFvi0EdzOurJwld3vzpdLJ7LfJl+3esKH/X1WNlnmGMD
+         6x3CIeVo6zJYQt5IcpeZkN0MICCNELxqHch0Uhqp8mDtXv64+7WZcHQ+gWAKZwDaeat4
+         4p9g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:references:in-reply-to:message-id:subject:from:to:date
+         :dkim-signature:dkim-filter;
+        bh=MVOulaawE/AaZ3eVKhmo18aBRS62blfw3JNynsS4+3Y=;
+        fh=c7GOLEttmcAhHBfTqzHGnuPLTyHoLeZ5TAxRIybQ39c=;
+        b=e5ecq2J5u79ls3XCcX9u5nTP2FKWCFFbSmSRWqEBdnkDnXnrE/A6i7ty+j7SnkC81p
+         oucBn3ce1DfZZkBZBAsmUg4udBN/4BHIf9wXu6Grb/slDeqnuGJlR0RU+da6yUKG06ZS
+         O1COTAlNZF5X2c+BavnHMdmS173gyzTW0tms41JmdVt8QBE0SJkWbtu8V1YfT219Vpx/
+         XPlS4UKAiaO1lzcvqUbX92qCJ8pgLL3BeZOGxRam8ro0VnrgfOQPVzRIymf2YzpD+2zK
+         3aIUD2xcDIgroGdn7Du4v+LvJzF/DU8Yb5Xn/rdBdTR1sITyNIPSA9+LdkplSZYbD0hk
+         pIkQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cytanet.com.cy header.s=mail header.b=Hm6Je4Cz;
+       spf=pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.214 as permitted sender) smtp.mailfrom=nasiafanari@cytanet.com.cy;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=cytanet.com.cy
+Return-Path: <nasiafanari@cytanet.com.cy>
+Received: from demokritos2.cytanet.com.cy (demokritos2.cytanet.com.cy. [195.14.130.214])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-3a0b86d8b5csi1354492f8f.258.2025.05.08.00.50.14
+        for <investiaprop@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 08 May 2025 00:50:14 -0700 (PDT)
+Received-SPF: pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.214 as permitted sender) client-ip=195.14.130.214;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cytanet.com.cy header.s=mail header.b=Hm6Je4Cz;
+       spf=pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.214 as permitted sender) smtp.mailfrom=nasiafanari@cytanet.com.cy;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=cytanet.com.cy
+X-Virus-Scanned: amavis at cytanet.com.cy
+DKIM-Filter: OpenDKIM Filter v2.11.0 demokritos2.cytanet.com.cy 6D18240EE53
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cytanet.com.cy;
+	s=mail; t=1746690613;
+	bh=MVOulaawE/AaZ3eVKhmo18aBRS62blfw3JNynsS4+3Y=;
+	h=Date:To:From:Subject:In-Reply-To:References:From;
+	b=Hm6Je4CzXf5FbBSt4RXeR8TGSOPgzrNJxhPiBOsyzjTYpHMehzSY2lOkKKwgAcD9H
+	 crdSuv452/WBwO2oNhILZDOxsrb5abPCHLVYuQiiG9FTxfyJuW5n4RVWeOnBggw0Gr
+	 zN+4p+J3TSg8in3kHtRkT7hST8NwdNRnh3JR6Sg4=
+X-Spam-Flag: NO
+X-Spam-Score: -2.454
+X-Spam-Level:
+X-Spam-Status: No, score=-2.454 tagged_above=-10 required=5
+ tests=[ALL_TRUSTED=-1, BAYES_00=-1.9, CYT_RUL=0.001, CYT_RUL_1=0.001,
+ CYT_RUL_120=0.001, CYT_RUL_124=0.001, CYT_RUL_125=0.001, CYT_RUL_135=0.001,
+ CYT_RUL_146=0.001, CYT_RUL_47=0.001, FROM_ICEWARP_WEBMAIL=0.001,
+ HTML_IMAGE_RATIO_06=0.001, HTML_MESSAGE=0.001, LOTS_OF_MONEY=0.001,
+ T_KAM_HTML_FONT_INVALID=0.01, URIBL_GREY=0.424]
+ autolearn=no autolearn_force=no
+Received: from demokritos2.cytanet.com.cy ([127.0.0.1])
+ by localhost (demokritos2.cytanet.com.cy [127.0.0.1]) (amavis, port 10024)
+ with LMTP id 1KRq32rz45Ln for <investiaprop@gmail.com>;
+ Thu,  8 May 2025 10:50:12 +0300 (EEST)
+Received: from cytanet.com.cy?[62.228.14.11] (IcewarpPla5.pri.cytanet.com.cy [172.21.205.135])
+	by demokritos2.cytanet.com.cy (Postfix) with ESMTP id 0061140EE75
+	for <investiaprop@gmail.com>; Thu,  8 May 2025 10:50:11 +0300 (EEST)
+Date: Thu, 08 May 2025 10:50:10 +0300
+To: investiaprop <investiaprop@gmail.com>
+From: nasiafanari <nasiafanari@cytanet.com.cy>
+Subject: Fw: Fwd: Winstonfield Updated Availability
+Message-ID: <d38881e546613b8c8defaa1da2dcade1@cytanet.com.cy>
+X-Mailer: IceWarp Mailer 14.1.0.17 RHEL8 x64-Desktop
+x-icewarp-spellchecker: en
+In-Reply-To: <CAGh41yMN+UbL2E+PiD9xpWJ-se-SB2y6zjCVgtSVT7bp+pPnkA@mail.gmail.com>
+References: <4ce680cf4ffb92dc76fe192d0.6537fbba5e.20250324133651.2dac48f649.80356353@mail124.atl91.mcsv.net>
+	<CAGh41yMN+UbL2E+PiD9xpWJ-se-SB2y6zjCVgtSVT7bp+pPnkA@mail.gmail.com>
+X-Priority: 3
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_cea06531ee1b9051bae113110f138a03"
+
+
+--b1_cea06531ee1b9051bae113110f138a03
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+----- Forwarded Message -----
+
+From: Investia company (investia@cyprusview.com)
+Date: 25/03/25 19:26
+To: Katerina Christodoulou (katerinainvestia@gmail.com), Nassia Athanasiou =
+(nasiafanari@cytanet.com.cy)
+Subject: Fwd: Winstonfield Updated Availability
+
+
+
+
+---------- Forwarded message ---------
+From: Winstonfield Property Developers <sales@winstonfield.com>
+Date: Mon, Mar 24, 2025 at 3:36=E2=80=AFPM
+Subject: Winstonfield Updated Availability
+To: <investia@cyprusview.com>
+
+
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+
+=20
+ MANSION NO.10
+Limassol, Cyprus
+NOW =E2=82=AC3.9 mil=C2=A0(no=C2=A0VAT)
+
+=20
+=20
+=20
+=20
+
+=20
+ VIDEO TOUR
+=20
+ IMAGES
+=20
+ No.10 Mansion sets the standard for luxury living in Limassol's Kalogiroi-=
+Mouttagiaka neighborhood. Offering 6 beds, 5 baths, and 650 sqm of lavish s=
+pace on a 1,200 sqm plot, this property is a testament to sophistication an=
+d comfort.
+
+Facilities:
+=E2=80=A2 Sauna.
+=E2=80=A2 Underfloor heating.
+=E2=80=A2 Airconditioning in all areas.
+=E2=80=A2 Alarm and CCTV system.
+=E2=80=A2 Salt swimming pool.
+=E2=80=A2 Covered=C2=A0parking.
+=E2=80=A2 Gym.
+=E2=80=A2 Photovoltaic Solar System.
+
+Location:=C2=A0https://maps.app.goo.gl/UDgqMzLzCoaZJ62A9
+=C2=A0
+
+=20
+=20
+=20
+=20
+=20
+
+=20
+=20
+
+=20
+ COMMERCIAL PROPERTY, NICOSIA
+=E2=82=AC1.5 MIL (no VAT)
+
+=20
+=20
+=20
+ VIDEO
+=20
+ This exceptional commercial property is located in one of the most sought =
+after locations in the heart of Strovolos, Nicosia. With its prime location=
+ near Leroy Merlin and offering a generous land area of 2.000 sq.m., this p=
+roperty is a gateway to a multitude of possibilities.
+
+Situated in one of the most sought-after locations in Nicosia, our commerci=
+al property offers unrivaled visibility and accessibility. Whether you're l=
+ooking to purchase or rent, as is or for development, this is your chance t=
+o seize an investment that promises substantial returns.
+=C2=A0
+Location:https://maps.app.goo.gl/9LgRCiVLfQKvxJ5U8?g_st=3Dcom.google.maps.p=
+review.copy
+=20
+=20
+
+=20
+ AGIOS MAMAS/TRIMIKLINI
+=E2=82=AC680.000 (no VAT)
+
+=20
+=20
+=20
+ This unique piece of land is located in Agios Mamas, just 1.5km from Alpha=
+mega Trimiklini. Featuring road, electricity, and water access, this except=
+ional plot is the perfect investment.
+=C2=A0
+Key Features:
+ - Total Area: 25,284 sqm
+ - Zone: Agricultural=C2=A0Location Highlights:
+ - Peaceful surroundings.
+ - Proximity to essential amenities.
+ - Scenic views and natural beauty.=C2=A0Title deeds available.
+=C2=A0
+Location:https://maps.app.goo.gl/9LgRCiVLfQKvxJ5U8?g_st=3Dcom.google.maps.p=
+review.copy
+=20
+=20
+
+=20
+=20
+=20
+=20
+=20
+
+=20
+ AYIOS TYCHONAS
+=E2=82=AC1.400.000
+
+=20
+=20
+=20
+ Residential land of 2.700 sq.m (after road deduction) with 30% Building De=
+nsity - Asphalt Road and all Utility Services. Title deed ready and availab=
+le for immediate transfer.
+
+Due to the big levels (platos) in addition to the above building density, t=
+he investor can design the future properties in such a way that he can gain=
+ additional square meters by utilising "basement" areas which will be at gr=
+ound level of the next plato and not under earth.
+
+Due to the topography of the land the views will remain always uninterrupte=
+d.
+=20
+=20
+
+=20
+ Contact us today at:
+
+(+357) 7000 33 03
+sales@winstonfield.com
+
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+
+=20
+ Copyright =C2=A9 *2025 Winstonfield Property Developers, All rights reserv=
+ed.
+
+Mailing address:
+Unit 3, Block 3, Maximos Plaza, Makariou Avenue III, 217, Limassol, 3105
+
+
+Want to change how you receive these emails?
+You can update your preferences or unsubscribe from this list.=20
+
+
+
+
+
+
+=20
+ This email was sent to=C2=A0investia@cyprusview.com
+why did I get this? =C2=A0=C2=A0=C2=A0unsubscribe from this list =C2=A0=
+=C2=A0=C2=A0update subscription preferences
+Winstonfield Property Developers =C2=B7 3 Arachovas Str =C2=B7 Limassol 309=
+6 =C2=B7 Cyprus
+
+
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=
+=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=
+=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=
+=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=
+=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=
+=CD=8F =E2=80=87=EF=BB=BF=CD=8F
+
+
+
+--=C2=A0
+
+
+
+Phone: +357 99 206950
+Office: +357 24 634830=C2=A0
+Fax : +357 24 634833
+Website: http://cyprusview.com
+
+
+
+--b1_cea06531ee1b9051bae113110f138a03
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div class=3D"iw_mail" dir=3D"ltr" style=3D"font-size: 13px;"><div><br></di=
+v><div><br></div><div><br></div><div dir=3D"ltr" style=3D"font-size: 13px;f=
+ont-family:Roboto, Tahoma, Helvetica, sans-serif;" class=3D"iw-reply-block"=
+><div style=3D"color:#333333;"><div style=3D"display:none;">----- Forwarded=
+ Message -----</div><hr style=3D"width:100%;margin:10px 0;color:#888888;bac=
+kground-color:#888888;border-color:#DDDDDD;" width=3D"100%" size=3D"1"><div=
+ style=3D"line-height: 1.2rem;"><div>From: Investia company (<a rel=3D"noop=
+ener noreferrer" href=3D"mailto:investia@cyprusview.com" style=3D"color: rg=
+b(0, 136, 204); text-decoration: none;" target=3D"_blank">investia@cyprusvi=
+ew.com</a>)</div><div>Date: 25/03/25 19:26</div><div>To: Katerina Christodo=
+ulou (<a rel=3D"noopener noreferrer" href=3D"mailto:katerinainvestia@gmail.=
+com" style=3D"color: rgb(0, 136, 204); text-decoration: none;" target=3D"_b=
+lank">katerinainvestia@gmail.com</a>), Nassia Athanasiou (<a rel=3D"noopene=
+r noreferrer" href=3D"mailto:nasiafanari@cytanet.com.cy" style=3D"color: rg=
+b(0, 136, 204); text-decoration: none;" target=3D"_blank">nasiafanari@cytan=
+et.com.cy</a>)</div><div>Subject: <span style=3D"font-weight:bold;">Fwd: Wi=
+nstonfield Updated Availability</span></div></div></div><br><div><div dir=
+=3D"ltr"><br><br><div class=3D"gmail_quote gmail_quote_container"><div dir=
+=3D"ltr" class=3D"gmail_attr">---------- Forwarded message ---------<br>Fro=
+m: <strong class=3D"gmail_sendername" dir=3D"auto">Winstonfield Property De=
+velopers</strong> <span dir=3D"auto">&lt;<a rel=3D"noopener noreferrer" hre=
+f=3D"mailto:sales@winstonfield.com" target=3D"_blank">sales@winstonfield.co=
+m</a>&gt;</span><br>Date: Mon, Mar 24, 2025 at 3:36=E2=80=AFPM<br>Subject: =
+Winstonfield Updated Availability<br>To: &lt;<a rel=3D"noopener noreferrer"=
+ href=3D"mailto:investia@cyprusview.com" target=3D"_blank">investia@cyprusv=
+iew.com</a>&gt;</div><br><br><div class=3D"msg6559767651710369166"><div sty=
+le=3D"height:100%;margin:0;padding:0;width:100%;"><center><table align=3D"c=
+enter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%" wid=
+th=3D"100%" id=3D"m_6559767651710369166bodyTable" style=3D"border-collapse:=
+collapse;height:100%;margin:0;padding:0;width:100%;"><tbody><tr><td align=
+=3D"center" valign=3D"top" id=3D"m_6559767651710369166bodyCell" style=3D"he=
+ight:100%;margin:0;padding:0;width:100%;"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse: collapse;=
+ width: 100%;"><tbody><tr><td align=3D"center" valign=3D"top" id=3D"m_65597=
+67651710369166templateHeader" style=3D"background:#ffffff none no-repeat ce=
+nter/cover;background-color:#ffffff;background-image:none;background-repeat=
+:no-repeat;background-position:center;background-size:cover;border-top:0;bo=
+rder-bottom:0;padding-top:0px;padding-bottom:0px;"><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_=
+6559767651710369166templateContainer" style=3D"border-collapse:collapse;max=
+-width:600px!important;"><tbody><tr><td valign=3D"top" class=3D"m_655976765=
+1710369166headerContainer" style=3D"background:#transparent none no-repeat =
+center/cover;background-color:#transparent;background-image:none;background=
+-repeat:no-repeat;background-position:center;background-size:cover;border-t=
+op:0;border-bottom:0;padding-top:0;padding-bottom:0;"><table border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;b=
+order-collapse:collapse;"><tbody><tr><td valign=3D"top" style=3D"padding:9p=
+x;"><table align=3D"left" width=3D"100%" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" style=3D"min-width:100%;border-collapse:collapse;float:left;=
+"><tbody><tr><td valign=3D"top" style=3D"padding-right:9px;padding-left:9px=
+;padding-top:0;padding-bottom:0;text-align:center;"><img height=3D"auto" al=
+ign=3D"center" alt=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAA=
+AAAQABAA" width=3D"265.08" style=3D"max-width: 3330px; padding-bottom: 0px;=
+ vertical-align: bottom; border: 0px; outline: none; text-decoration: none;=
+ display: inline !important;" class=3D"m_6559767651710369166mcnImage iw-pla=
+ceholder"></td></tr></tbody></table></td></tr></tbody></table></td></tr></t=
+body></table></td></tr><tr><td align=3D"center" valign=3D"top" id=3D"m_6559=
+767651710369166templateBody" style=3D"background:#ffffff none no-repeat cen=
+ter/cover;background-color:#ffffff;background-image:none;background-repeat:=
+no-repeat;background-position:center;background-size:cover;border-top:0;bor=
+der-bottom:0;padding-top:18px;padding-bottom:18px;"><table align=3D"center"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m=
+_6559767651710369166templateContainer" style=3D"border-collapse:collapse;ma=
+x-width:600px!important;"><tbody><tr><td valign=3D"top" class=3D"m_65597676=
+51710369166bodyContainer" style=3D"background:#transparent none no-repeat c=
+enter/cover;background-color:#transparent;background-image:none;background-=
+repeat:no-repeat;background-position:center;background-size:cover;border-to=
+p:0;border-bottom:0;padding-top:0;padding-bottom:0;"><table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_655976765171036=
+9166mcnDividerBlock" style=3D"min-width:100%;border-collapse:collapse;table=
+-layout:fixed!important;"><tbody><tr><td style=3D"min-width:100%;padding:18=
+px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ style=3D"min-width:100%;border-top:2px solid #bdbdbd;border-collapse:colla=
+pse;"><tbody><tr><td><br></td></tr></tbody></table></td></tr></tbody></tabl=
+e><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" st=
+yle=3D"min-width:100%;border-collapse:collapse;"><tbody><tr><td valign=3D"t=
+op" style=3D"padding-top:9px;"><table align=3D"left" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"max-width:100%;min-width:100%;border-co=
+llapse:collapse;float:left;" width=3D"100%" class=3D"m_6559767651710369166m=
+cnTextContentContainer"><tbody><tr><td valign=3D"top" class=3D"m_6559767651=
+710369166mcnTextContent" style=3D"padding-top:0;padding-right:18px;padding-=
+bottom:9px;padding-left:18px;word-break:break-word;color:#757575;font-famil=
+y:Helvetica;font-size:16px;line-height:150%;text-align:left;"><div style=3D=
+"text-align:center;"><span style=3D"color:#000000;"><span style=3D"font-siz=
+e:26px;"><strong>MANSION NO.10</strong></span><br><span style=3D"font-size:=
+15px;">Limassol, Cyprus</span><br><span style=3D"font-size:14px;"><strong>N=
+OW =E2=82=AC3.9 mil&nbsp;(no&nbsp;VAT)</strong></span></span></div></td></t=
+r></tbody></table></td></tr></tbody></table><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;border-coll=
+apse:collapse;"><tbody><tr><td valign=3D"top" style=3D"padding:9px;"><table=
+ align=3D"left" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"min-width:100%;border-collapse:collapse;float:left;"><tbody=
+><tr><td valign=3D"top" style=3D"padding-right:9px;padding-left:9px;padding=
+-top:0;padding-bottom:0;text-align:center;"><img height=3D"auto" align=3D"c=
+enter" alt=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA=
+" width=3D"564" style=3D"max-width: 4000px; padding-bottom: 0px; vertical-a=
+lign: bottom; border: 0px; outline: none; text-decoration: none; display: i=
+nline !important;" class=3D"m_6559767651710369166mcnImage iw-placeholder"><=
+/td></tr></tbody></table></td></tr></tbody></table><table border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_65597676517103691=
+66mcnDividerBlock" style=3D"min-width:100%;border-collapse:collapse;table-l=
+ayout:fixed!important;"><tbody><tr><td style=3D"min-width:100%;padding:15px=
+ 18px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" style=3D"min-width:100%;border-top:2px solid #ffffff;border-collapse:co=
+llapse;"><tbody><tr><td><br></td></tr></tbody></table></td></tr></tbody></t=
+able><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ style=3D"min-width:100%;border-collapse:collapse;"><tbody><tr><td style=3D=
+"padding-top:0;padding-right:18px;padding-bottom:18px;padding-left:18px;" v=
+align=3D"top" align=3D"center"><table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"border-radius: 13px; background-color: rgb(34, 34, 34)=
+; border-collapse: separate !important; width: 100%;"><tbody><tr><td align=
+=3D"center" valign=3D"middle" style=3D"font-family:Arial;font-size:16px;pad=
+ding:18px;"><a rel=3D"noopener noreferrer" class=3D"m_6559767651710369166mc=
+nButton" title=3D"VIDEO TOUR" href=3D"https://winstonfield.us6.list-manage.=
+com/track/click?u=3D4ce680cf4ffb92dc76fe192d0&amp;id=3Da5d84c1fe2&amp;e=3D6=
+537fbba5e" style=3D"font-weight:bold;letter-spacing:normal;line-height:100%=
+;text-align:center;text-decoration:none;color:#ffffff;display:block;" targe=
+t=3D"_blank">VIDEO TOUR</a></td></tr></tbody></table></td></tr></tbody></ta=
+ble><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+style=3D"min-width:100%;border-collapse:collapse;"><tbody><tr><td style=3D"=
+padding-top:0;padding-right:18px;padding-bottom:18px;padding-left:18px;" va=
+lign=3D"top" align=3D"center"><table border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" style=3D"border-radius: 13px; background-color: rgb(34, 34, 34);=
+ border-collapse: separate !important; width: 100%;"><tbody><tr><td align=
+=3D"center" valign=3D"middle" style=3D"font-family:Arial;font-size:16px;pad=
+ding:18px;"><a rel=3D"noopener noreferrer" class=3D"m_6559767651710369166mc=
+nButton" title=3D"IMAGES" href=3D"https://winstonfield.us6.list-manage.com/=
+track/click?u=3D4ce680cf4ffb92dc76fe192d0&amp;id=3D6ec99985e2&amp;e=3D6537f=
+bba5e" style=3D"font-weight:bold;letter-spacing:normal;line-height:100%;tex=
+t-align:center;text-decoration:none;color:#ffffff;display:block;" target=3D=
+"_blank">IMAGES</a></td></tr></tbody></table></td></tr></tbody></table><tab=
+le border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D=
+"min-width:100%;border-collapse:collapse;"><tbody><tr><td valign=3D"top" st=
+yle=3D"padding-top:9px;"><table align=3D"left" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" style=3D"max-width:100%;min-width:100%;border-collapse=
+:collapse;float:left;" width=3D"100%" class=3D"m_6559767651710369166mcnText=
+ContentContainer"><tbody><tr><td valign=3D"top" class=3D"m_6559767651710369=
+166mcnTextContent" style=3D"padding-top:0;padding-right:18px;padding-bottom=
+:9px;padding-left:18px;word-break:break-word;color:#757575;font-family:Helv=
+etica;font-size:16px;line-height:150%;text-align:left;"><div style=3D"text-=
+align:justify;"><span style=3D"font-size:14px;"><span style=3D"color:#00000=
+0;">No.10 Mansion sets the standard for luxury living in Limassol's Kalogir=
+oi-Mouttagiaka neighborhood. Offering 6 beds, 5 baths, and 650 sqm of lavis=
+h space on a 1,200 sqm plot, this property is a testament to sophistication=
+ and comfort.</span></span><br><br><span style=3D"font-size:14px;"><span st=
+yle=3D"color:#000000;"><u>Facilities:</u><br>=E2=80=A2 Sauna.<br>=E2=80=
+=A2 Underfloor heating.<br>=E2=80=A2 Airconditioning in all areas.<br>=
+=E2=80=A2 Alarm and CCTV system.<br>=E2=80=A2 Salt swimming pool.<br>=
+=E2=80=A2 Covered&nbsp;parking.<br>=E2=80=A2 Gym.<br>=E2=80=A2 Photovoltaic=
+ Solar System.<br><br>Location:</span><strong><u>&nbsp;</u></strong><a rel=
+=3D"noopener noreferrer" href=3D"https://winstonfield.us6.list-manage.com/t=
+rack/click?u=3D4ce680cf4ffb92dc76fe192d0&amp;id=3Da7b5586b17&amp;e=3D6537fb=
+ba5e" style=3D"color:#007c89;font-weight:normal;text-decoration:underline;"=
+ target=3D"_blank">https://maps.app.goo.gl/UDgqMzLzCoaZJ62A9</a></span><br>=
+&nbsp;</div></td></tr></tbody></table></td></tr></tbody></table><table bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border=
+-collapse: collapse; width: 100%;"><tbody class=3D"m_6559767651710369166mcn=
+ImageGroupBlockOuter"><tr><td valign=3D"top" style=3D"padding:9px;" class=
+=3D"m_6559767651710369166mcnImageGroupBlockInner"><table align=3D"left" wid=
+th=3D"273" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_6559=
+767651710369166mcnImageGroupContentContainer" style=3D"border-collapse: col=
+lapse; float: left; width: 100%;"><tbody><tr><td class=3D"m_655976765171036=
+9166mcnImageGroupContent" valign=3D"top" style=3D"padding-left:9px;padding-=
+top:0;padding-bottom:0;"><img height=3D"auto" alt=3D"" src=3D"data:image/gi=
+f;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"264" style=3D"max-width: =
+2000px; padding-bottom: 0px; border: 0px; outline: none; text-decoration: n=
+one; vertical-align: bottom;" class=3D"m_6559767651710369166mcnImage iw-pla=
+ceholder"></td></tr></tbody></table><table align=3D"right" width=3D"273" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_65597676517103691=
+66mcnImageGroupContentContainer" style=3D"border-collapse: collapse; float:=
+ right; width: 100%;"><tbody><tr><td class=3D"m_6559767651710369166mcnImage=
+GroupContent" valign=3D"top" style=3D"padding-right:9px;padding-top:0;paddi=
+ng-bottom:0;"><img height=3D"auto" alt=3D"" src=3D"data:image/gif;base64,R0=
+lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"264" style=3D"max-width: 2000px; pad=
+ding-bottom: 0px; border: 0px; outline: none; text-decoration: none; vertic=
+al-align: bottom;" class=3D"m_6559767651710369166mcnImage iw-placeholder"><=
+/td></tr></tbody></table></td></tr></tbody></table><table border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_65597676517103691=
+66mcnDividerBlock" style=3D"min-width:100%;border-collapse:collapse;table-l=
+ayout:fixed!important;"><tbody><tr><td style=3D"min-width:100%;padding:18px=
+;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" s=
+tyle=3D"min-width:100%;border-top:2px solid #ffffff;border-collapse:collaps=
+e;"><tbody><tr><td><br></td></tr></tbody></table></td></tr></tbody></table>=
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"m_6559767651710369166mcnDividerBlock" style=3D"min-width:100%;border-c=
+ollapse:collapse;table-layout:fixed!important;"><tbody><tr><td style=3D"min=
+-width:100%;padding:18px;"><table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea=
+;border-collapse:collapse;"><tbody><tr><td><br></td></tr></tbody></table></=
+td></tr></tbody></table><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" style=3D"min-width:100%;border-collapse:collapse;"><t=
+body><tr><td valign=3D"top" style=3D"padding-top:9px;"><table align=3D"left=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"max-width:100%;=
+min-width:100%;border-collapse:collapse;float:left;" width=3D"100%" class=
+=3D"m_6559767651710369166mcnTextContentContainer"><tbody><tr><td valign=3D"=
+top" class=3D"m_6559767651710369166mcnTextContent" style=3D"padding-top:0;p=
+adding-right:18px;padding-bottom:9px;padding-left:18px;word-break:break-wor=
+d;color:#757575;font-family:Helvetica;font-size:16px;line-height:150%;text-=
+align:left;"><div style=3D"text-align:center;"><span style=3D"color:#000000=
+;"><span style=3D"font-size:26px;"><strong>COMMERCIAL PROPERTY, NICOSIA</st=
+rong></span><br><span style=3D"font-size:14px;"><strong>=E2=82=AC1.5 MIL (n=
+o VAT)</strong></span></span></div></td></tr></tbody></table></td></tr></tb=
+ody></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-collapse:collapse;"><tbody><tr><td=
+ valign=3D"top" style=3D"padding:9px;"><table align=3D"left" width=3D"100%"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"min-width:100%;b=
+order-collapse:collapse;float:left;"><tbody><tr><td valign=3D"top" style=3D=
+"padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-ali=
+gn:center;"><img height=3D"auto" align=3D"center" alt=3D"" src=3D"data:imag=
+e/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"564" style=3D"max-wid=
+th: 5557px; padding-bottom: 0px; vertical-align: bottom; border: 0px; outli=
+ne: none; text-decoration: none; display: inline !important;" class=3D"m_65=
+59767651710369166mcnImage iw-placeholder"></td></tr></tbody></table></td></=
+tr></tbody></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+width=3D"100%" style=3D"min-width:100%;border-collapse:collapse;"><tbody><t=
+r><td style=3D"padding-top:0;padding-right:18px;padding-bottom:18px;padding=
+-left:18px;" valign=3D"top" align=3D"center"><table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"border-radius: 13px; background-color: r=
+gb(34, 34, 34); border-collapse: separate !important; width: 100%;"><tbody>=
+<tr><td align=3D"center" valign=3D"middle" style=3D"font-family:Arial;font-=
+size:16px;padding:18px;"><a rel=3D"noopener noreferrer" class=3D"m_65597676=
+51710369166mcnButton" title=3D"VIDEO" href=3D"https://winstonfield.us6.list=
+-manage.com/track/click?u=3D4ce680cf4ffb92dc76fe192d0&amp;id=3D5513c9a371&a=
+mp;e=3D6537fbba5e" style=3D"font-weight:bold;letter-spacing:normal;line-hei=
+ght:100%;text-align:center;text-decoration:none;color:#ffffff;display:block=
+;" target=3D"_blank">VIDEO</a></td></tr></tbody></table></td></tr></tbody><=
+/table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100=
+%" style=3D"min-width:100%;border-collapse:collapse;"><tbody><tr><td valign=
+=3D"top" style=3D"padding-top:9px;"><table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"max-width:100%;min-width:100%;bord=
+er-collapse:collapse;float:left;" width=3D"100%" class=3D"m_655976765171036=
+9166mcnTextContentContainer"><tbody><tr><td valign=3D"top" class=3D"m_65597=
+67651710369166mcnTextContent" style=3D"padding-top:0;padding-right:18px;pad=
+ding-bottom:9px;padding-left:18px;word-break:break-word;color:#757575;font-=
+family:Helvetica;font-size:16px;line-height:150%;text-align:left;"><span st=
+yle=3D"font-size:14px;"><span style=3D"color:#000000;">This exceptional com=
+mercial property is located in one of the most sought after locations in th=
+e heart of Strovolos, Nicosia. With its prime location near Leroy Merlin an=
+d offering a generous land area of 2.000 sq.m., this property is a gateway =
+to a multitude of possibilities.<br><br>Situated in one of the most sought-=
+after locations in Nicosia, our commercial property offers unrivaled visibi=
+lity and accessibility. Whether you're looking to purchase or rent, as is o=
+r for development, this is your chance to seize an investment that promises=
+ substantial returns.</span><br>&nbsp;<br><strong><span style=3D"color:#000=
+000;">Location:</span></strong><u><a rel=3D"noopener noreferrer" href=3D"ht=
+tps://winstonfield.us6.list-manage.com/track/click?u=3D4ce680cf4ffb92dc76fe=
+192d0&amp;id=3D224427dd11&amp;e=3D6537fbba5e" style=3D"color:#007c89;font-w=
+eight:normal;text-decoration:underline;" target=3D"_blank">https://maps.app=
+.goo.gl/9LgRCiVLfQKvxJ5U8?g_st=3Dcom.google.maps.preview.copy</a></u></span=
+></td></tr></tbody></table></td></tr></tbody></table><table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_655976765171036=
+9166mcnDividerBlock" style=3D"min-width:100%;border-collapse:collapse;table=
+-layout:fixed!important;"><tbody><tr><td style=3D"min-width:100%;padding:18=
+px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ style=3D"min-width:100%;border-top:2px solid #eaeaea;border-collapse:colla=
+pse;"><tbody><tr><td><br></td></tr></tbody></table></td></tr></tbody></tabl=
+e><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" st=
+yle=3D"min-width:100%;border-collapse:collapse;"><tbody><tr><td valign=3D"t=
+op" style=3D"padding-top:9px;"><table align=3D"left" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"max-width:100%;min-width:100%;border-co=
+llapse:collapse;float:left;" width=3D"100%" class=3D"m_6559767651710369166m=
+cnTextContentContainer"><tbody><tr><td valign=3D"top" class=3D"m_6559767651=
+710369166mcnTextContent" style=3D"padding-top:0;padding-right:18px;padding-=
+bottom:9px;padding-left:18px;word-break:break-word;color:#757575;font-famil=
+y:Helvetica;font-size:16px;line-height:150%;text-align:left;"><div style=3D=
+"text-align:center;"><span style=3D"color:#000000;"><span style=3D"font-siz=
+e:26px;"><strong>AGIOS MAMAS/TRIMIKLINI</strong></span><br><span style=3D"f=
+ont-size:14px;"><strong>=E2=82=AC680.000 (no VAT)</strong></span></span></d=
+iv></td></tr></tbody></table></td></tr></tbody></table><table border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;=
+border-collapse:collapse;"><tbody><tr><td valign=3D"top" style=3D"padding:9=
+px;"><table align=3D"left" width=3D"100%" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" style=3D"min-width:100%;border-collapse:collapse;float:left=
+;"><tbody><tr><td valign=3D"top" style=3D"padding-right:9px;padding-left:9p=
+x;padding-top:0;padding-bottom:0;text-align:center;"><img height=3D"auto" a=
+lign=3D"center" alt=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAA=
+AAAAQABAA" width=3D"564" style=3D"max-width: 4000px; padding-bottom: 0px; v=
+ertical-align: bottom; border: 0px; outline: none; text-decoration: none; d=
+isplay: inline !important;" class=3D"m_6559767651710369166mcnImage iw-place=
+holder"></td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-widt=
+h:100%;border-collapse:collapse;"><tbody><tr><td valign=3D"top" style=3D"pa=
+dding-top:9px;"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width:100%;min-width:100%;border-collapse:collapse=
+;float:left;" width=3D"100%" class=3D"m_6559767651710369166mcnTextContentCo=
+ntainer"><tbody><tr><td valign=3D"top" class=3D"m_6559767651710369166mcnTex=
+tContent" style=3D"padding-top:0;padding-right:18px;padding-bottom:9px;padd=
+ing-left:18px;word-break:break-word;color:#757575;font-family:Helvetica;fon=
+t-size:16px;line-height:150%;text-align:left;"><span style=3D"font-size:14p=
+x;"><span style=3D"color:#000000;">This unique piece of land is located in =
+Agios Mamas, just 1.5km from Alphamega Trimiklini. Featuring road, electric=
+ity, and water access, this exceptional plot is the perfect investment.<br>=
+&nbsp;<br>Key Features:</span></span><ul><li><span style=3D"font-size:14px;=
+"><span style=3D"color:#000000;">Total Area: 25,284 sqm</span></span></li><=
+li><span style=3D"font-size:14px;"><span style=3D"color:#000000;">Zone: Agr=
+icultural</span></span></li></ul><span style=3D"font-size:14px;"><span styl=
+e=3D"color:#000000;">&nbsp;Location Highlights:</span></span><ul><li><span =
+style=3D"font-size:14px;"><span style=3D"color:#000000;">Peaceful surroundi=
+ngs.</span></span></li><li><span style=3D"font-size:14px;"><span style=3D"c=
+olor:#000000;">Proximity to essential amenities.</span></span></li><li><spa=
+n style=3D"font-size:14px;"><span style=3D"color:#000000;">Scenic views and=
+ natural beauty.</span></span></li></ul><span style=3D"font-size:14px;"><sp=
+an style=3D"color:#000000;">&nbsp;<strong>Title deeds available.</strong></=
+span></span><br>&nbsp;<br><strong><span style=3D"font-size:14px;"><span sty=
+le=3D"color:#000000;">Location:</span><u><a rel=3D"noopener noreferrer" hre=
+f=3D"https://winstonfield.us6.list-manage.com/track/click?u=3D4ce680cf4ffb9=
+2dc76fe192d0&amp;id=3Deb625b85cc&amp;e=3D6537fbba5e" style=3D"color:#007c89=
+;font-weight:normal;text-decoration:underline;" target=3D"_blank">https://m=
+aps.app.goo.gl/9LgRCiVLfQKvxJ5U8?g_st=3Dcom.google.maps.preview.copy</a></u=
+></span></strong></td></tr></tbody></table></td></tr></tbody></table><table=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m=
+_6559767651710369166mcnDividerBlock" style=3D"min-width:100%;border-collaps=
+e:collapse;table-layout:fixed!important;"><tbody><tr><td style=3D"min-width=
+:100%;padding:10px 18px;"><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" style=3D"min-width:100%;border-top:2px solid #ffffff;=
+border-collapse:collapse;"><tbody><tr><td><br></td></tr></tbody></table></t=
+d></tr></tbody></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" width=3D"100%" style=3D"border-collapse: collapse; width: 100%;"><tbody=
+ class=3D"m_6559767651710369166mcnImageGroupBlockOuter"><tr><td valign=3D"t=
+op" style=3D"padding:9px;" class=3D"m_6559767651710369166mcnImageGroupBlock=
+Inner"><table align=3D"left" width=3D"273" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" class=3D"m_6559767651710369166mcnImageGroupContentContaine=
+r" style=3D"border-collapse: collapse; float: left; width: 100%;"><tbody><t=
+r><td class=3D"m_6559767651710369166mcnImageGroupContent" valign=3D"top" st=
+yle=3D"padding-left:9px;padding-top:0;padding-bottom:0;"><img height=3D"aut=
+o" alt=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" wi=
+dth=3D"264" style=3D"max-width: 4000px; padding-bottom: 0px; border: 0px; o=
+utline: none; text-decoration: none; vertical-align: bottom;" class=3D"m_65=
+59767651710369166mcnImage iw-placeholder"></td></tr></tbody></table><table =
+align=3D"right" width=3D"273" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"m_6559767651710369166mcnImageGroupContentContainer" style=3D"b=
+order-collapse: collapse; float: right; width: 100%;"><tbody><tr><td class=
+=3D"m_6559767651710369166mcnImageGroupContent" valign=3D"top" style=3D"padd=
+ing-right:9px;padding-top:0;padding-bottom:0;"><img height=3D"auto" alt=3D"=
+" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"264=
+" style=3D"max-width: 4000px; padding-bottom: 0px; border: 0px; outline: no=
+ne; text-decoration: none; vertical-align: bottom;" class=3D"m_655976765171=
+0369166mcnImage iw-placeholder"></td></tr></tbody></table></td></tr></tbody=
+></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"m_6559767651710369166mcnDividerBlock" style=3D"min-width:100%=
+;border-collapse:collapse;table-layout:fixed!important;"><tbody><tr><td sty=
+le=3D"min-width:100%;padding:18px;"><table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;border-top:2px soli=
+d #eaeaea;border-collapse:collapse;"><tbody><tr><td><br></td></tr></tbody><=
+/table></td></tr></tbody></table><table border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%" style=3D"min-width:100%;border-collapse:collap=
+se;"><tbody><tr><td valign=3D"top" style=3D"padding-top:9px;"><table align=
+=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"max-wid=
+th:100%;min-width:100%;border-collapse:collapse;float:left;" width=3D"100%"=
+ class=3D"m_6559767651710369166mcnTextContentContainer"><tbody><tr><td vali=
+gn=3D"top" class=3D"m_6559767651710369166mcnTextContent" style=3D"padding-t=
+op:0;padding-right:18px;padding-bottom:9px;padding-left:18px;word-break:bre=
+ak-word;color:#757575;font-family:Helvetica;font-size:16px;line-height:150%=
+;text-align:left;"><div style=3D"text-align:center;"><span style=3D"color:#=
+000000;"><span style=3D"font-size:26px;"><strong>AYIOS TYCHONAS</strong></s=
+pan><br><span style=3D"font-size:14px;"><strong>=E2=82=AC1.400.000</strong>=
+</span></span></div></td></tr></tbody></table></td></tr></tbody></table><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"min-width:100%;border-collapse:collapse;"><tbody><tr><td valign=3D"top"=
+ style=3D"padding:9px;"><table align=3D"left" width=3D"100%" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" style=3D"min-width:100%;border-collapse:=
+collapse;float:left;"><tbody><tr><td valign=3D"top" style=3D"padding-right:=
+9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center;"><im=
+g height=3D"auto" align=3D"center" alt=3D"" src=3D"data:image/gif;base64,R0=
+lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"564" style=3D"max-width: 4000px; pad=
+ding-bottom: 0px; vertical-align: bottom; border: 0px; outline: none; text-=
+decoration: none; display: inline !important;" class=3D"m_65597676517103691=
+66mcnImage iw-placeholder"></td></tr></tbody></table></td></tr></tbody></ta=
+ble><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+style=3D"min-width:100%;border-collapse:collapse;"><tbody><tr><td valign=3D=
+"top" style=3D"padding-top:9px;"><table align=3D"left" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" style=3D"max-width:100%;min-width:100%;border-=
+collapse:collapse;float:left;" width=3D"100%" class=3D"m_655976765171036916=
+6mcnTextContentContainer"><tbody><tr><td valign=3D"top" class=3D"m_65597676=
+51710369166mcnTextContent" style=3D"padding-top:0;padding-right:18px;paddin=
+g-bottom:9px;padding-left:18px;word-break:break-word;color:#757575;font-fam=
+ily:Helvetica;font-size:16px;line-height:150%;text-align:left;"><span style=
+=3D"font-size:14px;"><span style=3D"color:#000000;">Residential land of 2.7=
+00 sq.m (after road deduction) with 30% Building Density - Asphalt Road and=
+ all Utility Services. Title deed ready and available for immediate transfe=
+r.<br><br>Due to the big levels (platos) in addition to the above building =
+density, the investor can design the future properties in such a way that h=
+e can gain additional square meters by utilising "basement" areas which wil=
+l be at ground level of the next plato and not under earth.<br><br>Due to t=
+he topography of the land the views will remain always uninterrupted.</span=
+></span></td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_655976=
+7651710369166mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important;"><tbody><tr><td style=3D"min-width:100%;p=
+adding:18px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse;"><tbody><tr><td><br></td></tr></tbody></table></td></tr></tbo=
+dy></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"min-width:100%;border-collapse:collapse;"><tbody><tr><td va=
+lign=3D"top" style=3D"padding-top:9px;"><table align=3D"left" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"max-width:100%;min-width:100%;=
+border-collapse:collapse;float:left;" width=3D"100%" class=3D"m_65597676517=
+10369166mcnTextContentContainer"><tbody><tr><td valign=3D"top" class=3D"m_6=
+559767651710369166mcnTextContent" style=3D"padding-top:0;padding-right:18px=
+;padding-bottom:9px;padding-left:18px;word-break:break-word;color:#757575;f=
+ont-family:Helvetica;font-size:16px;line-height:150%;text-align:left;"><div=
+ style=3D"text-align:center;"><span style=3D"color:#000000;"><strong>Contac=
+t us today at:</strong><br><br>(+357) 7000 33 03<br><a rel=3D"noopener nore=
+ferrer" href=3D"mailto:sales@winstonfield.com" target=3D"_blank">sales@wins=
+tonfield.com</a></span></div></td></tr></tbody></table></td></tr></tbody></=
+table></td></tr></tbody></table></td></tr><tr><td align=3D"center" valign=
+=3D"top" id=3D"m_6559767651710369166templateFooter" style=3D"background:#22=
+2222 none no-repeat center/cover;background-color:#222222;background-image:=
+none;background-repeat:no-repeat;background-position:center;background-size=
+:cover;border-top:0;border-bottom:0;padding-top:0px;padding-bottom:0px;"><t=
+able align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%" class=3D"m_6559767651710369166templateContainer" style=3D"border=
+-collapse:collapse;max-width:600px!important;"><tbody><tr><td valign=3D"top=
+" class=3D"m_6559767651710369166footerContainer" style=3D"background:transp=
+arent none no-repeat center/cover;background-color:transparent;background-i=
+mage:none;background-repeat:no-repeat;background-position:center;background=
+-size:cover;border-top:0;border-bottom:0;padding-top:0;padding-bottom:0;"><=
+table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"min-width:100%;border-collapse:collapse;"><tbody><tr><td align=3D"cente=
+r" valign=3D"top" style=3D"padding:9px;"><table border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;border-collaps=
+e:collapse;"><tbody><tr><td align=3D"center" style=3D"padding-left:9px;padd=
+ing-right:9px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" style=3D"min-width:100%;border-collapse:collapse;"><tbody><tr><=
+td align=3D"center" valign=3D"top" style=3D"padding-top:9px;padding-right:9=
+px;padding-left:9px;"><table align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"border-collapse: collapse; width: 100%;"><tbod=
+y><tr><td align=3D"center" valign=3D"top"><table align=3D"left" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" style=3D"display: inline; border-coll=
+apse: collapse; float: left; width: 100%;"><tbody><tr><td valign=3D"top" st=
+yle=3D"padding-right:10px;padding-bottom:9px;"><table border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse: collap=
+se; width: 100%;"><tbody><tr><td align=3D"left" valign=3D"middle" style=3D"=
+padding-top:5px;padding-right:10px;padding-bottom:5px;padding-left:9px;"><t=
+able align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"" style=3D"border-collapse: collapse; float: left; width: 100%;"><tbody=
+><tr><td style=3D"width: 24px;" align=3D"center" valign=3D"middle"><a rel=
+=3D"noopener noreferrer" href=3D"https://winstonfield.us6.list-manage.com/t=
+rack/click?u=3D4ce680cf4ffb92dc76fe192d0&amp;id=3Dff3351ee8b&amp;e=3D6537fb=
+ba5e" target=3D"_blank"><img src=3D"data:image/gif;base64,R0lGODlhAQABAAD/A=
+CwAAAAAAQABAA" alt=3D"Facebook" style=3D"display: block; border: 0px; heigh=
+t: auto; outline: none; text-decoration: none;" height=3D"24" width=3D"24" =
+class=3D"iw-placeholder"></a></td></tr></tbody></table></td></tr></tbody></=
+table></td></tr></tbody></table><table align=3D"left" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" style=3D"display: inline; border-collapse: coll=
+apse; float: left; width: 100%;"><tbody><tr><td valign=3D"top" style=3D"pad=
+ding-right:10px;padding-bottom:9px;"><table border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" width=3D"100%" style=3D"border-collapse: collapse; width:=
+ 100%;"><tbody><tr><td align=3D"left" valign=3D"middle" style=3D"padding-to=
+p:5px;padding-right:10px;padding-bottom:5px;padding-left:9px;"><table align=
+=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" style=
+=3D"border-collapse: collapse; float: left; width: 100%;"><tbody><tr><td st=
+yle=3D"width: 24px;" align=3D"center" valign=3D"middle"><a rel=3D"noopener =
+noreferrer" href=3D"mailto:info@winstonfield.com" target=3D"_blank"><img sr=
+c=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" alt=3D"Email" st=
+yle=3D"display: block; border: 0px; height: auto; outline: none; text-decor=
+ation: none;" height=3D"24" width=3D"24" class=3D"iw-placeholder"></a></td>=
+</tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><t=
+able align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"display: inline; border-collapse: collapse; float: left; width: 100%;">=
+<tbody><tr><td valign=3D"top" style=3D"padding-right:10px;padding-bottom:9p=
+x;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+style=3D"border-collapse: collapse; width: 100%;"><tbody><tr><td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top:5px;padding-right:10px;padding-=
+bottom:5px;padding-left:9px;"><table align=3D"left" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"" style=3D"border-collapse: collapse; fl=
+oat: left; width: 100%;"><tbody><tr><td style=3D"width: 24px;" align=3D"cen=
+ter" valign=3D"middle"><a rel=3D"noopener noreferrer" href=3D"https://winst=
+onfield.us6.list-manage.com/track/click?u=3D4ce680cf4ffb92dc76fe192d0&amp;i=
+d=3D4f21b75c7a&amp;e=3D6537fbba5e" target=3D"_blank"><img src=3D"data:image=
+/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" alt=3D"Link" style=3D"display: =
+block; border: 0px; height: auto; outline: none; text-decoration: none;" he=
+ight=3D"24" width=3D"24" class=3D"iw-placeholder"></a></td></tr></tbody></t=
+able></td></tr></tbody></table></td></tr></tbody></table><table align=3D"le=
+ft" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"display: inli=
+ne; border-collapse: collapse; float: left; width: 100%;"><tbody><tr><td va=
+lign=3D"top" style=3D"padding-right:10px;padding-bottom:9px;"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-c=
+ollapse: collapse; width: 100%;"><tbody><tr><td align=3D"left" valign=3D"mi=
+ddle" style=3D"padding-top:5px;padding-right:10px;padding-bottom:5px;paddin=
+g-left:9px;"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"" style=3D"border-collapse: collapse; float: left; width:=
+ 100%;"><tbody><tr><td style=3D"width: 24px;" align=3D"center" valign=3D"mi=
+ddle"><a rel=3D"noopener noreferrer" href=3D"https://winstonfield.us6.list-=
+manage.com/track/click?u=3D4ce680cf4ffb92dc76fe192d0&amp;id=3D9d351558e5&am=
+p;e=3D6537fbba5e" target=3D"_blank"><img src=3D"data:image/gif;base64,R0lGO=
+DlhAQABAAD/ACwAAAAAAQABAA" alt=3D"Website" style=3D"display: block; border:=
+ 0px; height: auto; outline: none; text-decoration: none;" height=3D"24" wi=
+dth=3D"24" class=3D"iw-placeholder"></a></td></tr></tbody></table></td></tr=
+></tbody></table></td></tr></tbody></table><table align=3D"left" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" style=3D"display: inline; border-col=
+lapse: collapse; float: left; width: 100%;"><tbody><tr><td valign=3D"top" s=
+tyle=3D"padding-right:0;padding-bottom:9px;"><table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse: collapse=
+; width: 100%;"><tbody><tr><td align=3D"left" valign=3D"middle" style=3D"pa=
+dding-top:5px;padding-right:10px;padding-bottom:5px;padding-left:9px;"><tab=
+le align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"" style=3D"border-collapse: collapse; float: left; width: 100%;"><tbody><t=
+r><td style=3D"width: 24px;" align=3D"center" valign=3D"middle"><a rel=3D"n=
+oopener noreferrer" href=3D"https://winstonfield.us6.list-manage.com/track/=
+click?u=3D4ce680cf4ffb92dc76fe192d0&amp;id=3D4ba0c0285f&amp;e=3D6537fbba5e"=
+ target=3D"_blank"><img src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAA=
+AAAQABAA" alt=3D"LinkedIn" style=3D"display: block; border: 0px; height: au=
+to; outline: none; text-decoration: none;" height=3D"24" width=3D"24" class=
+=3D"iw-placeholder"></a></td></tr></tbody></table></td></tr></tbody></table=
+></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></ta=
+ble></td></tr></tbody></table></td></tr></tbody></table><table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_655976765171=
+0369166mcnDividerBlock" style=3D"min-width:100%;border-collapse:collapse;ta=
+ble-layout:fixed!important;"><tbody><tr><td style=3D"min-width:100%;padding=
+:18px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" style=3D"min-width:100%;border-top:2px solid #505050;border-collapse:co=
+llapse;"><tbody><tr><td><br></td></tr></tbody></table></td></tr></tbody></t=
+able><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ style=3D"min-width:100%;border-collapse:collapse;"><tbody><tr><td valign=
+=3D"top" style=3D"padding-top:9px;"><table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"max-width:100%;min-width:100%;bord=
+er-collapse:collapse;float:left;" width=3D"100%" class=3D"m_655976765171036=
+9166mcnTextContentContainer"><tbody><tr><td valign=3D"top" class=3D"m_65597=
+67651710369166mcnTextContent" style=3D"padding-top:0;padding-right:18px;pad=
+ding-bottom:9px;padding-left:18px;word-break:break-word;color:#ffffff;font-=
+family:Helvetica;font-size:12px;line-height:150%;text-align:center;"><em>Co=
+pyright =C2=A9 *2025 Winstonfield Property Developers, All rights reserved.=
+</em><br><br><strong>Mailing address:</strong><br>Unit 3, Block 3, Maximos =
+Plaza, Makariou Avenue III, 217, Limassol, 3105<br><br><br>Want to change h=
+ow you receive these emails?<br>You can <a rel=3D"noopener noreferrer" href=
+=3D"mailto:sales@winstonfield.com?subject=3DUpdate%20Preferences" style=3D"=
+color:#ffffff;font-weight:normal;text-decoration:underline;" target=3D"_bla=
+nk">update your preferences</a> or <a rel=3D"noopener noreferrer" href=3D"m=
+ailto:sales@winstonfield.com?subject=3DUnsubscribe%20From%20the%20List" sty=
+le=3D"color:#ffffff;font-weight:normal;text-decoration:underline;" target=
+=3D"_blank">unsubscribe from this list</a>.</td></tr></tbody></table></td><=
+/tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></t=
+d></tr></tbody></table></center> <center><br><br><br><br><br><br><table bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" id=3D"m_655976=
+7651710369166canspamBarWrapper" style=3D"background-color: rgb(255, 255, 25=
+5); border-top: 1px solid rgb(229, 229, 229); width: 100%;"><tbody><tr><td =
+align=3D"center" valign=3D"top" style=3D"padding-top:20px;padding-bottom:20=
+px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=3D"m_655976=
+7651710369166canspamBar"><tbody><tr><td align=3D"center" valign=3D"top" sty=
+le=3D"color:#606060;font-family:Helvetica,Arial,sans-serif;font-size:11px;l=
+ine-height:150%;padding-right:20px;padding-bottom:5px;padding-left:20px;tex=
+t-align:center;">This email was sent to&nbsp;<a rel=3D"noopener noreferrer"=
+ href=3D"mailto:investia@cyprusview.com" style=3D"color:#404040!important;"=
+ target=3D"_blank">investia@cyprusview.com</a><br><a rel=3D"noopener norefe=
+rrer" href=3D"https://winstonfield.us6.list-manage.com/about?u=3D4ce680cf4f=
+fb92dc76fe192d0&amp;id=3Dd96712e056&amp;e=3D6537fbba5e&amp;c=3D2dac48f649" =
+style=3D"color:#404040!important;" target=3D"_blank"><em>why did I get this=
+?</em></a> &nbsp;&nbsp;&nbsp;<a rel=3D"noopener noreferrer" href=3D"https:/=
+/winstonfield.us6.list-manage.com/unsubscribe?u=3D4ce680cf4ffb92dc76fe192d0=
+&amp;id=3Dd96712e056&amp;t=3Db&amp;e=3D6537fbba5e&amp;c=3D2dac48f649" style=
+=3D"color:#404040!important;" target=3D"_blank">unsubscribe from this list<=
+/a> &nbsp;&nbsp;&nbsp;<a rel=3D"noopener noreferrer" href=3D"https://winsto=
+nfield.us6.list-manage.com/profile?u=3D4ce680cf4ffb92dc76fe192d0&amp;id=3Dd=
+96712e056&amp;e=3D6537fbba5e&amp;c=3D2dac48f649" style=3D"color:#404040!imp=
+ortant;" target=3D"_blank">update subscription preferences</a><br>Winstonfi=
+eld Property Developers =C2=B7 3 Arachovas Str =C2=B7 Limassol 3096 =C2=
+=B7 Cyprus<br><br></td></tr></tbody></table></td></tr></tbody></table></cen=
+ter></div><div style=3D"display:none;">=E2=80=87=EF=BB=BF=CD=8F =E2=80=
+=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=
+=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=
+=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=
+=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=
+=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F</div><div style=3D"display:none;font-size:0px;line-height:0px;max-heigh=
+t:0px;max-width:0px;opacity:0;overflow:hidden;"><img src=3D"data:image/gif;=
+base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" height=3D"1" width=3D"1" style=3D"di=
+splay: none; font-size: 0px; line-height: 0px; opacity: 0; overflow: hidden=
+;" alt=3D"" class=3D"iw-placeholder"></div></div></div><div><br></div><div>=
+<br></div><span class=3D"gmail_signature_prefix">--&nbsp;</span><br><div di=
+r=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_signature"><div=
+ dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div><img style=3D"" src=3D"=
+data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" class=3D"iw-placehold=
+er"><br></div><div>Phone: +357 99 206950</div><div>Office: +357 24 634830&n=
+bsp;<br>Fax : +357 24 634833</div><div>Website: <a rel=3D"noopener noreferr=
+er" href=3D"http://cyprusview.com" target=3D"_blank">http://cyprusview.com<=
+/a></div><div><br></div></div></div></div></div></div></div></div></div>
+
+
+--b1_cea06531ee1b9051bae113110f138a03--
+
