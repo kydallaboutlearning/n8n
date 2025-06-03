@@ -1,0 +1,686 @@
+Delivered-To: investiaprop@gmail.com
+Received: by 2002:a05:6f02:212:b0:84:c707:c888 with SMTP id 18csp286939rcn;
+        Thu, 8 May 2025 00:51:16 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHlz9vxByVBLO3YO6SefZW2eT0K/GOlWUakN1Qh7YuDFbA5lAnRtPznpkyTkLUx1IhQZegD
+X-Received: by 2002:a5d:5c84:0:b0:3a0:8834:214c with SMTP id ffacd0b85a97d-3a0ba0b0471mr1216489f8f.20.1746690675723;
+        Thu, 08 May 2025 00:51:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1746690675; cv=none;
+        d=google.com; s=arc-20240605;
+        b=lV1CKuZBe9VEPrLh/L79YNN/GAH5yBeglVu7JnvcNog65zwg6yWRAwxYtY00VoMgst
+         5XcmQ80wET6yC3hQXXxZwXvxa0dUjMlffkO6E6Z2ETf19WBEC3NtGWnXfFeBraP7i/Wo
+         KHfanaBE6koww3LcEdEnGLLHjWBV0aDMZZWh8tnngYHTfiCxF2u+cx3F7LTGgjWUBK6+
+         YhnHV6btwC74LxAG/4fGssnx288Aaq+jYRCJtMTY1h3qG4Mvkx8Op4T0LGC2WPEUO1Yp
+         07Fr5WCKH9q2CvsoWiX3ulUTn7wbgt1F/SV2+k2HuLSZCiNQYuyazeXr/42lgSDdk47M
+         LSlg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:references:in-reply-to:message-id:subject:from:to:date
+         :dkim-signature:dkim-filter;
+        bh=PgxPp1a4zjmKRwoS05EqzgsOriUohwFRRV3VNFMJyjM=;
+        fh=c7GOLEttmcAhHBfTqzHGnuPLTyHoLeZ5TAxRIybQ39c=;
+        b=WjZ1B+vLdMA8clpG//wX5TRvkNbjW5lZvOcvBOsTyLNLMmNCJUYhO6JAYcfb2p22Ju
+         RSf/2sAJCDt95QXAyjAFvSBrZIorfuYLGRW/+ABgYkqSon9te4tf8i2+bz+QBr30L30b
+         TrcwpKz0AgoZrpO01r0I/pgbMyr5QTwECHC5xwPPBaPZ7VB/+I4Vz+01AH8nTXpvS/ip
+         o/PiNm/kc/b/iWXbtPW7+Tomvvcnea5Loeqi+7eMrrRyhWZmF3EOsWZHugP1hzUxmmDB
+         PN9KBhvDd5f7+7WrH08o1++K+/5LXmFNRUUDSV/PXyy90zfls4SPHRZnXRjM0jGWNvdK
+         /IZg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cytanet.com.cy header.s=mail header.b=TgAsAHWd;
+       spf=pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.215 as permitted sender) smtp.mailfrom=nasiafanari@cytanet.com.cy;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=cytanet.com.cy
+Return-Path: <nasiafanari@cytanet.com.cy>
+Received: from demokritos1a.cytanet.com.cy (demokritos1a.cytanet.com.cy. [195.14.130.215])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-3a0f63dd62dsi98885f8f.775.2025.05.08.00.51.15
+        for <investiaprop@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 08 May 2025 00:51:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.215 as permitted sender) client-ip=195.14.130.215;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cytanet.com.cy header.s=mail header.b=TgAsAHWd;
+       spf=pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.215 as permitted sender) smtp.mailfrom=nasiafanari@cytanet.com.cy;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=cytanet.com.cy
+X-Virus-Scanned: amavis at cytanet.com.cy
+DKIM-Filter: OpenDKIM Filter v2.11.0 demokritos1a.cytanet.com.cy CEC2C401D4B
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cytanet.com.cy;
+	s=mail; t=1746690674;
+	bh=PgxPp1a4zjmKRwoS05EqzgsOriUohwFRRV3VNFMJyjM=;
+	h=Date:To:From:Subject:In-Reply-To:References:From;
+	b=TgAsAHWdAbgQnhytE8LezYRvN4Ewk9skS8xkbJovtckRETt5NEMDkWl7WS1mD5Nzg
+	 O44WcV4wwWBbo71rks2IwchvC7yAksCaD6QjhOi0v1GqnN+nyT05rWcmEFcKaP4q6h
+	 P1AgUiBKLf0c8pAQogdL7Q+zo2HPweXsqSv/wn0c=
+X-Spam-Flag: NO
+X-Spam-Score: -2.379
+X-Spam-Level:
+X-Spam-Status: No, score=-2.379 tagged_above=-10 required=5
+ tests=[ALL_TRUSTED=-1, BAYES_00=-1.9, CYT_RUL=0.001, CYT_RUL_1=0.001,
+ CYT_RUL_120=0.001, CYT_RUL_124=0.001, CYT_RUL_135=0.001, CYT_RUL_146=0.001,
+ CYT_RUL_47=0.001, FROM_ICEWARP_WEBMAIL=0.001, HTML_IMAGE_RATIO_04=0.001,
+ HTML_MESSAGE=0.001, LOTS_OF_MONEY=0.001, SUBJ_ALL_CAPS=0.5,
+ T_KAM_HTML_FONT_INVALID=0.01] autolearn=no autolearn_force=no
+Received: from demokritos1a.cytanet.com.cy ([127.0.0.1])
+ by localhost (demokritos1a.cytanet.com.cy [127.0.0.1]) (amavis, port 10024)
+ with LMTP id cJ32gTaSeOk8 for <investiaprop@gmail.com>;
+ Thu,  8 May 2025 10:51:13 +0300 (EEST)
+Received: from cytanet.com.cy?[62.228.14.11] (IcewarpPla5.pri.cytanet.com.cy [172.21.205.135])
+	by demokritos1a.cytanet.com.cy (Postfix) with ESMTP id 7D121401D54
+	for <investiaprop@gmail.com>; Thu,  8 May 2025 10:51:13 +0300 (EEST)
+Date: Thu, 08 May 2025 10:51:12 +0300
+To: investiaprop <investiaprop@gmail.com>
+From: nasiafanari <nasiafanari@cytanet.com.cy>
+Subject: Fw: DIMITRIS | NEW PROJECT | HILL RISE PHASE V | STYLISH & COZY 3 VILLAS | MOUTTAYIAKA | LIMASSOL | FEB 2025
+Message-ID: <527b694a68a41286cce281cde2110af8@cytanet.com.cy>
+X-Mailer: IceWarp Mailer 14.1.0.17 RHEL8 x64-Desktop
+x-icewarp-spellchecker: en
+In-Reply-To: <4uphro1k88ia.71Bm_mUwy74Glld2YWifhw2@tracking.athanasiou.com>
+References: <4uphro1k88ia.71Bm_mUwy74Glld2YWifhw2@tracking.athanasiou.com>
+X-Priority: 3
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_529dd59d3522702c6d0cfcc3d3846b49"
+
+
+--b1_529dd59d3522702c6d0cfcc3d3846b49
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+----- Forwarded Message -----
+
+From: Dimitris | Chr. Athanasiou Constructions & Developments Ltd (dimitris=
+@athanasiou.com)
+Date: 25/02/25 10:37
+To: nasiafanari@cytanet.com.cy
+Subject: DIMITRIS | NEW PROJECT | HILL RISE PHASE V | STYLISH & COZY 3 VILL=
+AS | MOUTTAYIAKA | LIMASSOL | FEB 2025
+
+
+
+ =C2=A0
+=20
+=20
+=20
+=20
+=20
+HILL RISE PHASE V | MODERN & STYLISH VILLAS=C2=A0
+MOUTTAGIAKA | LIMASSOL | CYPRUS
+
+=20
+Hill Rise Phase V Villas is an stylish project of three luxurious homes in =
+the private and serene and quite area of Mouttayiaka, which combines outsta=
+nding mountain and sea views. Every square inch of the four to four-bedroom=
+ villas was created to provide a great escape into an ethereal island lifes=
+tyle and each villa is custom designed to carry a well-appointed unique, mo=
+dern look. All villas include private parking, private green gardens, swimm=
+ing pool, outside sitting area and large balconies. The homes are gated, se=
+cured and surrounded by tranquil nature providing a vibrant feel of sublime=
+ relaxation. In addition to the stunning location, the rich green and hill-=
+bound surrounding areas, immerse the project in a hard-to-find, peaceful en=
+vironment just a few minutes away from the sandy beaches and 5* hotels and =
+only ten minutes away from the city, allowing full and quick access to all=
+=0Aamenities and city life. The project caters for those looking for both c=
+ity and holiday homes, while also offering incredible investment value.
+
+=20
+=20
+=20
+=E2=97=89 3 beds (after title deed 4th)=C2=A0
+=E2=97=89 Guest WC | Family Bath & Shower en-suite=C2=A0
+=E2=97=89 Plot size from 558 SQM=C2=A0
+=E2=97=89 Total covered area: 307 SQM=C2=A0
+=E2=97=89 High ceiling=C2=A0
+=E2=97=89 Electric shutters in beds=C2=A0
+=E2=97=89 Private parking=C2=A0
+=E2=97=89 Double glazed windows
+=20
+=20
+=E2=97=89 Underfloor heating
+=E2=97=89 Landscaped gardens
+=E2=97=89 Provision for PV system
+=E2=97=89 Provision for air-conditioning
+=E2=97=89 Private swimming pools
+=E2=97=89 Alarm system
+=E2=97=89 Solar panels for hot water
+=E2=97=89 CCTV
+
+=20
+MODERN & STYLISH 2 VILLAS l SEA VIEW | LIMASSOL
+
+=20
+=C2=A0COMPLETION SET | Q4 2025
+
+=20
+=20
+=20
+PHOTO GALLERY
+
+=20
+=20
+=20
+ =20
+=20
+=20
+=20
+=20
+=20
+ =20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+ GOOGLE MAP
+=20
+ TITLE DEEDS ARE GUARANTEED
+=20
+
+INVESTMENT HIGHLIGHTS
+
+=20
+=20
+=20
+=E2=97=89 Stylish modern 3 beds Luxury Villas=C2=A0
+
+=E2=97=89 Prices from =E2=82=AC1,380,000+VAT=C2=A0
+
+=E2=97=89 High rental demand up to 5% ROI=C2=A0
+
+=E2=97=89 Secure investment
+=20
+=20
+=E2=97=89 Reserve with min amount=C2=A0
+
+=E2=97=89 Completion set Q3 2026=C2=A0
+
+=E2=97=89 High-end finishes throughout=C2=A0
+
+=E2=97=89 Sea View
+
+=20
+PROPERTIES & PRICES ARE SUBJECT TO AVAILABILITY & CAN BE CHANGED WITHOUT PR=
+IOR NOTICE AT THE COMPANS=E2=80=99Y DISCRETION. THE IMAGES ARE FOR ILLUSTRA=
+TION PURPOSE ONLY | ACTUAL PRODUCT MAY VARY.
+
+=20
+Dimitris M
+Sales Director=C2=A0
+Tel: +357-25 81 21 23=C2=A0
+Mob: +357 96 866 770=C2=A0
+Fax: +357-25 31 99 80=C2=A0
+E-mail: dimitris@athanasiou.com=C2=A0
+
+
+
+=20
+=20
+=20
+=20
+=20
+=20
+
+
+=20
+If you no longer wish to receive mail from us, you can=C2=A0unsubscribe.
+Dimitris | Chr. Athanasiou Constructions & Developments Ltd , 52, Amathount=
+os Avenue, Ayios Tychonas, Limassol, 4532, Cyprus, http://www.athanasiou.co=
+m
+
+=20
+Unable to view? Read it Online
+=20
+
+ -=20
+ -=20
+
+
+--b1_529dd59d3522702c6d0cfcc3d3846b49
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div class=3D"iw_mail" dir=3D"ltr" style=3D"font-size: 13px;"><div><br></di=
+v><div><br></div><div><br></div><div dir=3D"ltr" style=3D"font-size: 13px;f=
+ont-family:Roboto, Tahoma, Helvetica, sans-serif;" class=3D"iw-reply-block"=
+><div style=3D"color:#333333;"><div style=3D"display:none;">----- Forwarded=
+ Message -----</div><hr style=3D"width:100%;margin:10px 0;color:#888888;bac=
+kground-color:#888888;border-color:#DDDDDD;" width=3D"100%" size=3D"1"><div=
+ style=3D"line-height: 1.2rem;"><div>From: Dimitris | Chr. Athanasiou Const=
+ructions &amp; Developments Ltd (<a rel=3D"noopener noreferrer" href=3D"mai=
+lto:dimitris@athanasiou.com" style=3D"color: rgb(0, 136, 204); text-decorat=
+ion: none;" target=3D"_blank">dimitris@athanasiou.com</a>)</div><div>Date: =
+25/02/25 10:37</div><div>To: <a rel=3D"noopener noreferrer" href=3D"mailto:=
+nasiafanari@cytanet.com.cy" style=3D"color: rgb(0, 136, 204); text-decorati=
+on: none;" target=3D"_blank">nasiafanari@cytanet.com.cy</a></div><div>Subje=
+ct: <span style=3D"font-weight:bold;">DIMITRIS | NEW PROJECT | HILL RISE PH=
+ASE V | STYLISH &amp; COZY 3 VILLAS | MOUTTAYIAKA | LIMASSOL | FEB 2025</sp=
+an></div></div></div><br><div><center lang=3D"en" style=3D"width: 100%; bac=
+kground-color: #F5F6F8;"><table align=3D"center" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" width=3D"640" style=3D"margin: auto; width: 100%;" c=
+lass=3D"contentMainTable"><tbody><tr class=3D"wp-block-editor-spacerblock-v=
+1"><td style=3D"background-color:#F5F6F8;line-height:50px;font-size:50px;wi=
+dth:100%;min-width:100%;">&nbsp;</td></tr><tr class=3D"wp-block-editor-imag=
+eblock-v1"><td style=3D"background-color:#080808;padding-top:20px;padding-b=
+ottom:20px;padding-left:20px;padding-right:20px;" align=3D"center"><table a=
+lign=3D"center" width=3D"100%" class=3D"imageBlockWrapper" style=3D"width:1=
+00%;border-spacing:0;border-collapse:collapse;"><tbody><tr align=3D"center"=
+><td style=3D"padding:0;"><img src=3D"data:image/gif;base64,R0lGODlhAQABAAD=
+/ACwAAAAAAQABAA" width=3D"354" height=3D"auto" alt=3D"" style=3D"border-rad=
+ius: 0px; display: block; width: 59%; max-width: 100%; border: 0px;" class=
+=3D"g-img iw-placeholder"></td></tr></tbody></table></td></tr><tr class=3D"=
+wp-block-editor-imageblock-v1"><td style=3D"background-color:#ffffff;paddin=
+g-top:20px;padding-bottom:20px;padding-left:20px;padding-right:20px;" align=
+=3D"center"><table align=3D"center" width=3D"100%" class=3D"imageBlockWrapp=
+er" style=3D"width:100%;border-spacing:0;border-collapse:collapse;"><tbody>=
+<tr align=3D"center"><td style=3D"padding:0;"><img src=3D"data:image/gif;ba=
+se64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"600" height=3D"auto" alt=3D""=
+ style=3D"border-radius: 0px; display: block; width: 100%; max-width: 100%;=
+ border: 0px;" class=3D"g-img iw-placeholder"></td></tr></tbody></table></t=
+d></tr><tr class=3D"wp-block-editor-paragraphblock-v1"><td valign=3D"top" s=
+tyle=3D"padding:20px 20px 20px 20px;background-color:#F4EEE2;"><p class=3D"=
+paragraph" style=3D"font-family:Helvetica, sans-serif;text-align:center;lin=
+e-height:30.00px;font-size:20px;margin:0;color:#5f5f5f;letter-spacing:0;wor=
+d-break:normal;"><span style=3D"font-weight: bold;" class=3D"bold"><span st=
+yle=3D"color:#5f5f5f;">HILL RISE PHASE V | MODERN &amp; STYLISH VILLAS&nbsp=
+;<br>MOUTTAGIAKA | LIMASSOL | CYPRUS</span></span></p></td></tr><tr class=
+=3D"wp-block-editor-paragraphblock-v1"><td valign=3D"top" style=3D"padding:=
+0px 20px 20px 20px;background-color:#f4eee2;"><p class=3D"paragraph" style=
+=3D"font-family:Helvetica, sans-serif;text-align:left;line-height:24.00px;f=
+ont-size:12px;margin:0;color:#5f5f5f;letter-spacing:0;word-break:normal;"><=
+span style=3D"color:#000000;">Hill Rise Phase V Villas is an stylish projec=
+t of three luxurious homes in the private and serene and quite area of Mout=
+tayiaka, which combines outstanding mountain and sea views. Every square in=
+ch of the four to four-bedroom villas was created to provide a great escape=
+ into an ethereal island lifestyle and each villa is custom designed to car=
+ry a well-appointed unique, modern look. All villas include private parking=
+, private green gardens, swimming pool, outside sitting area and large balc=
+onies. The homes are gated, secured and surrounded by tranquil nature provi=
+ding a vibrant feel of sublime relaxation. In addition to the stunning loca=
+tion, the rich green and hill-bound surrounding areas, immerse the project =
+in a hard-to-find, peaceful environment just a few minutes away from the sa=
+ndy beaches and 5* hotels and only ten minutes away from the city, allowing=
+ full and quick access to all amenities and city life. The project caters f=
+or those looking for both city and holiday homes, while also offering incre=
+dible investment value.</span></p></td></tr><tr><td style=3D"padding-top:20=
+px;padding-left:0;padding-right:0;padding-bottom:20px;background-color:#fff=
+fff;"><table class=3D"multi-column" style=3D"width:640px;border-collapse:co=
+llapse !important;" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr style=3D=
+"padding-top:20px;padding-left:0;padding-right:0;padding-bottom:20px;" clas=
+s=3D"wp-block-editor-twocolumnsfiftyfiftyblock-v1"><td style=3D"width:320px=
+;float:left;" class=3D"wp-block-editor-column single-column"><table align=
+=3D"left" border=3D"0" class=3D"single-column" width=3D"320" style=3D"width=
+:320px;float:left;border-collapse:collapse !important;" cellspacing=3D"0" c=
+ellpadding=3D"0"><tbody><tr class=3D"wp-block-editor-paragraphblock-v1"><td=
+ valign=3D"top" style=3D"padding:20px 20px 20px 20px;background-color:#ffff=
+ff;"><p class=3D"paragraph" style=3D"font-family:Helvetica, sans-serif;line=
+-height:19.50px;font-size:13px;margin:0;color:#5f5f5f;letter-spacing:0;word=
+-break:normal;"><span style=3D"color:#5f5f5f;">=E2=97=89 3 beds (after titl=
+e deed 4th)&nbsp;<br>=E2=97=89 Guest WC | Family Bath &amp; Shower en-suite=
+&nbsp;<br>=E2=97=89 Plot size from 558 SQM&nbsp;<br>=E2=97=89 Total covered=
+ area: 307 SQM&nbsp;<br>=E2=97=89 High ceiling&nbsp;<br>=E2=97=89 Electric =
+shutters in beds&nbsp;<br>=E2=97=89 Private parking&nbsp;<br>=E2=97=89 Doub=
+le glazed windows</span></p></td></tr></tbody></table></td><td style=3D"wid=
+th:320px;float:left;" class=3D"wp-block-editor-column single-column"><table=
+ align=3D"right" border=3D"0" class=3D"single-column" width=3D"320" style=
+=3D"width:320px;float:left;border-collapse:collapse !important;" cellspacin=
+g=3D"0" cellpadding=3D"0"><tbody><tr class=3D"wp-block-editor-paragraphbloc=
+k-v1"><td valign=3D"top" style=3D"padding:20px 20px 20px 20px;background-co=
+lor:#ffffff;"><p class=3D"paragraph" style=3D"font-family:Helvetica, sans-s=
+erif;line-height:19.50px;font-size:13px;margin:0;color:#5f5f5f;letter-spaci=
+ng:0;word-break:normal;">=E2=97=89 Underfloor heating<br>=E2=97=89 Landscap=
+ed gardens<br>=E2=97=89 Provision for PV system<br>=E2=97=89 Provision for =
+air-conditioning<br>=E2=97=89 Private swimming pools<br>=E2=97=89 Alarm sys=
+tem<br>=E2=97=89 Solar panels for hot water<br>=E2=97=89 CCTV</p></td></tr>=
+</tbody></table></td></tr></tbody></table></td></tr><tr class=3D"wp-block-e=
+ditor-headingblock-v1"><td valign=3D"top" style=3D"background-color:#B0874F=
+;display:block;padding-top:20px;padding-right:20px;padding-bottom:9px;paddi=
+ng-left:20px;text-align:center;"><p style=3D"font-family:Helvetica, sans-se=
+rif;text-align:center;line-height:20.70px;font-size:18px;background-color:#=
+B0874F;color:#000000;margin:0;word-break:normal;" class=3D"heading1"><span =
+style=3D"color: #ffffff;">MODERN &amp; STYLISH 2 VILLAS l SEA VIEW | LIMASS=
+OL</span></p></td></tr><tr class=3D"wp-block-editor-headingblock-v1"><td va=
+lign=3D"top" style=3D"background-color:#B0874F;display:block;padding-top:0;=
+padding-right:0;padding-bottom:12px;padding-left:0;text-align:center;"><p s=
+tyle=3D"font-family:Helvetica, sans-serif;text-align:center;line-height:16.=
+10px;letter-spacing:0;font-size:14px;background-color:#B0874F;color:#000000=
+;margin:0;word-break:normal;" class=3D"heading1"><span style=3D"color:#FFFF=
+FF;">&nbsp;COMPLETION SET | Q4 2025</span></p></td></tr><tr><td style=3D"pa=
+dding-top:6px;padding-left:0;padding-right:0;padding-bottom:0;background-co=
+lor:#ffffff;"><table class=3D"multi-column" style=3D"width:640px;border-col=
+lapse:collapse !important;" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr =
+style=3D"padding-top:6px;padding-left:0;padding-right:0;padding-bottom:0;" =
+class=3D"wp-block-editor-onecolumnsblock-v1"><td style=3D"width:640px;float=
+:left;" class=3D"wp-block-editor-column single-column"><table align=3D"left=
+" border=3D"0" class=3D"single-column" width=3D"640" style=3D"width:640px;f=
+loat:left;border-collapse:collapse !important;" cellspacing=3D"0" cellpaddi=
+ng=3D"0"><tbody><tr class=3D"wp-block-editor-headingblock-v1"><td valign=3D=
+"top" style=3D"background-color:#ffffff;display:block;padding-top:0;padding=
+-right:0;padding-bottom:0;padding-left:0;text-align:center;"><p style=3D"fo=
+nt-family:Helvetica, sans-serif;text-align:center;letter-spacing:0;font-siz=
+e:20px;background-color:#ffffff;color:#000000;margin:0;word-break:normal;" =
+class=3D"heading1"><span style=3D"color:#B0874F;">PHOTO GALLERY</span></p><=
+/td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td style=
+=3D"padding-top:0;padding-left:0;padding-right:0;padding-bottom:0;backgroun=
+d-color:#F9FAFB;"><table class=3D"multi-column" style=3D"width:640px;border=
+-collapse:collapse !important;" cellpadding=3D"0" cellspacing=3D"0"><tbody>=
+<tr style=3D"padding-top:0;padding-left:0;padding-right:0;padding-bottom:0;=
+" class=3D"wp-block-editor-twocolumnsfiftyfiftyblock-v1"><td style=3D"width=
+:320px;float:left;" class=3D"wp-block-editor-column single-column"><table a=
+lign=3D"left" border=3D"0" class=3D"single-column" width=3D"320" style=3D"w=
+idth:320px;float:left;border-collapse:collapse !important;" cellspacing=3D"=
+0" cellpadding=3D"0"><tbody><tr class=3D"wp-block-editor-imageblock-v1"><td=
+ style=3D"background-color:#F9FAFB;padding-top:20px;padding-bottom:20px;pad=
+ding-left:20px;padding-right:20px;" align=3D"center"><table align=3D"center=
+" width=3D"100%" class=3D"imageBlockWrapper" style=3D"width:100%;border-spa=
+cing:0;border-collapse:collapse;"><tbody><tr align=3D"center"><td style=3D"=
+padding:0;"><a rel=3D"noopener noreferrer" href=3D"https://tracking.athanas=
+iou.com/tracking/click?d=3DALmABEj0MLNYVhqupvSB8pcq-2MiOjq-8wjKvivYJwdQeQOM=
+rVT7xaU1AbZLvNvUBwVnvHT919j8jtzBbgVqNGQ97_BlAgRp24zMGKBAP94YTiGJcG8L7xDKozn=
+M5Juejy32ZLZ_8gffW0QpBOH6NUFpz9n8J1vKbjsiduve9bP7DkLoQl8epj18q70FtN1H8g2" t=
+arget=3D"_blank"><img src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAA=
+AQABAA" width=3D"280" height=3D"auto" alt=3D"" style=3D"border-radius: 0px;=
+ display: block; width: 100%; max-width: 100%; border: 0px;" class=3D"g-img=
+ iw-placeholder"></a></td></tr></tbody></table></td></tr></tbody></table></=
+td><td style=3D"width:320px;float:left;" class=3D"wp-block-editor-column si=
+ngle-column"><table align=3D"right" border=3D"0" class=3D"single-column" wi=
+dth=3D"320" style=3D"width:320px;float:left;border-collapse:collapse !impor=
+tant;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr class=3D"wp-block-edi=
+tor-imageblock-v1"><td style=3D"background-color:#F9FAFB;padding-top:20px;p=
+adding-bottom:20px;padding-left:20px;padding-right:20px;" align=3D"center">=
+<table align=3D"center" width=3D"100%" class=3D"imageBlockWrapper" style=3D=
+"width:100%;border-spacing:0;border-collapse:collapse;"><tbody><tr align=3D=
+"center"><td style=3D"padding:0;"><a rel=3D"noopener noreferrer" href=3D"ht=
+tps://tracking.athanasiou.com/tracking/click?d=3DALmABEj0MLNYVhqupvSB8pcq-2=
+MiOjq-8wjKvivYJwdQeQOMrVT7xaU1AbZLvNvUBwVnvHT919j8jtzBbgVqNGQ97_BlAgRp24zMG=
+KBAP975LgjBllmiy98UJ5RiojvZ5oarfqXUIXSFx6xdjQDINVdeOTyOtglbCWrOEtvxIl37J3Xm=
+grKDl3jyFeVu-0xtSYo9htjSaYqkqWeP9PwMwRE1" target=3D"_blank"><img src=3D"dat=
+a:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"280" height=3D"=
+auto" alt=3D"" style=3D"border-radius: 0px; display: block; width: 100%; ma=
+x-width: 100%; border: 0px;" class=3D"g-img iw-placeholder"></a></td></tr><=
+/tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></t=
+r><tr><td style=3D"padding-top:0;padding-left:0;padding-right:0;padding-bot=
+tom:0;background-color:#F9FAFB;"><table class=3D"multi-column" style=3D"wid=
+th:640px;border-collapse:collapse !important;" cellpadding=3D"0" cellspacin=
+g=3D"0"><tbody><tr style=3D"padding-top:0;padding-left:0;padding-right:0;pa=
+dding-bottom:0;" class=3D"wp-block-editor-twocolumnsfiftyfiftyblock-v1"><td=
+ style=3D"width:320px;float:left;" class=3D"wp-block-editor-column single-c=
+olumn"><table align=3D"left" border=3D"0" class=3D"single-column" width=3D"=
+320" style=3D"width:320px;float:left;border-collapse:collapse !important;" =
+cellspacing=3D"0" cellpadding=3D"0"><tbody><tr class=3D"wp-block-editor-ima=
+geblock-v1"><td style=3D"background-color:#F9FAFB;padding-top:20px;padding-=
+bottom:20px;padding-left:20px;padding-right:20px;" align=3D"center"><table =
+align=3D"center" width=3D"100%" class=3D"imageBlockWrapper" style=3D"width:=
+100%;border-spacing:0;border-collapse:collapse;"><tbody><tr align=3D"center=
+"><td style=3D"padding:0;"><a rel=3D"noopener noreferrer" href=3D"https://t=
+racking.athanasiou.com/tracking/click?d=3DALmABEj0MLNYVhqupvSB8pcq-2MiOjq-8=
+wjKvivYJwdQeQOMrVT7xaU1AbZLvNvUBwVnvHT919j8jtzBbgVqNGQ97_BlAgRp24zMGKBAP95E=
+JOtZWqg_RzjuCSLXA_7UMqa6U4_2rpr_AsyR7nhQ0zCyAG9-ddAGS_iue3vAvh-nyrGA3JPQUtK=
+mE4q7l3XbKPDFDFC49Zr3GMYmvDNqxHM1" target=3D"_blank"><img src=3D"data:image=
+/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"280" height=3D"auto" a=
+lt=3D"" style=3D"border-radius: 0px; display: block; width: 100%; max-width=
+: 100%; border: 0px;" class=3D"g-img iw-placeholder"></a></td></tr></tbody>=
+</table></td></tr></tbody></table></td><td style=3D"width:320px;float:left;=
+" class=3D"wp-block-editor-column single-column"><table align=3D"right" bor=
+der=3D"0" class=3D"single-column" width=3D"320" style=3D"width:320px;float:=
+left;border-collapse:collapse !important;" cellspacing=3D"0" cellpadding=3D=
+"0"><tbody><tr class=3D"wp-block-editor-imageblock-v1"><td style=3D"backgro=
+und-color:#F9FAFB;padding-top:20px;padding-bottom:20px;padding-left:20px;pa=
+dding-right:20px;" align=3D"center"><table align=3D"center" width=3D"100%" =
+class=3D"imageBlockWrapper" style=3D"width:100%;border-spacing:0;border-col=
+lapse:collapse;"><tbody><tr align=3D"center"><td style=3D"padding:0;"><a re=
+l=3D"noopener noreferrer" href=3D"https://tracking.athanasiou.com/tracking/=
+click?d=3DALmABEj0MLNYVhqupvSB8pcq-2MiOjq-8wjKvivYJwdQeQOMrVT7xaU1AbZLvNvUB=
+wVnvHT919j8jtzBbgVqNGQ97_BlAgRp24zMGKBAP94UOz9Kfj8hFFe5qUydWoefWrCWFANcqlb-=
+r_dhM9CdkY_N9BPHuCXCr4REJmJj2--mkT4Gi3yUJ4Q0O14wui33HVLafxZ1iCh1nYx1yr0ulK4=
+1" target=3D"_blank"><img src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwA=
+AAAAAQABAA" width=3D"280" height=3D"auto" alt=3D"" style=3D"border-radius: =
+0px; display: block; width: 100%; max-width: 100%; border: 0px;" class=3D"g=
+-img iw-placeholder"></a></td></tr></tbody></table></td></tr></tbody></tabl=
+e></td></tr></tbody></table></td></tr><tr class=3D"wp-block-editor-imageblo=
+ck-v1"><td style=3D"background-color:#ffffff;padding-top:20px;padding-botto=
+m:20px;padding-left:20px;padding-right:20px;" align=3D"center"><table align=
+=3D"center" width=3D"100%" class=3D"imageBlockWrapper" style=3D"width:100%;=
+border-spacing:0;border-collapse:collapse;"><tbody><tr align=3D"center"><td=
+ style=3D"padding:0;"><img src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACw=
+AAAAAAQABAA" width=3D"600" height=3D"auto" alt=3D"" style=3D"border-radius:=
+ 0px; display: block; width: 100%; max-width: 100%; border: 0px;" class=3D"=
+g-img iw-placeholder"></td></tr></tbody></table></td></tr><tr class=3D"wp-b=
+lock-editor-imageblock-v1"><td style=3D"background-color:#ffffff;padding-to=
+p:20px;padding-bottom:20px;padding-left:20px;padding-right:20px;" align=3D"=
+center"><table align=3D"center" width=3D"100%" class=3D"imageBlockWrapper" =
+style=3D"width:100%;border-spacing:0;border-collapse:collapse;"><tbody><tr =
+align=3D"center"><td style=3D"padding:0;"><img src=3D"data:image/gif;base64=
+,R0lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"600" height=3D"auto" alt=3D"" sty=
+le=3D"border-radius: 0px; display: block; width: 100%; max-width: 100%; bor=
+der: 0px;" class=3D"g-img iw-placeholder"></td></tr></tbody></table></td></=
+tr><tr class=3D"wp-block-editor-buttonblock-v1" align=3D"center"><td style=
+=3D"background-color:#ffffff;padding-top:20px;padding-right:20px;padding-bo=
+ttom:20px;padding-left:20px;width:100%;" valign=3D"top"><table cellspacing=
+=3D"0" cellpadding=3D"0" class=3D"button-table"><tbody><tr><td valign=3D"to=
+p" class=3D"button-F_UmBDdep8MLvPfspJH5k button-td button-td-primary" style=
+=3D"cursor:pointer;border:none;border-radius:4px;background-color:#5457ff;f=
+ont-size:16px;font-family:Open Sans, sans-serif;width:fit-content;direction=
+:ltr;text-decoration:none;letter-spacing:0;color:#ffffff;overflow:hidden;">=
+<a rel=3D"noopener noreferrer" style=3D"color:#ffffff;display:block;padding=
+:16px 24px 16px 24px;" href=3D"https://tracking.athanasiou.com/tracking/cli=
+ck?d=3DSv2bfAHxaOcAK0Q6cM1z-ZKzvPibPU2TJ9xwvCweK5DduKAiR0Z-VH1H1zt39eUf-9Ih=
+CIbxb3ehHiQye6qePihNFTbWZaptHH6v_QNOv8jY8NIEmBKxwlLVNxy3dqJthmav4cbbh9kW5DQ=
+Mu6-q_f1FU13199THLITGzQtJP-PW0" target=3D"_blank">GOOGLE MAP</a></td></tr><=
+/tbody></table></td></tr><tr class=3D"wp-block-editor-buttonblock-v1" align=
+=3D"center"><td style=3D"background-color:#ffffff;padding-top:20px;padding-=
+right:20px;padding-bottom:20px;padding-left:20px;width:100%;" valign=3D"top=
+"><table cellspacing=3D"0" cellpadding=3D"0" class=3D"button-table"><tbody>=
+<tr><td valign=3D"top" class=3D"button--lLFUttz9yn0u1qNWdlYO button-td butt=
+on-td-primary" style=3D"cursor:pointer;border:none;border-radius:4px;backgr=
+ound-color:#B0874F;font-size:16px;font-family:Open Sans, sans-serif;width:f=
+it-content;direction:ltr;text-decoration:none;letter-spacing:0;color:#fffff=
+f;overflow:hidden;"><a rel=3D"noopener noreferrer" style=3D"color:#ffffff;d=
+isplay:block;padding:12px 12px 12px 12px;" href=3D"https://tracking.athanas=
+iou.com/tracking/click?d=3DlepNGyspsV4W09_S3avWcpOxMIiBhTC6hGpTmWyp1n2UdJYo=
+fOpmPx8u1mJSm3mhm2P5shZFNqyc3jcN66mJT_Cc4E_NLiiDA_GBkwaut1vX5nU0V3EfQzeC0tK=
+KFSLYcbGyocJ1QGE_6Sp97BhD_H4Nc98uhXRZE-DFqtLKc_wt0" target=3D"_blank">TITLE=
+ DEEDS ARE GUARANTEED</a></td></tr></tbody></table></td></tr><tr class=3D"w=
+p-block-editor-paragraphblock-v1"><td valign=3D"top" style=3D"padding:0px 0=
+px 0px 0px;background-color:#140F47;"><p class=3D"paragraph" style=3D"font-=
+family:Helvetica, sans-serif;text-align:center;line-height:20.70px;font-siz=
+e:18px;margin:0;color:#5f5f5f;letter-spacing:0;word-break:normal;"><span st=
+yle=3D"color:#ffffff;"><br><span style=3D"font-weight: bold;" class=3D"bold=
+">INVESTMENT HIGHLIGHTS</span></span></p></td></tr><tr><td style=3D"padding=
+-top:20px;padding-left:0;padding-right:0;padding-bottom:20px;background-col=
+or:#140F47;"><table class=3D"multi-column" style=3D"width:640px;border-coll=
+apse:collapse !important;" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr s=
+tyle=3D"padding-top:20px;padding-left:0;padding-right:0;padding-bottom:20px=
+;" class=3D"wp-block-editor-twocolumnsfiftyfiftyblock-v1"><td style=3D"widt=
+h:320px;float:left;" class=3D"wp-block-editor-column single-column"><table =
+align=3D"left" border=3D"0" class=3D"single-column" width=3D"320" style=3D"=
+width:320px;float:left;border-collapse:collapse !important;" cellspacing=3D=
+"0" cellpadding=3D"0"><tbody><tr class=3D"wp-block-editor-paragraphblock-v1=
+"><td valign=3D"top" style=3D"padding:20px 20px 20px 20px;background-color:=
+#140F47;"><p class=3D"paragraph" style=3D"font-family:Helvetica, sans-serif=
+;font-size:11px;margin:0;color:#5f5f5f;letter-spacing:0;word-break:normal;"=
+><span style=3D"color:#FFFFFF;">=E2=97=89 Stylish modern 3 beds Luxury Vill=
+as&nbsp;<br><br>=E2=97=89 Prices from =E2=82=AC1,380,000+VAT&nbsp;<br><br>=
+=E2=97=89 High rental demand up to 5% ROI&nbsp;<br><br>=E2=97=89 Secure inv=
+estment</span></p></td></tr></tbody></table></td><td style=3D"width:320px;f=
+loat:left;" class=3D"wp-block-editor-column single-column"><table align=3D"=
+right" border=3D"0" class=3D"single-column" width=3D"320" style=3D"width:32=
+0px;float:left;border-collapse:collapse !important;" cellspacing=3D"0" cell=
+padding=3D"0"><tbody><tr class=3D"wp-block-editor-paragraphblock-v1"><td va=
+lign=3D"top" style=3D"padding:20px 20px 20px 20px;background-color:#140F47;=
+"><p class=3D"paragraph" style=3D"font-family:Helvetica, sans-serif;font-si=
+ze:12px;margin:0;color:#5f5f5f;letter-spacing:0;word-break:normal;"><span s=
+tyle=3D"color:#FFFFFF;">=E2=97=89 Reserve with min amount&nbsp;<br><br>=
+=E2=97=89 Completion set Q3 2026&nbsp;<br><br>=E2=97=89 High-end finishes t=
+hroughout&nbsp;<br><br>=E2=97=89 Sea View</span></p></td></tr></tbody></tab=
+le></td></tr></tbody></table></td></tr><tr class=3D"wp-block-editor-paragra=
+phblock-v1"><td valign=3D"top" style=3D"padding:20px 20px 20px 20px;backgro=
+und-color:#ffffff;"><p class=3D"paragraph" style=3D"font-family:Helvetica, =
+sans-serif;text-align:center;line-height:15.00px;font-size:10px;margin:0;co=
+lor:#5f5f5f;letter-spacing:0;word-break:normal;"><span style=3D"color:#f10c=
+0c;">PROPERTIES &amp; PRICES ARE SUBJECT TO AVAILABILITY &amp; CAN BE CHANG=
+ED WITHOUT PRIOR NOTICE AT THE COMPANS=E2=80=99Y DISCRETION. THE IMAGES ARE=
+ FOR ILLUSTRATION PURPOSE ONLY | ACTUAL PRODUCT MAY VARY.</span></p></td></=
+tr><tr class=3D"wp-block-editor-paragraphblock-v1"><td valign=3D"top" style=
+=3D"padding:20px 20px 20px 20px;background-color:#FFFFFF;"><p class=3D"para=
+graph" style=3D"font-family:Helvetica, sans-serif;line-height:19.50px;font-=
+size:13px;margin:0;color:#5f5f5f;letter-spacing:0;word-break:normal;"><span=
+ style=3D"color:#000000;">Dimitris M<br>Sales Director&nbsp;<br>Tel: +357-2=
+5 81 21 23&nbsp;<br>Mob: +357 96 866 770&nbsp;<br>Fax: +357-25 31 99 80&nbs=
+p;<br>E-mail: <a rel=3D"noopener noreferrer" href=3D"mailto:dimitris@athana=
+siou.com" data-type=3D"email" data-id=3D"10b49de1-ac9e-44a1-8862-f0e6867788=
+d8-Ft9KJ4oSaSyPpaRni-coO" style=3D"color:#000000 !important; display: inlin=
+e-block;" class=3D"link-10b49de1-ac9e-44a1-8862-f0e6867788d8-Ft9KJ4oSaSyPpa=
+Rni-coO" target=3D"_blank">dimitris@athanasiou.com</a>&nbsp;</span><br><br>=
+</p></td></tr><tr class=3D"wp-block-editor-socialiconsblock-v1" style=3D"di=
+splay:table-row;background-color:#F5F6F8;"><td style=3D"width:100%;"><table=
+ style=3D"background-color:#F5F6F8;width:100%;padding-top:42px;padding-bott=
+om:32px;padding-left:32px;padding-right:32px;border-collapse:separate !impo=
+rtant;" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td align=3D"center"=
+ valign=3D"top"><div style=3D"max-width:576px;"><table style=3D"width:100%;=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><td valign=
+=3D"top"><div style=3D"margin-left:auto;margin-right:auto;margin-top:-5px;m=
+argin-bottom:-5px;width:100%;max-width:104px;"><table style=3D"width: 100%;=
+" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td><table =
+align=3D"left" style=3D"float: left; width: 100%;" class=3D"single-social-i=
+con" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"top" styl=
+e=3D"padding-top:5px;padding-bottom:5px;padding-left:10px;padding-right:10p=
+x;border-collapse:collapse !important;border-spacing:0;font-size:0;"><a cla=
+ss=3D"social-icon--link" href=3D"https://tracking.athanasiou.com/tracking/c=
+lick?d=3DjOBynDMt2EIv8qEHORi2mi4rzsxSOHkiLTdclbjhlgxD0wGQl_YyCt682GgiZBU95O=
+ZA-XRnEFNqylx_mP1Y9Y4KpjUWsa9WW1vwruXpdYQsKEJWO07UW4XsTNPjh_Zud6qp2VOoTjvoq=
+mSa7Oe32x5suW3AfCtzMTJNn4H-Kr0R0" rel=3D"noopener noreferrer" target=3D"_bl=
+ank"><img src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" widt=
+h=3D"32" height=3D"32" style=3D"max-width: 32px; display: block; border: 0p=
+x;" alt=3D"Facebook" class=3D"iw-placeholder"></a></td></tr></tbody></table=
+><table align=3D"left" style=3D"float: left; width: 100%;" class=3D"single-=
+social-icon" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"t=
+op" style=3D"padding-top:5px;padding-bottom:5px;padding-left:10px;padding-r=
+ight:10px;border-collapse:collapse !important;border-spacing:0;font-size:0;=
+"><a class=3D"social-icon--link" href=3D"https://tracking.athanasiou.com/tr=
+acking/click?d=3DDGitxbhuphNzA_LzU0i_Dv6KeBznoIaEqzn_a3fOqpHetvKQ0ZGq_SUroK=
+g6dleTtV5uti3KbYV5DOzQ8yPiffmYrWo8lCLmv-uzPCsYaAm5GjAWlxyrhgL5ztHZpLCePdFoP=
+c4bQH5aep7RR8AeByI1" rel=3D"noopener noreferrer" target=3D"_blank"><img src=
+=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"32" heig=
+ht=3D"32" style=3D"max-width: 32px; display: block; border: 0px;" alt=3D"X =
+(formerly Twitter)" class=3D"iw-placeholder"></a></td></tr></tbody></table>=
+</td></tr></tbody></table></div></td></tr></tbody></table></div></td></tr><=
+/tbody></table></td></tr><tr><td valign=3D"top" align=3D"center" style=3D"p=
+adding:20px 20px 20px 20px;background-color:#F5F6F8;"><p class=3D"paragraph=
+" style=3D"font-family:Helvetica, sans-serif;text-align:center;line-height:=
+22.00px;font-size:11px;margin:0;color:#5f5f5f;word-break:normal;">If you no=
+ longer wish to receive mail from us, you can&nbsp;<a rel=3D"noopener noref=
+errer" href=3D"https://tracking.athanasiou.com/tracking/unsubscribe?d=3DoU0=
+REEGUSlgZST1kPh6dFdh1LA4axuIhNPSmnZ5doZDpLkdNGNP2PDsOCMUIufnhbWm1IuzMFRR6XN=
+YcsuDYJ67ZW-i-LenZbHkj41OXuuvp0" data-type=3D"mergefield" data-filename=3D"=
+" data-id=3D"c0c4d759-1c22-48d4-a614-785d6acaf420-6V201gHRzhDxAzaNqZiJS" cl=
+ass=3D"c0c4d759-1c22-48d4-a614-785d6acaf420-6V201gHRzhDxAzaNqZiJS" data-mer=
+gefield-value=3D"unsubscribe" data-mergefield-input-value=3D"" style=3D"col=
+or: #5457FF; display: inline-block;" target=3D"_blank">unsubscribe</a>.<br>=
+Dimitris | Chr. Athanasiou Constructions &amp; Developments Ltd , 52, Amath=
+ountos Avenue, Ayios Tychonas, Limassol, 4532, Cyprus, <a rel=3D"noopener n=
+oreferrer" href=3D"http://www.athanasiou.com" target=3D"_blank">http://www.=
+athanasiou.com</a></p></td></tr><tr class=3D"wp-block-editor-paragraphblock=
+-v1"><td valign=3D"top" style=3D"padding:12px 12px 12px 12px;background-col=
+or:#F5F6F8;"><p class=3D"paragraph" style=3D"font-family:Helvetica, sans-se=
+rif;text-align:center;line-height:11.50px;font-size:10px;margin:0;color:#5f=
+5f5f;word-break:normal;">Unable to view? Read it <a rel=3D"noopener norefer=
+rer" href=3D"https://tracking.athanasiou.com/view?msgid=3D71Bm_mUwy74Glld2Y=
+Wifhw2" data-type=3D"mergefield" data-id=3D"62d10d6d-b252-49a7-af10-c771dbd=
+58b15-Xzt0XJLlayJkgPI0XyMI5" data-filename=3D"" class=3D"62d10d6d-b252-49a7=
+-af10-c771dbd58b15-Xzt0XJLlayJkgPI0XyMI5" data-mergefield-value=3D"view" da=
+ta-mergefield-input-value=3D"" style=3D"color: #5457FF; display: inline-blo=
+ck;" target=3D"_blank">Online</a></p></td></tr></tbody></table></center> <i=
+mg height=3D"1px" width=3D"1px" src=3D"data:image/gif;base64,R0lGODlhAQABAA=
+D/ACwAAAAAAQABAA" style=3D"" alt=3D"" class=3D"iw-placeholder"></div></div>=
+<style type=3D"text/css"></style><style type=3D"text/css">.iw-reply-block :=
+root { color-scheme: light; }
+.iw-reply-block html,.iw-reply-block { overflow-wrap: break-word; word-brea=
+k: break-word; margin: 0px auto !important; padding: 0px !important; height=
+: 100% !important; width: 100% !important; }
+.iw-reply-block center,.iw-reply-block #body_table { }
+.iw-reply-block ul,.iw-reply-block ol { padding: 0px; margin-top: 0px; marg=
+in-bottom: 0px; }
+.iw-reply-block li { margin-bottom: 0px; }
+.iw-reply-block .list-block-list-outside-left li { margin-left: 20px !impor=
+tant; }
+.iw-reply-block .list-block-list-outside-right li { margin-right: 20px !imp=
+ortant; }
+.iw-reply-block .paragraph { font-size: 15px; font-family: Helvetica, sans-=
+serif; font-weight: normal; font-style: normal; text-align: start; line-hei=
+ght: 1; text-decoration: none; color: rgb(95, 95, 95); }
+.iw-reply-block .heading1 { font-size: 32px; font-family: Helvetica, sans-s=
+erif; font-weight: normal; font-style: normal; text-align: start; line-heig=
+ht: 1; text-decoration: none; color: rgb(0, 0, 0); }
+.iw-reply-block .heading2 { font-size: 26px; font-family: Helvetica, sans-s=
+erif; font-weight: normal; font-style: normal; text-align: start; line-heig=
+ht: 1; text-decoration: none; color: rgb(0, 0, 0); }
+.iw-reply-block .heading3 { font-size: 19px; font-family: Helvetica, sans-s=
+erif; font-weight: normal; font-style: normal; text-align: start; line-heig=
+ht: 1; text-decoration: none; color: rgb(0, 0, 0); }
+.iw-reply-block .list { font-size: 15px; font-family: Helvetica, sans-serif=
+; font-weight: normal; font-style: normal; text-align: start; line-height: =
+1; text-decoration: none; color: rgb(95, 95, 95); }
+.iw-reply-block p a,.iw-reply-block li a { color: rgb(84, 87, 255); text-de=
+coration: none; font-style: normal; font-weight: normal; }
+.iw-reply-block .button-table a { text-decoration: none; font-style: normal=
+; font-weight: normal; }
+.iw-reply-block .paragraph > span { text-decoration: none; }
+.iw-reply-block .heading1 > span { text-decoration: none; }
+.iw-reply-block .heading2 > span { text-decoration: none; }
+.iw-reply-block .heading3 > span { text-decoration: none; }
+.iw-reply-block .list > span { text-decoration: none; }
+.iw-reply-block * { text-size-adjust: 100%; }
+.iw-reply-block div[style*=3D"margin: 16px 0"] { margin: 0px !important; }
+.iw-reply-block #MessageViewBody,.iw-reply-block #MessageWebViewDiv { width=
+: 100% !important; }
+.iw-reply-block table { border-collapse: collapse; border-spacing: 0px; }
+.iw-reply-block table:not(.button-table) { border-spacing: 0px !important; =
+border-collapse: collapse !important; table-layout: fixed !important; margi=
+n: 0px auto !important; }
+.iw-reply-block th { font-weight: normal; }
+.iw-reply-block tr td p { margin: 0px; }
+.iw-reply-block img { }
+.iw-reply-block a[x-apple-data-detectors],.iw-reply-block .unstyle-auto-det=
+ected-links a,.iw-reply-block .aBn { border-bottom: 0px !important; cursor:=
+ default !important; color: inherit !important; text-decoration: none !impo=
+rtant; font-size: inherit !important; font-family: inherit !important; font=
+-weight: inherit !important; line-height: inherit !important; }
+.iw-reply-block .im { color: inherit !important; }
+.iw-reply-block .a6S { display: none !important; opacity: 0.01 !important; =
+}
+.iw-reply-block img.g-img + div { display: none !important; }
+@media only screen and (min-device-width: 320px) and (max-device-width: 374=
+px) {
+  u ~ div .contentMainTable { min-width: 320px !important; }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 413=
+px) {
+  u ~ div .contentMainTable { min-width: 375px !important; }
+}
+@media only screen and (min-device-width: 414px) {
+  u ~ div .contentMainTable { min-width: 414px !important; }
+}
+</style><style type=3D"text/css">@media only screen and (max-device-width: =
+640px) {
+  .contentMainTable { width: 100% !important; margin: auto !important; }
+  .single-column { width: 100% !important; margin: auto !important; }
+  .multi-column { width: 100% !important; margin: auto !important; }
+  .imageBlockWrapper { width: 100% !important; margin: auto !important; }
+}
+@media only screen and (max-width: 640px) {
+  .contentMainTable { width: 100% !important; margin: auto !important; }
+  .single-column { width: 100% !important; margin: auto !important; }
+  .multi-column { width: 100% !important; margin: auto !important; }
+  .imageBlockWrapper { width: 100% !important; margin: auto !important; }
+}
+</style><style type=3D"text/css">.iw-reply-block .link-10b49de1-ac9e-44a1-8=
+862-f0e6867788d8-Ft9KJ4oSaSyPpaRni-coO { color: rgb(0, 0, 0) !important; }
+</style><link rel=3D"preload" href=3D"https://fonts.googleapis.com/css2?fam=
+ily=3DOpen+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=3Dswap"><link=
+ rel=3D"stylesheet" href=3D"https://fonts.googleapis.com/css2?family=3DOpen=
++Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=3Dswap"></div>
+
+
+--b1_529dd59d3522702c6d0cfcc3d3846b49--
+
