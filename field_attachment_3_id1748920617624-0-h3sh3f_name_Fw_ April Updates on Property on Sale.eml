@@ -1,0 +1,1715 @@
+Delivered-To: investiaprop@gmail.com
+Received: by 2002:a05:6f02:212:b0:84:c707:c888 with SMTP id 18csp286375rcn;
+        Thu, 8 May 2025 00:49:31 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IE0PO++ajZoMI5r2rIVpTok5rOWE1Ar6x1uOZbxrXxrAsGLT9JAgCwGOACdeRob2zaLYzBM
+X-Received: by 2002:a05:6000:1887:b0:39f:4d62:c5fc with SMTP id ffacd0b85a97d-3a0b49e0503mr5406771f8f.35.1746690570710;
+        Thu, 08 May 2025 00:49:30 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1746690570; cv=none;
+        d=google.com; s=arc-20240605;
+        b=S5A3CtEY0LvP1scgpYLVsrirelh4dR1hdeJ7OzJyQi5WUwS9UNVYXF93Vel8FTedGw
+         s7i9jDwF0FDVN5der2gmnBhc7qqW5iaGHQNanzgFY3F7bLU1iLcF7nq0eWFpFwqJi5zz
+         X2mWmlGBTrntfkDGgvokiwYkuyOioerUd34soA/15DQpoJY3KfSRTuH0p7gitv2C0mI1
+         mrgohDAGyV9o7zqir9t7d2FHNjpDO0b76UdXo6Oo8FVLFxHAiU/k7Efoatir20trR6DF
+         OA9/HTusiGmcm5caQIqpjEd3paGDzo3B2l+PLj7yKnb68HykcB0HQwELPntpeK8PdJTU
+         xggA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:references:in-reply-to:message-id:subject:from:to:date
+         :dkim-signature:dkim-filter;
+        bh=8yCq8WeMPEqmDivibAfcNg3Gezz3kpCoILkSt49hP98=;
+        fh=c7GOLEttmcAhHBfTqzHGnuPLTyHoLeZ5TAxRIybQ39c=;
+        b=EsQSUKZyCKB2qWucJJkQo80lVUrCBcnz60cZk3fZxrMeL4bCaT8dOhuswMM1eTSsnh
+         65wOlLKRvVKWfhCdQDbeG91rGaEK7h1Vsfux7OWvDBIDU518GZsIUPxt53A/y9aBdkTk
+         VKojNjv7Wx6YohLy560TpgKC8wx8ZZN0ptSG7ojT5Ebg6ZzY0UmBQZwiifouDHKqN3O2
+         cf9rl5il0IcJW0ZnquyfB3pGqAtEdMku9S6o4d8aHWYau8EyYA7XXvWzNcOYqzV6OSd0
+         5xLDFKp3sU9CDG8c+FPQ1S5X+9pCBxaLUlMRa2r4ola6CnDuJgKvFbtNtC/F+SUZG96B
+         lbPw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cytanet.com.cy header.s=mail header.b=FAkmCJyP;
+       spf=pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.215 as permitted sender) smtp.mailfrom=nasiafanari@cytanet.com.cy;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=cytanet.com.cy
+Return-Path: <nasiafanari@cytanet.com.cy>
+Received: from demokritos1a.cytanet.com.cy (demokritos1a.cytanet.com.cy. [195.14.130.215])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-3a0b6f5f678si1803822f8f.813.2025.05.08.00.49.30
+        for <investiaprop@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 08 May 2025 00:49:30 -0700 (PDT)
+Received-SPF: pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.215 as permitted sender) client-ip=195.14.130.215;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cytanet.com.cy header.s=mail header.b=FAkmCJyP;
+       spf=pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.215 as permitted sender) smtp.mailfrom=nasiafanari@cytanet.com.cy;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=cytanet.com.cy
+X-Virus-Scanned: amavis at cytanet.com.cy
+DKIM-Filter: OpenDKIM Filter v2.11.0 demokritos1a.cytanet.com.cy B2DC9401D69
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cytanet.com.cy;
+	s=mail; t=1746690569;
+	bh=8yCq8WeMPEqmDivibAfcNg3Gezz3kpCoILkSt49hP98=;
+	h=Date:To:From:Subject:In-Reply-To:References:From;
+	b=FAkmCJyPM+jdWUR+v91Ylw9WwKrgChfRJKPcEZ600dUz/scJz7oKsyEO/BCcFZlKp
+	 4/lTEOLorp/5LqDsYxoG+jtgc8vT13gpZqniQqb0iY8mdPJtCdhNq7UYm/bZCZcADd
+	 4NpWSPUsfJY+WxxJC1bjTa5ZBNIr4XnYUq8PU/FM=
+X-Spam-Flag: NO
+X-Spam-Score: -2.88
+X-Spam-Level:
+X-Spam-Status: No, score=-2.88 tagged_above=-10 required=5
+ tests=[ALL_TRUSTED=-1, BAYES_00=-1.9, CYT_RUL=0.001, CYT_RUL_1=0.001,
+ CYT_RUL_120=0.001, CYT_RUL_124=0.001, CYT_RUL_135=0.001, CYT_RUL_146=0.001,
+ CYT_RUL_47=0.001, FROM_ICEWARP_WEBMAIL=0.001, HTML_MESSAGE=0.001,
+ LOTS_OF_MONEY=0.001, T_KAM_HTML_FONT_INVALID=0.01]
+ autolearn=no autolearn_force=no
+Received: from demokritos1a.cytanet.com.cy ([127.0.0.1])
+ by localhost (demokritos1a.cytanet.com.cy [127.0.0.1]) (amavis, port 10024)
+ with LMTP id Hijia--uQx5y for <investiaprop@gmail.com>;
+ Thu,  8 May 2025 10:49:28 +0300 (EEST)
+Received: from cytanet.com.cy?[62.228.14.11] (IcewarpPla5.pri.cytanet.com.cy [172.21.205.135])
+	by demokritos1a.cytanet.com.cy (Postfix) with ESMTP id 180DF401D65
+	for <investiaprop@gmail.com>; Thu,  8 May 2025 10:49:28 +0300 (EEST)
+Date: Thu, 08 May 2025 10:49:26 +0300
+To: investiaprop <investiaprop@gmail.com>
+From: nasiafanari <nasiafanari@cytanet.com.cy>
+Subject: Fw: April Updates on Property on Sale
+Message-ID: <9e1b57986102e7d29c07044b77b21e55@cytanet.com.cy>
+X-Mailer: IceWarp Mailer 14.1.0.17 RHEL8 x64-Desktop
+x-icewarp-spellchecker: en
+In-Reply-To: <202507040604.n4dbifd4ivj@as.d.mailin.fr>
+References: <202507040604.n4dbifd4ivj@as.d.mailin.fr>
+X-Priority: 3
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_35a8a0dba9c6f91a6454a26e822514e5"
+
+
+--b1_35a8a0dba9c6f91a6454a26e822514e5
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+----- Forwarded Message -----
+
+
+From: ReLux Estates (sale@reluxestates.com)
+Date: 07/04/25 09:04
+To: nasiafanari@cytanet.com.cy
+Subject: April Updates on Property on Sale
+
+
+March Updates on Property on Sale=20
+ Exclusive ReLux Estates Property on Sale=E2=80=8C =C2=A0 =C2=AD=E2=80=
+=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =
+=C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=
+=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =
+=C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=
+=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C=0A=C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C=0A=C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=
+=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD=E2=80=8C =C2=A0 =C2=AD =09  =
+ =20
+ =20
+ =20
+ =20
+=20
+ =20
+  View in browser
+
+    =20
+ =20
+ =20
+=20
+      =20
+ =20
+ =20
+ =20
+=20
+      =C2=AD   =20
+      =C2=AD   =20
+      =C2=AD   =20
+      =C2=AD   =20
+      =C2=AD   =20
+          =20
+ =20
+=20
+ =20
+Our own properties on SALE
+   =20
+ =20
+=20
+ =20
+ =20
+     =20
+ =20
+Modern office in the city centre
+
+ =20
+ =20
+=E2=82=AC 1 100 000 =C2=A0https://reluxestates.com/items/1003027=C2=A0
+
+NOTE! We are happy to offer a commission of 5 %=C2=A0 to our partners.
+
+ =20
+ =20
+ =C2=AD=20
+       More info      =20
+ =20
+=20
+ =20
+ =20
+     =20
+ =20
+2 bedroom apartment on seaside Moutagiaka
+
+ =20
+ =20
+=E2=82=AC 350 000 =C2=A0https://reluxestates.com/items/1006779 =C2=A0
+
+NOTE! We are happy to offer a commission=C2=A0
+
+of 5 %=C2=A0 to our partners.
+
+ =20
+ =20
+ =C2=AD=20
+       More info      =20
+ =20
+    =20
+ =20
+Villa in Agios Tychonas
+
+ =20
+ =20
+=E2=82=AC 2 990 000
+
+https://reluxestates.com/items/1005856=C2=A0
+
+NOTE! We are happy to offer a commission of 10%=C2=A0 to our partners.
+
+ =20
+ =20
+ =C2=AD=20
+       More info      =20
+ =20
+=20
+ =20
+ =20
+ =C2=AD    =20
+ =20
+=20
+ =20
+ =20
+ =20
+Exclusive properties on SALE
+     =20
+ =20
+=20
+ =20
+    =20
+ =20
+2-bedroom Apartment in Potamos Germasogia
+
+ =20
+ =20
+=E2=82=AC 670 000
+
+https://reluxestates.com/items/1004164=C2=A0
+
+ =20
+ =20
+ =C2=AD=20
+       More info      =20
+ =20
+    =20
+ =20
+3-bedroom Apartment in Potamos Germasogia
+
+ =20
+ =20
+=E2=82=AC 970 000
+
+https://reluxestates.com/items/1004214=C2=A0
+
+ =20
+ =20
+ =C2=AD=20
+       More info      =20
+ =20
+=20
+ =20
+    =20
+ =20
+3 bedroom House in Akrounta
+
+ =20
+ =20
+=E2=82=AC 720 000
+
+https://reluxestates.com/items/1009285=C2=A0
+
+ =20
+ =20
+ =C2=AD=20
+       More info      =20
+ =20
+    =20
+ =20
+3+1 bedroom Villa in Anthoupoli
+
+ =20
+ =20
+=E2=82=AC 745 000
+
+https://reluxestates.com/items/1009031 =C2=A0=C2=A0
+
+ =20
+ =20
+ =C2=AD=20
+       More info      =20
+ =20
+=20
+ =20
+    =20
+ =20
+Villa in Ayia Fyla
+
+ =20
+ =20
+=E2=82=AC 1 300 000
+
+https://reluxestates.com/items/1009320=C2=A0
+
+ =20
+ =20
+ =C2=AD=20
+       More info      =20
+ =20
+    =20
+ =20
+3 bedroom Duplex in =C2=A0Potamos Germasogia
+
+ =20
+ =20
+=E2=82=AC1 780 000
+
+https://reluxestates.com/items/1006742
+
+ =20
+ =20
+ =C2=AD=20
+       More info      =20
+ =20
+=20
+ =20
+    =20
+ =20
+3-bedroom Apartment next to the sea side
+
+ =20
+ =20
+=E2=82=AC 2 100 000
+
+https://reluxestates.com/items/1007090=C2=A0
+
+ =20
+ =20
+ =C2=AD=20
+       More info      =20
+ =20
+    =20
+ =20
+3 bedroom Apartments on a seaside
+
+ =20
+ =20
+=E2=82=AC 2 900 000
+
+https://reluxestates.com/items/1006949=C2=A0
+
+ =20
+ =20
+ =C2=AD=20
+       More info      =20
+ =C2=AD=20
+ =20
+=20
+ =20
+NOTE! You are welcome to use this property for advertising ONLY on your web=
+site,=C2=A0
+
+NOT on any other platforms such as Facebook, Bazaraki, Telegram, and et=
+=D1=81.
+
+   =20
+ =C2=AD=20
+ =20
+=20
+  =C2=AD   =20
+ =20
+=20
+ =20
+ReLux Estates
+ =20
+ =20
+Christaki Kranou 12, Germasogeia,
+
+4041,=C2=A0Limassol
+
+ =20
+ =20
+sale@reluxestates.com
++357 25 351888
+
+   =20
+ =20
+Privacy
+
+Imprint
+
+Unsubscribe
+
+        =09=09=09=09=09=09=09=09=09=09=09=09=09=09
+=09
+=20
+
+
+--b1_35a8a0dba9c6f91a6454a26e822514e5
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div class=3D"iw_mail" dir=3D"ltr" style=3D"font-size: 13px;"><div><br></di=
+v><div><br></div></div><div><br></div>
+<div class=3D"iw-reply-block" style=3D"font-size: 13px;font-family:Roboto, =
+Tahoma, Helvetica, sans-serif;" dir=3D"ltr"><div style=3D"color:#333333;"><=
+div style=3D"display:none;">----- Forwarded Message -----<br></div><hr size=
+=3D"1" width=3D"100%" style=3D"width:100%;margin:10px 0;color:#888888;backg=
+round-color:#888888;border-color:#DDDDDD"><div style=3D"line-height: 1.2rem=
+"><div>From: ReLux Estates (<a style=3D"color: rgb(0, 136, 204); text-decor=
+ation: none;" href=3D"mailto:sale@reluxestates.com" target=3D"_blank" rel=
+=3D"noopener noreferrer">sale@reluxestates.com</a>)</div><div>Date: 07/04/2=
+5 09:04</div><div>To: <a style=3D"color: rgb(0, 136, 204); text-decoration:=
+ none;" href=3D"mailto:nasiafanari@cytanet.com.cy" target=3D"_blank" rel=3D=
+"noopener noreferrer">nasiafanari@cytanet.com.cy</a></div><div>Subject: <sp=
+an style=3D"font-weight:bold">April Updates on Property on Sale</span></div=
+></div></div><br><div>
+
+
+
+
+
+
+<title>March Updates on Property on Sale</title>
+<style type=3D"text/css">#outlook a { padding:0; } .ExternalClass { width:1=
+00%; } .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClas=
+s font, .ExternalClass td, .ExternalClass div { line-height: 100%; } table =
+td { border-collapse: collapse; mso-line-height-rule: exactly; } .editable.=
+image { font-size: 0 !important; line-height: 0 !important; } .nl2go_prehea=
+der { display: none !important; mso-hide:all !important; mso-line-height-ru=
+le: exactly; visibility: hidden !important; line-height: 0px !important; fo=
+nt-size: 0px !important; } body { width:100% !important; -webkit-text-size-=
+adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; } img { outlin=
+e:none; text-decoration:none; -ms-interpolation-mode: bicubic; } a img { bo=
+rder:none; } table { border-collapse:collapse; mso-table-lspace:0pt; mso-ta=
+ble-rspace:0pt; } th { font-weight: normal; text-align: left; } *[class=3D"=
+gmail-fix"] { display: none !important; } </style>
+<style type=3D"text/css"> @media (max-width: 600px) { .gmx-killpill { conte=
+nt: ' \03D1';} } </style>
+<style type=3D"text/css">@media (max-width: 600px) { .gmx-killpill { conten=
+t: ' \03D1';} .r0-o { border-style: solid !important; margin: 0 auto 0 auto=
+ !important; width: 100% !important } .r1-i { background-color: transparent=
+ !important } .r2-c { box-sizing: border-box !important; text-align: center=
+ !important; valign: top !important; width: 100% !important } .r3-i { paddi=
+ng-bottom: 5px !important; padding-top: 5px !important } .r4-c { box-sizing=
+: border-box !important; display: block !important; valign: top !important;=
+ width: 100% !important } .r5-o { border-style: solid !important; width: 10=
+0% !important } .r6-i { padding-left: 10px !important; padding-right: 10px =
+!important; text-align: center !important } .r7-i { background-color: #ffff=
+ff !important } .r8-c { box-sizing: border-box !important; text-align: cent=
+er !important; valign: middle !important; width: 100% !important } .r9-i { =
+padding-bottom: 20px !important; padding-left: 16px !important; padding-rig=
+ht: 16px !important; padding-top: 20px !important } .r10-c { box-sizing: bo=
+rder-box !important; valign: middle !important; width: 50% !important } .r1=
+1-o { border-style: solid !important; margin: 0 auto 0 0 !important; width:=
+ 95px !important } .r12-i { padding-bottom: 14px !important; padding-top: 1=
+4px !important } .r13-c { box-sizing: border-box !important; text-align: ri=
+ght !important; width: 100% !important } .r14-o { border-style: solid !impo=
+rtant; margin: 0 0 0 auto !important; width: 100% !important } .r15-i { fon=
+t-size: 0px !important; padding-bottom: 0px !important; padding-left: 0px !=
+important; padding-right: 0px !important; padding-top: 0px !important } .r1=
+6-c { box-sizing: border-box !important; width: 16px !important } .r17-o { =
+border-style: solid !important; margin-right: 5px !important; width: 16px !=
+important } .r18-o { border-style: solid !important; margin-right: 0px !imp=
+ortant; width: 16px !important } .r19-o { border-style: solid !important; m=
+argin: 0 auto 0 0 !important; width: 100% !important } .r20-i { padding-bot=
+tom: 0px !important; padding-left: 0px !important; padding-right: 0px !impo=
+rtant; padding-top: 0px !important; text-align: center !important } .r21-i =
+{ padding-bottom: 0px !important; padding-left: 0px !important; padding-rig=
+ht: 0px !important; padding-top: 0px !important } .r22-i { padding-top: 16p=
+x !important } .r23-c { box-sizing: border-box !important; padding-bottom: =
+0px !important; padding-left: 0px !important; padding-right: 0px !important=
+; padding-top: 8px !important; text-align: left !important; valign: top !im=
+portant; width: 100% !important } .r24-c { box-sizing: border-box !importan=
+t; padding-bottom: 0px !important; padding-top: 8px !important; text-align:=
+ left !important; valign: top !important; width: 100% !important } .r25-c {=
+ box-sizing: border-box !important; text-align: center !important; valign: =
+top !important; width: 135px !important } .r26-o { border-style: solid !imp=
+ortant; margin: 0 auto 0 auto !important; margin-bottom: 0px !important; ma=
+rgin-top: 8px !important; width: 135px !important } .r27-i { text-align: ce=
+nter !important } .r28-r { background-color: #be0027 !important; border-col=
+or: #be0027 !important; border-radius: 8px !important; border-width: 0px !i=
+mportant; padding-bottom: 12px !important; padding-top: 12px !important; te=
+xt-align: center !important; width: 135px !important } .r29-i { padding-bot=
+tom: 20px !important; padding-left: 15px !important; padding-right: 15px !i=
+mportant; padding-top: 20px !important } .r30-i { padding-left: 0px !import=
+ant; padding-right: 0px !important } .r31-c { box-sizing: border-box !impor=
+tant; padding-bottom: 30px !important; padding-top: 30px !important; text-a=
+lign: center !important; width: 100% !important } .r32-c { box-sizing: bord=
+er-box !important; text-align: left !important; valign: top !important; wid=
+th: 100% !important } .r33-c { box-sizing: border-box !important; padding-t=
+op: 16px !important; text-align: center !important; valign: top !important;=
+ width: 100% !important } .r34-o { border-style: solid !important; margin: =
+0 auto 0 auto !important; margin-bottom: 20px !important; margin-top: 20px =
+!important; width: 100% !important } .r35-i { background-color: #f5f5f5 !im=
+portant; padding-bottom: 40px !important; padding-left: 16px !important; pa=
+dding-right: 16px !important; padding-top: 40px !important } .r36-i { paddi=
+ng-bottom: 0px !important; padding-left: 15px !important; padding-right: 15=
+px !important; padding-top: 0px !important } .r37-o { border-style: solid !=
+important; margin: 0 auto 0 auto !important; margin-bottom: 0px !important;=
+ margin-top: 0px !important; width: 100% !important } .r38-i { background-c=
+olor: #414141 !important; padding-bottom: 16px !important; padding-left: 32=
+px !important; padding-right: 32px !important; padding-top: 16px !important=
+ } .r39-c { box-sizing: border-box !important; valign: middle !important; w=
+idth: 58.33% !important } .r40-i { padding-bottom: 0px !important; padding-=
+left: 0px !important; padding-right: 0px !important; padding-top: 0px !impo=
+rtant; text-align: left !important } .r41-i { padding-bottom: 0px !importan=
+t; padding-left: 0px !important; padding-right: 0px !important; padding-top=
+: 8px !important; text-align: left !important } .r42-c { box-sizing: border=
+-box !important; valign: middle !important; width: 41.67% !important } .r43=
+-i { padding-bottom: 0px !important; padding-left: 0px !important; padding-=
+right: 0px !important; padding-top: 0px !important; text-align: right !impo=
+rtant } body { -webkit-text-size-adjust: none } .nl2go-responsive-hide { di=
+splay: none } .nl2go-body-table { min-width: unset !important } .mobshow { =
+height: auto !important; overflow: visible !important; max-height: unset !i=
+mportant; visibility: visible !important } .resp-table { display: inline-ta=
+ble !important } .magic-resp { display: table-cell !important } } </style>
+<style type=3D"text/css"></style>
+<style type=3D"text/css">p, h1, h2, h3, h4, ol, ul, li { margin: 0; } .nl2g=
+o-default-textstyle { color: #414141; font-family: Fira Sans Extra Condense=
+d, arial; font-size: 16px; line-height: 1.5; word-break: break-word } .defa=
+ult-button { color: #ffffff; font-family: Fira Sans Extra Condensed, arial;=
+ font-size: 16px; font-style: normal; font-weight: bold; line-height: 1.15;=
+ text-decoration: none; word-break: break-word } a, a:link { color: #be0027=
+; text-decoration: underline } .default-heading0 { color: #414141; font-fam=
+ily: Open Sans, arial; font-size: 16px; word-break: break-word } .default-h=
+eading1 { color: #666666; font-family: Open Sans, arial; font-size: 32px; w=
+ord-break: break-word } .default-heading2 { color: #414141; font-family: Op=
+en Sans, arial; font-size: 24px; word-break: break-word } .default-heading3=
+ { color: #1F2D3D; font-family: Open Sans, arial; font-size: 24px; word-bre=
+ak: break-word } .default-heading4 { color: #1F2D3D; font-family: Open Sans=
+, arial; font-size: 18px; word-break: break-word } a[x-apple-data-detectors=
+] { color: inherit !important; text-decoration: inherit !important; font-si=
+ze: inherit !important; font-family: inherit !important; font-weight: inher=
+it !important; line-height: inherit !important; } .no-show-for-you { border=
+: none; display: none; float: none; font-size: 0; height: 0; line-height: 0=
+; max-height: 0; mso-hide: all; overflow: hidden; table-layout: fixed; visi=
+bility: hidden; width: 0; } </style>
+<style type=3D"text/css">a:link{color: #be0027; text-decoration: underline;=
+}</style>
+
+ <table style=3D"mso-hide: all; display: none;" cellspacing=3D"0" border=3D=
+"0" cellpadding=3D"0"><tbody><tr><td>Exclusive ReLux Estates Property on Sa=
+le=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD=
+=E2=80=8C &nbsp; =C2=AD=E2=80=8C &nbsp; =C2=AD</td></tr></tbody></table> =
+=09 <img class=3D"iw-placeholder" src=3D"data:image/gif;base64,R0lGODlhAQAB=
+AAD/ACwAAAAAAQABAA" style=3D"display:none">   <table style=3D"background-co=
+lor: #ffffff; width: 100%;" width=3D"100%" class=3D"nl2go-body-table" role=
+=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><=
+tr>
+<td> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r0-o" alig=
+n=3D"center" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0"><tbody><tr>
+<td style=3D"background-color: transparent;" class=3D"r1-i" valign=3D"top">=
+ <table style=3D"table-layout: fixed;" class=3D"r0-o" align=3D"center" widt=
+h=3D"600" role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr>
+<td style=3D"padding-bottom: 5px; padding-top: 5px;" class=3D"r3-i"> <table=
+ role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%"><tbody><tr>
+<th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" width=3D"1=
+00%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r0-o" ali=
+gn=3D"center" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0"><tbody><tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-left: 30=
+px; padding-right: 30px; text-align: center;" class=3D"r6-i nl2go-default-t=
+extstyle" align=3D"center"> <div><p style=3D"margin: 0;"><a style=3D"color:=
+ #be0027; text-decoration: underline;" href=3D"https://cia4p.r.a.d.sendibm1=
+.com/mk/mr/sh/6rqJ8GoudeITQXi5j0S8kBcViCN/o4lOobqKq1t9" target=3D"_blank" r=
+el=3D"noopener noreferrer"> <span style=3D"color: #858588; font-size: 12px;=
+ text-decoration: underline;"> View in browser</span></a></p></div> </td> <=
+/tr></tbody></table>
+</th> </tr></tbody></table>
+</td> </tr></tbody></table>
+</td> </tr></tbody></table>
+<table style=3D"table-layout: fixed; width: 600px;" class=3D"r0-o" align=3D=
+"center" width=3D"600" role=3D"presentation" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0"><tbody><tr>
+<td style=3D"background-color: #ffffff;" class=3D"r7-i" valign=3D"top"> <ta=
+ble style=3D"table-layout: fixed; width: 100%;" class=3D"r0-o" align=3D"cen=
+ter" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0"><tbody><tr>
+<td style=3D"padding-bottom: 20px; padding-left: 16px; padding-right: 16px;=
+ padding-top: 20px;" class=3D"r9-i"> <table role=3D"presentation" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr>
+<th style=3D"font-weight: normal;" class=3D"r10-c" valign=3D"middle" width=
+=3D"50%"> <table style=3D"table-layout: fixed; width: 95px;" class=3D"r11-o=
+" align=3D"left" width=3D"95" role=3D"presentation" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0"><tbody><tr>
+<td style=3D"font-size: 0px; line-height: 0px; padding-bottom: 14px; paddin=
+g-top: 14px;" class=3D"r12-i"> <a style=3D"color: #be0027; text-decoration:=
+ underline;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/6rqJfgq8dI=
+NmO7gyENF5cnJC0Mp/dnw99WkXwM0V" target=3D"_blank" rel=3D"noopener noreferre=
+r"> <img class=3D"iw-placeholder" style=3D"display: block; width: 100%;" bo=
+rder=3D"0" width=3D"95" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAA=
+AAAQABAA"></a> </td> </tr></tbody></table>
+</th> <th style=3D"font-weight: normal;" class=3D"r10-c" valign=3D"middle" =
+width=3D"50%"> <table style=3D"table-layout: fixed; width: 284px;" class=3D=
+"r14-o" align=3D"right" width=3D"284" role=3D"presentation" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0"><tbody><tr>
+<td valign=3D"top"> <table role=3D"presentation" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr>
+<td style=3D"display: inline-block;" align=3D"right" class=3D"r13-c"> <tabl=
+e style=3D"table-layout: fixed; width: 284px;" class=3D"r14-o" align=3D"rig=
+ht" width=3D"284" role=3D"presentation" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0"><tbody><tr>
+<td style=3D"padding-left: 163px;" class=3D"r15-i"> <table role=3D"presenta=
+tion" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbod=
+y><tr>
+<th style=3D"font-weight: normal;" class=3D"r16-c mobshow resp-table" width=
+=3D"21"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r17-o"=
+ width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0"><tbody><tr>
+<td style=3D"font-size: 0px; line-height: 0px; padding-bottom: 5px; padding=
+-top: 5px;" class=3D"r3-i"> <a style=3D"color: #be0027; text-decoration: un=
+derline;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/6rqJfgq8dIPRQ=
+Zz7igedYOR7dfr/ENEihwcK4-q7" target=3D"_blank" rel=3D"noopener noreferrer">=
+ <img class=3D"iw-placeholder" style=3D"display: block; width: 100%;" borde=
+r=3D"0" width=3D"16" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAA=
+QABAA"></a> </td> <td style=3D"font-size: 0px; line-height: 1px;" width=3D"=
+5" class=3D"nl2go-responsive-hide">=C2=AD </td> </tr></tbody></table>
+</th> <th style=3D"font-weight: normal;" class=3D"r16-c mobshow resp-table"=
+ width=3D"21"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"=
+r17-o" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr>
+<td style=3D"font-size: 0px; line-height: 0px; padding-bottom: 5px; padding=
+-top: 5px;" class=3D"r3-i"> <a style=3D"color: #be0027; text-decoration: un=
+derline;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/6rqJfgq8dIR6T=
+2HHD04BTzZ3Gyt/uF6cXx4jjwyt" target=3D"_blank" rel=3D"noopener noreferrer">=
+ <img class=3D"iw-placeholder" style=3D"display: block; width: 100%;" borde=
+r=3D"0" width=3D"16" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAA=
+QABAA"></a> </td> <td style=3D"font-size: 0px; line-height: 1px;" width=3D"=
+5" class=3D"nl2go-responsive-hide">=C2=AD </td> </tr></tbody></table>
+</th> <th style=3D"font-weight: normal;" class=3D"r16-c mobshow resp-table"=
+ width=3D"21"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"=
+r17-o" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr>
+<td style=3D"font-size: 0px; line-height: 0px; padding-bottom: 5px; padding=
+-top: 5px;" class=3D"r3-i"> <a style=3D"color: #be0027; text-decoration: un=
+derline;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/6rqJfgq8dISlV=
+UZQhJTjPagyuHv/hsvNKuviXW_k" target=3D"_blank" rel=3D"noopener noreferrer">=
+ <img class=3D"iw-placeholder" style=3D"display: block; width: 100%;" borde=
+r=3D"0" width=3D"16" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAA=
+QABAA"></a> </td> <td style=3D"font-size: 0px; line-height: 1px;" width=3D"=
+5" class=3D"nl2go-responsive-hide">=C2=AD </td> </tr></tbody></table>
+</th> <th style=3D"font-weight: normal;" class=3D"r16-c mobshow resp-table"=
+ width=3D"21"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"=
+r17-o" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr>
+<td style=3D"font-size: 0px; line-height: 0px; padding-bottom: 5px; padding=
+-top: 5px;" class=3D"r3-i"> <a style=3D"color: #be0027; text-decoration: un=
+derline;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/6rqJfgq8dIUQX=
+wraBctHLBouXax/Wl9fkiu8Ps1k" target=3D"_blank" rel=3D"noopener noreferrer">=
+ <img class=3D"iw-placeholder" style=3D"display: block; width: 100%;" borde=
+r=3D"0" width=3D"16" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAA=
+QABAA"></a> </td> <td style=3D"font-size: 0px; line-height: 1px;" width=3D"=
+5" class=3D"nl2go-responsive-hide">=C2=AD </td> </tr></tbody></table>
+</th> <th style=3D"font-weight: normal;" class=3D"r16-c mobshow resp-table"=
+ width=3D"21"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"=
+r17-o" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr>
+<td style=3D"font-size: 0px; line-height: 0px; padding-bottom: 5px; padding=
+-top: 5px;" class=3D"r3-i"> <a style=3D"color: #be0027; text-decoration: un=
+derline;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/6rqJfgq8dIW5a=
+P9jfwIpGmwqAtz/Nn25cm3go-84" target=3D"_blank" rel=3D"noopener noreferrer">=
+ <img class=3D"iw-placeholder" style=3D"display: block; width: 100%;" borde=
+r=3D"0" width=3D"16" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAA=
+QABAA"></a> </td> <td style=3D"font-size: 0px; line-height: 1px;" width=3D"=
+5" class=3D"nl2go-responsive-hide">=C2=AD </td> </tr></tbody></table>
+</th> <th style=3D"font-weight: normal;" class=3D"r16-c mobshow resp-table"=
+ width=3D"16"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"=
+r18-o" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr>
+<td style=3D"font-size: 0px; line-height: 0px; padding-bottom: 5px; padding=
+-top: 5px;" class=3D"r3-i"> <a style=3D"color: #be0027; text-decoration: un=
+derline;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/6rqJfgq8dIXkc=
+rRtAFiNCO4loD1/dU-uJnnkyumK" target=3D"_blank" rel=3D"noopener noreferrer">=
+ <img class=3D"iw-placeholder" style=3D"display: block; width: 100%;" borde=
+r=3D"0" width=3D"16" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAA=
+QABAA"></a> </td> </tr></tbody></table>
+</th> </tr></tbody></table>
+</td> </tr></tbody></table>
+</td> </tr></tbody></table>
+</td> </tr></tbody></table>
+</th> </tr></tbody></table>
+</td> </tr></tbody></table>
+<table style=3D"table-layout: fixed; width: 100%;" class=3D"r0-o" align=3D"=
+center" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0"><tbody><tr>
+<td style=3D"padding-bottom: 20px; padding-top: 20px;" class=3D"r9-i"> <tab=
+le role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%"><tbody><tr>
+<th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" width=3D"1=
+00%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r19-o" al=
+ign=3D"left" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0"><tbody><tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; text-align: cent=
+er;" class=3D"r20-i nl2go-default-textstyle" valign=3D"top" align=3D"center=
+"> <div><h2 style=3D"margin: 0; color: #414141; font-family: Open Sans,aria=
+l; font-size: 24px; word-break: break-word;" class=3D"default-heading2">Our=
+ own properties on SALE</h2></div> </td> </tr></tbody></table>
+</th> </tr></tbody></table>
+</td> </tr></tbody></table>
+<table style=3D"table-layout: fixed; width: 100%;" class=3D"r0-o" align=3D"=
+center" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0"><tbody><tr>
+<td style=3D"padding-bottom: 20px; padding-top: 20px;" class=3D"r9-i"> <tab=
+le role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%"><tbody><tr>
+<th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" width=3D"1=
+00%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r5-o" wid=
+th=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0"><tbody><tr>
+<td style=3D"padding-right: 10px;" class=3D"r21-i" valign=3D"top"> <table r=
+ole=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%">
+<tbody><tr>
+<td align=3D"center" class=3D"r2-c"> <table style=3D"border-collapse: separ=
+ate; border-radius: 8px; table-layout: fixed; width: 531px;" class=3D"r0-o"=
+ width=3D"531" role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0"><tbody><tr>
+<td style=3D"border-radius: 8px; font-size: 0px; line-height: 0px;" class=
+=3D"r22-i"> <a style=3D"color: #be0027; text-decoration: underline;" href=
+=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/6rqJfgq8dIZPfJk2eZ7v7zChRW3=
+/DWKEG-iH0O9C" target=3D"_blank" rel=3D"noopener noreferrer"> <img class=3D=
+"iw-placeholder" style=3D"display: block; width: 100%; border-radius: 8px;"=
+ border=3D"0" width=3D"531" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/AC=
+wAAAAAAQABAA"></a> </td> </tr></tbody></table>
+</td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r23-c nl2go-defau=
+lt-textstyle"> <div><p style=3D"margin: 0;"><span style=3D"font-family: Fir=
+a Sans Extra Condensed, arial; font-size: 16px;">Modern office in the city =
+centre</span></p></div> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top; word-wrap: break-word;" align=3D"left" cla=
+ss=3D"r24-c nl2go-default-textstyle"> <div>
+<p style=3D"margin: 0;"><strong>=E2=82=AC 1 100 000</strong> &nbsp;<a style=
+=3D"color: #be0027; text-decoration: underline;" href=3D"https://cia4p.r.a.=
+d.sendibm1.com/mk/cl/f/sh/6rqJfgq8dIb4hm2C8sXT3aKd4p5/hDDq9xWHl91t" target=
+=3D"_blank" rel=3D"noopener noreferrer">https://reluxestates.com/items/1003=
+027</a>&nbsp;</p>
+<p style=3D"margin: 0;">NOTE! We are happy to offer a <strong>commission of=
+ 5 %&nbsp;</strong> to our partners.</p>
+</div> </td> </tr>
+<tr>
+<td align=3D"center" class=3D"r25-c"> <table style=3D"table-layout: fixed; =
+width: 135px;" class=3D"r26-o" width=3D"135" role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody><tr class=3D"nl2go-responsive-hide">
+<td style=3D"font-size: 8px; line-height: 8px;" height=3D"8">=C2=AD</td> </=
+tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word;" class=3D"r27-i =
+nl2go-default-textstyle" valign=3D"top" align=3D"center" height=3D"18">    =
+ <a style=3D"font-style: normal; font-weight: bold; line-height: 1.15; text=
+-decoration: none; word-break: break-word; border-style: solid; word-wrap: =
+break-word; display: block; -webkit-text-size-adjust: none; background-colo=
+r: #be0027; border-color: #be0027; border-radius: 8px; border-width: 0px; c=
+olor: #ffffff; font-family: Fira Sans Extra Condensed, arial; font-size: 16=
+px; height: 18px; mso-hide: all; padding-bottom: 12px; padding-top: 12px; w=
+idth: 135px;" data-btn=3D"1" class=3D"r28-r default-button" href=3D"https:/=
+/cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/6rqJfgq8dIcjkEKLdBx0zBSYi87/6CgdiTMOiS=
+AO" target=3D"_blank" rel=3D"noopener noreferrer"> <span>More info</span></=
+a>  </td> </tr>
+</tbody></table>
+</td> </tr>
+</tbody></table>
+</td> </tr></tbody></table>
+</th> </tr></tbody></table>
+</td> </tr></tbody></table>
+<table style=3D"table-layout: fixed; width: 100%;" class=3D"r0-o" align=3D"=
+center" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0"><tbody><tr>
+<td style=3D"padding-bottom: 20px; padding-top: 20px;" class=3D"r9-i"> <tab=
+le role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%"><tbody><tr>
+<th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" width=3D"5=
+0%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r5-o" widt=
+h=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr>
+<td style=3D"padding-right: 10px;" class=3D"r21-i" valign=3D"top"> <table r=
+ole=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%">
+<tbody><tr>
+<td align=3D"center" class=3D"r2-c"> <table style=3D"border-collapse: separ=
+ate; border-radius: 8px; table-layout: fixed; width: 261px;" class=3D"r0-o"=
+ width=3D"261" role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0"><tbody><tr>
+<td style=3D"border-radius: 8px; font-size: 0px; line-height: 0px;" class=
+=3D"r22-i"> <a style=3D"color: #be0027; text-decoration: underline;" href=
+=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SMK1E8tHeFuYwWOqbsZoTYaL6E5=
+f/qieswSAUgADD" target=3D"_blank" rel=3D"noopener noreferrer"> <img class=
+=3D"iw-placeholder" style=3D"display: block; width: 100%; border-radius: 8p=
+x;" border=3D"0" width=3D"261" src=3D"data:image/gif;base64,R0lGODlhAQABAAD=
+/ACwAAAAAAQABAA"></a> </td> </tr></tbody></table>
+</td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r23-c nl2go-defau=
+lt-textstyle"> <div><p style=3D"margin: 0;"><span style=3D"font-family: Fir=
+a Sans Extra Condensed, arial; font-size: 16px;">2 bedroom apartment on sea=
+side Moutagiaka</span></p></div> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r24-c nl2go-defau=
+lt-textstyle"> <div>
+<p style=3D"margin: 0;"><strong>=E2=82=AC 350 000</strong> &nbsp;<a style=
+=3D"color: #be0027; text-decoration: underline;" href=3D"https://cia4p.r.a.=
+d.sendibm1.com/mk/cl/f/sh/SMK1E8tHeG1QOfDnn2jIZNt54Wfv/6A-2YM7mI2vP" target=
+=3D"_blank" rel=3D"noopener noreferrer">https://reluxestates.com/items/1006=
+779</a> &nbsp;</p>
+<p style=3D"margin: 0;">NOTE! We are happy to offer a <strong>commission&nb=
+sp;</strong></p>
+<p style=3D"margin: 0;"><strong>of 5 %&nbsp;</strong> to our partners.</p>
+</div> </td> </tr>
+<tr>
+<td align=3D"center" class=3D"r25-c"> <table style=3D"table-layout: fixed; =
+width: 135px;" class=3D"r26-o" width=3D"135" role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody><tr class=3D"nl2go-responsive-hide">
+<td style=3D"font-size: 8px; line-height: 8px;" height=3D"8">=C2=AD</td> </=
+tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word;" class=3D"r27-i =
+nl2go-default-textstyle" valign=3D"top" align=3D"center" height=3D"18">    =
+ <a style=3D"font-style: normal; font-weight: bold; line-height: 1.15; text=
+-decoration: none; word-break: break-word; border-style: solid; word-wrap: =
+break-word; display: block; -webkit-text-size-adjust: none; background-colo=
+r: #be0027; border-color: #be0027; border-radius: 8px; border-width: 0px; c=
+olor: #ffffff; font-family: Fira Sans Extra Condensed, arial; font-size: 16=
+px; height: 18px; mso-hide: all; padding-bottom: 12px; padding-top: 12px; w=
+idth: 135px;" data-btn=3D"2" class=3D"r28-r default-button" href=3D"https:/=
+/cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SMK1E8tHeG8Hqo2kyCsmfDBp2pGB/Y6n-_ovyd=
+3W2" target=3D"_blank" rel=3D"noopener noreferrer"> <span>More info</span><=
+/a>  </td> </tr>
+</tbody></table>
+</td> </tr>
+</tbody></table>
+</td> </tr></tbody></table>
+</th> <th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" widt=
+h=3D"50%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r5-o=
+" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0"><tbody><tr>
+<td style=3D"padding-left: 20px; padding-right: 20px;" class=3D"r21-i" vali=
+gn=3D"top"> <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%">
+<tbody><tr>
+<td style=3D"border-radius: 8px; font-size: 0px; line-height: 0px; valign: =
+top;" align=3D"center" class=3D"r2-c"> <a style=3D"color: #be0027; text-dec=
+oration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SM=
+K1E8tHeGF9Iwri9N2Gl2UZ17qR/OoBcAy1iQW0z" target=3D"_blank" rel=3D"noopener =
+noreferrer"> <img class=3D"iw-placeholder" style=3D"display: block; width: =
+100%; border-radius: 8px;" border=3D"0" width=3D"260" src=3D"data:image/gif=
+;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA"></a> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r23-c nl2go-defau=
+lt-textstyle"> <div><p style=3D"margin: 0;"><span style=3D"font-family: Fir=
+a Sans Extra Condensed, arial; font-size: 16px;">Villa in Agios Tychonas</s=
+pan></p></div> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top; word-wrap: break-word;" align=3D"left" cla=
+ss=3D"r24-c nl2go-default-textstyle"> <div>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><strong>=E2=82=AC 2 =
+990 000</strong></p>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><a style=3D"color: #=
+be0027; text-decoration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.c=
+om/mk/cl/f/sh/SMK1E8tHeGM0l5gfKXBkqrnIzQQh/WiUp7ldynPFC" target=3D"_blank" =
+rel=3D"noopener noreferrer">https://reluxestates.com/items/1005856</a>&nbsp=
+;</p>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;">NOTE! We are happy t=
+o offer a <strong>commission of 10%&nbsp;</strong> to our partners.</p>
+</div> </td> </tr>
+<tr>
+<td align=3D"center" class=3D"r25-c"> <table style=3D"table-layout: fixed; =
+width: 135px;" class=3D"r26-o" width=3D"135" role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody><tr class=3D"nl2go-responsive-hide">
+<td style=3D"font-size: 8px; line-height: 8px;" height=3D"8">=C2=AD</td> </=
+tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word;" class=3D"r27-i =
+nl2go-default-textstyle" valign=3D"top" align=3D"center" height=3D"18">    =
+ <a style=3D"font-style: normal; font-weight: bold; line-height: 1.15; text=
+-decoration: none; word-break: break-word; border-style: solid; word-wrap: =
+break-word; display: block; -webkit-text-size-adjust: none; background-colo=
+r: #be0027; border-color: #be0027; border-radius: 8px; border-width: 0px; c=
+olor: #ffffff; font-family: Fira Sans Extra Condensed, arial; font-size: 16=
+px; height: 18px; mso-hide: all; padding-bottom: 12px; padding-top: 12px; w=
+idth: 135px;" data-btn=3D"3" class=3D"r28-r default-button" href=3D"https:/=
+/cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SMK1E8tHeGSsDEVcVhLEwh62xj0x/mSnFUh81l=
+7Y0" target=3D"_blank" rel=3D"noopener noreferrer"> <span>More info</span><=
+/a>  </td> </tr>
+</tbody></table>
+</td> </tr>
+</tbody></table>
+</td> </tr></tbody></table>
+</th> </tr></tbody></table>
+</td> </tr></tbody></table>
+<table style=3D"table-layout: fixed; width: 100%;" class=3D"r0-o" align=3D"=
+center" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0"><tbody><tr>
+<td style=3D"padding-bottom: 20px; padding-top: 20px;" class=3D"r29-i"> <ta=
+ble role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+width=3D"100%"><tbody><tr>
+<th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" width=3D"1=
+00%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r5-o" wid=
+th=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0"><tbody><tr>
+<td style=3D"padding-left: 15px; padding-right: 15px;" class=3D"r30-i" vali=
+gn=3D"top"> <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%"><tbody><tr>
+<td style=3D"padding-bottom: 30px; padding-top: 30px;" align=3D"center" cla=
+ss=3D"r31-c"> <table style=3D"border-top-style: solid; background-clip: bor=
+der-box; border-top-color: #be0027; border-top-width: 3px; font-size: 3px; =
+line-height: 3px;" height=3D"3" role=3D"presentation" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr>
+<td style=3D"font-size: 0px; line-height: 0px;" height=3D"0">=C2=AD</td> </=
+tr></tbody></table>
+</td> </tr></tbody></table>
+</td> </tr></tbody></table>
+</th> </tr></tbody></table>
+</td> </tr></tbody></table>
+<table style=3D"table-layout: fixed; width: 100%;" class=3D"r0-o" align=3D"=
+center" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0"><tbody><tr>
+<td style=3D"padding-bottom: 20px; padding-top: 20px;" class=3D"r29-i"> <ta=
+ble role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+width=3D"100%"><tbody><tr>
+<th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" width=3D"1=
+00%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r5-o" wid=
+th=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0"><tbody><tr>
+<td style=3D"padding-left: 15px; padding-right: 15px;" class=3D"r30-i" vali=
+gn=3D"top"> <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%"><tbody><tr>
+<td align=3D"left" class=3D"r32-c"> <table style=3D"table-layout: fixed; wi=
+dth: 100%;" class=3D"r19-o" width=3D"100%" role=3D"presentation" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; text-align: cent=
+er;" class=3D"r20-i nl2go-default-textstyle" valign=3D"top" align=3D"center=
+"> <div><h2 style=3D"margin: 0; color: #414141; font-family: Open Sans,aria=
+l; font-size: 24px; word-break: break-word;" class=3D"default-heading2">Exc=
+lusive properties on SALE</h2></div> </td> </tr></tbody></table>
+</td> </tr></tbody></table>
+</td> </tr></tbody></table>
+</th> </tr></tbody></table>
+</td> </tr></tbody></table>
+<table style=3D"table-layout: fixed; width: 100%;" class=3D"r0-o" align=3D"=
+center" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0"><tbody><tr>
+<td style=3D"padding-bottom: 20px; padding-top: 20px;" class=3D"r9-i"> <tab=
+le role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%"><tbody><tr>
+<th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" width=3D"5=
+0%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r5-o" widt=
+h=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr>
+<td style=3D"padding-left: 5px; padding-right: 5px;" class=3D"r21-i" valign=
+=3D"top"> <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%">
+<tbody><tr>
+<td style=3D"border-radius: 8px; font-size: 0px; line-height: 0px; valign: =
+top;" align=3D"center" class=3D"r33-c"> <a style=3D"color: #be0027; text-de=
+coration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/S=
+MK1E8tHeGZjfNKZgrUj2WOmw1bD/8rHwzdtGOB2d" target=3D"_blank" rel=3D"noopener=
+ noreferrer"> <img class=3D"iw-placeholder" style=3D"display: block; width:=
+ 100%; border-radius: 8px;" border=3D"0" width=3D"290" src=3D"data:image/gi=
+f;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA"></a> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r23-c nl2go-defau=
+lt-textstyle"> <div><p style=3D"margin: 0;"><span style=3D"font-family: Fir=
+a Sans Extra Condensed, arial; font-size: 16px;">2-bedroom Apartment in Pot=
+amos Germasogia</span></p></div> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r24-c nl2go-defau=
+lt-textstyle"> <div>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><strong>=E2=82=AC 67=
+0 000</strong></p>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><a style=3D"color: #=
+be0027; text-decoration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.c=
+om/mk/cl/f/sh/SMK1E8tHeGgb7W9Ws1eD8LhWuKBT/XLQQYiD1a102" target=3D"_blank" =
+rel=3D"noopener noreferrer">https://reluxestates.com/items/1004164</a>&nbsp=
+;</p>
+</div> </td> </tr>
+<tr>
+<td align=3D"center" class=3D"r25-c"> <table style=3D"table-layout: fixed; =
+width: 135px;" class=3D"r26-o" width=3D"135" role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody><tr class=3D"nl2go-responsive-hide">
+<td style=3D"font-size: 8px; line-height: 8px;" height=3D"8">=C2=AD</td> </=
+tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word;" class=3D"r27-i =
+nl2go-default-textstyle" valign=3D"top" align=3D"center" height=3D"18">    =
+ <a style=3D"font-style: normal; font-weight: bold; line-height: 1.15; text=
+-decoration: none; word-break: break-word; border-style: solid; word-wrap: =
+break-word; display: block; -webkit-text-size-adjust: none; background-colo=
+r: #be0027; border-color: #be0027; border-radius: 8px; border-width: 0px; c=
+olor: #ffffff; font-family: Fira Sans Extra Condensed, arial; font-size: 16=
+px; height: 18px; mso-hide: all; padding-bottom: 12px; padding-top: 12px; w=
+idth: 135px;" data-btn=3D"4" class=3D"r28-r default-button" href=3D"https:/=
+/cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SMK1E8tHeGnSZeyU3BnhEB0Gsclj/0-bE3WIms=
+sRJ" target=3D"_blank" rel=3D"noopener noreferrer"> <span>More info</span><=
+/a>  </td> </tr>
+</tbody></table>
+</td> </tr>
+</tbody></table>
+</td> </tr></tbody></table>
+</th> <th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" widt=
+h=3D"50%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r5-o=
+" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0"><tbody><tr>
+<td style=3D"padding-left: 10px;" class=3D"r21-i" valign=3D"top"> <table ro=
+le=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%">
+<tbody><tr>
+<td style=3D"border-radius: 8px; font-size: 0px; line-height: 0px; valign: =
+top;" align=3D"center" class=3D"r2-c"> <a style=3D"color: #be0027; text-dec=
+oration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SM=
+K1E8tHeGuK1nnRELxBK0J0qvLz/aAN8_vmPtlIk" target=3D"_blank" rel=3D"noopener =
+noreferrer"> <img class=3D"iw-placeholder" style=3D"display: block; width: =
+100%; border-radius: 8px;" border=3D"0" width=3D"290" src=3D"data:image/gif=
+;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA"></a> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r23-c nl2go-defau=
+lt-textstyle"> <div><p style=3D"margin: 0;"><span style=3D"font-family: Fir=
+a Sans Extra Condensed, arial; font-size: 16px;">3-bedroom Apartment in Pot=
+amos Germasogia</span></p></div> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r24-c nl2go-defau=
+lt-textstyle"> <div>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><strong>=E2=82=AC 97=
+0 000</strong></p>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><a style=3D"color: #=
+be0027; text-decoration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.c=
+om/mk/cl/f/sh/SMK1E8tHeFuabYr8lMtE1UBT1rOh/YUw-eA6Y7Zy_" target=3D"_blank" =
+rel=3D"noopener noreferrer">https://reluxestates.com/items/1004214</a>&nbsp=
+;</p>
+</div> </td> </tr>
+<tr>
+<td align=3D"center" class=3D"r25-c"> <table style=3D"table-layout: fixed; =
+width: 135px;" class=3D"r26-o" width=3D"135" role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody><tr class=3D"nl2go-responsive-hide">
+<td style=3D"font-size: 8px; line-height: 8px;" height=3D"8">=C2=AD</td> </=
+tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word;" class=3D"r27-i =
+nl2go-default-textstyle" valign=3D"top" align=3D"center" height=3D"18">    =
+ <a style=3D"font-style: normal; font-weight: bold; line-height: 1.15; text=
+-decoration: none; word-break: break-word; border-style: solid; word-wrap: =
+break-word; display: block; -webkit-text-size-adjust: none; background-colo=
+r: #be0027; border-color: #be0027; border-radius: 8px; border-width: 0px; c=
+olor: #ffffff; font-family: Fira Sans Extra Condensed, arial; font-size: 16=
+px; height: 18px; mso-hide: all; padding-bottom: 12px; padding-top: 12px; w=
+idth: 135px;" data-btn=3D"5" class=3D"r28-r default-button" href=3D"https:/=
+/cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SMK1E8tHeG1S3hg5wX2i7JUD09yx/N0d0gxdMu=
+p5N" target=3D"_blank" rel=3D"noopener noreferrer"> <span>More info</span><=
+/a>  </td> </tr>
+</tbody></table>
+</td> </tr>
+</tbody></table>
+</td> </tr></tbody></table>
+</th> </tr></tbody></table>
+</td> </tr></tbody></table>
+<table style=3D"table-layout: fixed; width: 100%;" class=3D"r0-o" align=3D"=
+center" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0"><tbody><tr>
+<td style=3D"padding-bottom: 20px; padding-top: 20px;" class=3D"r9-i"> <tab=
+le role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%"><tbody><tr>
+<th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" width=3D"5=
+0%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r5-o" widt=
+h=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr>
+<td style=3D"padding-left: 5px; padding-right: 5px;" class=3D"r21-i" valign=
+=3D"top"> <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%">
+<tbody><tr>
+<td style=3D"border-radius: 8px; font-size: 0px; line-height: 0px; valign: =
+top;" align=3D"center" class=3D"r2-c"> <a style=3D"color: #be0027; text-dec=
+oration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SM=
+K1E8tHeG8JVqV37hCCD8mwySZD/rZodriaLqQ-u" target=3D"_blank" rel=3D"noopener =
+noreferrer"> <img class=3D"iw-placeholder" style=3D"display: block; width: =
+100%; border-radius: 8px;" border=3D"0" width=3D"290" src=3D"data:image/gif=
+;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA"></a> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r23-c nl2go-defau=
+lt-textstyle"> <div><p style=3D"margin: 0;"><span style=3D"font-family: Fir=
+a Sans Extra Condensed, arial; font-size: 16px;">3 bedroom House in Akrount=
+a</span></p></div> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r24-c nl2go-defau=
+lt-textstyle"> <div>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><strong>=E2=82=AC 72=
+0 000</strong></p>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><a style=3D"color: #=
+be0027; text-decoration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.c=
+om/mk/cl/f/sh/SMK1E8tHeGFAxzK0IrLgIy5gwl9T/CBXqjZMdCiw_" target=3D"_blank" =
+rel=3D"noopener noreferrer">https://reluxestates.com/items/1009285</a>&nbsp=
+;</p>
+</div> </td> </tr>
+<tr>
+<td align=3D"center" class=3D"r25-c"> <table style=3D"table-layout: fixed; =
+width: 135px;" class=3D"r26-o" width=3D"135" role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody><tr class=3D"nl2go-responsive-hide">
+<td style=3D"font-size: 8px; line-height: 8px;" height=3D"8">=C2=AD</td> </=
+tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word;" class=3D"r27-i =
+nl2go-default-textstyle" valign=3D"top" align=3D"center" height=3D"18">    =
+ <a style=3D"font-style: normal; font-weight: bold; line-height: 1.15; text=
+-decoration: none; word-break: break-word; border-style: solid; word-wrap: =
+break-word; display: block; -webkit-text-size-adjust: none; background-colo=
+r: #be0027; border-color: #be0027; border-radius: 8px; border-width: 0px; c=
+olor: #ffffff; font-family: Fira Sans Extra Condensed, arial; font-size: 16=
+px; height: 18px; mso-hide: all; padding-bottom: 12px; padding-top: 12px; w=
+idth: 135px;" data-btn=3D"6" class=3D"r28-r default-button" href=3D"https:/=
+/cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SMK1E8tHeGM2Q88xU1VAOnOQv3jj/8EcFJmBil=
+e8D" target=3D"_blank" rel=3D"noopener noreferrer"> <span>More info</span><=
+/a>  </td> </tr>
+</tbody></table>
+</td> </tr>
+</tbody></table>
+</td> </tr></tbody></table>
+</th> <th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" widt=
+h=3D"50%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r5-o=
+" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0"><tbody><tr>
+<td style=3D"padding-left: 5px; padding-right: 5px;" class=3D"r21-i" valign=
+=3D"top"> <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%">
+<tbody><tr>
+<td style=3D"border-radius: 8px; font-size: 0px; line-height: 0px; valign: =
+top;" align=3D"center" class=3D"r33-c"> <a style=3D"color: #be0027; text-de=
+coration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/S=
+MK1E8tHeGStsGxufBeeUchAtMJz/dTkvdwSitV2B" target=3D"_blank" rel=3D"noopener=
+ noreferrer"> <img class=3D"iw-placeholder" style=3D"display: block; width:=
+ 100%; border-radius: 8px;" border=3D"0" width=3D"290" src=3D"data:image/gi=
+f;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA"></a> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r23-c nl2go-defau=
+lt-textstyle"> <div><p style=3D"margin: 0;">3+1 bedroom Villa in Anthoupoli=
+</p></div> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r24-c nl2go-defau=
+lt-textstyle"> <div>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><strong>=E2=82=AC 74=
+5 000</strong></p>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><a style=3D"color: #=
+be0027; text-decoration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.c=
+om/mk/cl/f/sh/SMK1E8tHeGZlKPmrqLo8aRzureuF/HSpgTiKcGObp" target=3D"_blank" =
+rel=3D"noopener noreferrer">https://reluxestates.com/items/1009031</a> &nbs=
+p;&nbsp;</p>
+</div> </td> </tr>
+<tr>
+<td align=3D"center" class=3D"r25-c"> <table style=3D"table-layout: fixed; =
+width: 135px;" class=3D"r26-o" width=3D"135" role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody><tr class=3D"nl2go-responsive-hide">
+<td style=3D"font-size: 8px; line-height: 8px;" height=3D"8">=C2=AD</td> </=
+tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word;" class=3D"r27-i =
+nl2go-default-textstyle" valign=3D"top" align=3D"center" height=3D"18">    =
+ <a style=3D"font-style: normal; font-weight: bold; line-height: 1.15; text=
+-decoration: none; word-break: break-word; border-style: solid; word-wrap: =
+break-word; display: block; -webkit-text-size-adjust: none; background-colo=
+r: #be0027; border-color: #be0027; border-radius: 8px; border-width: 0px; c=
+olor: #ffffff; font-family: Fira Sans Extra Condensed, arial; font-size: 16=
+px; height: 18px; mso-hide: all; padding-bottom: 12px; padding-top: 12px; w=
+idth: 135px;" data-btn=3D"7" class=3D"r28-r default-button" href=3D"https:/=
+/cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SMK1E8tHeGgcmYbp1VxcgHIepxUV/P3U_l6dFW=
+lD7" target=3D"_blank" rel=3D"noopener noreferrer"> <span>More info</span><=
+/a>  </td> </tr>
+</tbody></table>
+</td> </tr>
+</tbody></table>
+</td> </tr></tbody></table>
+</th> </tr></tbody></table>
+</td> </tr></tbody></table>
+<table style=3D"table-layout: fixed; width: 100%;" class=3D"r0-o" align=3D"=
+center" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0"><tbody><tr>
+<td style=3D"padding-bottom: 20px; padding-top: 20px;" class=3D"r9-i"> <tab=
+le role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%"><tbody><tr>
+<th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" width=3D"5=
+0%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r5-o" widt=
+h=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr>
+<td style=3D"padding-left: 5px; padding-right: 5px;" class=3D"r21-i" valign=
+=3D"top"> <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%">
+<tbody><tr>
+<td style=3D"border-radius: 8px; font-size: 0px; line-height: 0px; valign: =
+top;" align=3D"center" class=3D"r33-c"> <a style=3D"color: #be0027; text-de=
+coration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/S=
+MK1E8tHeGnUEhQmCg76m6bOoG4l/gz3I0UOWOYbm" target=3D"_blank" rel=3D"noopener=
+ noreferrer"> <img class=3D"iw-placeholder" style=3D"display: block; width:=
+ 100%; border-radius: 8px;" border=3D"0" width=3D"290" src=3D"data:image/gi=
+f;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA"></a> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r23-c nl2go-defau=
+lt-textstyle"> <div><p style=3D"margin: 0;">Villa in Ayia Fyla</p></div> </=
+td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r24-c nl2go-defau=
+lt-textstyle"> <div>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><strong>=E2=82=AC 1 =
+300 000</strong></p>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><a style=3D"color: #=
+be0027; text-decoration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.c=
+om/mk/cl/f/sh/SMK1E8tHeGuLgqFjNqGarvu8mYf1/a2JJn5DmKOmQ" target=3D"_blank" =
+rel=3D"noopener noreferrer">https://reluxestates.com/items/1009320</a>&nbsp=
+;</p>
+</div> </td> </tr>
+<tr>
+<td align=3D"center" class=3D"r25-c"> <table style=3D"table-layout: fixed; =
+width: 135px;" class=3D"r26-o" width=3D"135" role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody><tr class=3D"nl2go-responsive-hide">
+<td style=3D"font-size: 8px; line-height: 8px;" height=3D"8">=C2=AD</td> </=
+tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word;" class=3D"r27-i =
+nl2go-default-textstyle" valign=3D"top" align=3D"center" height=3D"18">    =
+ <a style=3D"font-style: normal; font-weight: bold; line-height: 1.15; text=
+-decoration: none; word-break: break-word; border-style: solid; word-wrap: =
+break-word; display: block; -webkit-text-size-adjust: none; background-colo=
+r: #be0027; border-color: #be0027; border-radius: 8px; border-width: 0px; c=
+olor: #ffffff; font-family: Fira Sans Extra Condensed, arial; font-size: 16=
+px; height: 18px; mso-hide: all; padding-bottom: 12px; padding-top: 12px; w=
+idth: 135px;" data-btn=3D"8" class=3D"r28-r default-button" href=3D"https:/=
+/cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SMK1E8tHeFucGbJQurCdZPmaxUhj/hbk_EdNJn=
+DJS" target=3D"_blank" rel=3D"noopener noreferrer"> <span>More info</span><=
+/a>  </td> </tr>
+</tbody></table>
+</td> </tr>
+</tbody></table>
+</td> </tr></tbody></table>
+</th> <th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" widt=
+h=3D"50%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r5-o=
+" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0"><tbody><tr>
+<td style=3D"padding-left: 10px;" class=3D"r21-i" valign=3D"top"> <table ro=
+le=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%">
+<tbody><tr>
+<td style=3D"border-radius: 8px; font-size: 0px; line-height: 0px; valign: =
+top;" align=3D"center" class=3D"r33-c"> <a style=3D"color: #be0027; text-de=
+coration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/S=
+MK1E8tHeG1Tik8O61M7fF5KvnHz/9pSJqtiXMGek" target=3D"_blank" rel=3D"noopener=
+ noreferrer"> <img class=3D"iw-placeholder" style=3D"display: block; width:=
+ 100%; border-radius: 8px;" border=3D"0" width=3D"290" src=3D"data:image/gi=
+f;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA"></a> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r23-c nl2go-defau=
+lt-textstyle"> <div><p style=3D"margin: 0;">3 bedroom Duplex in &nbsp;Potam=
+os Germasogia</p></div> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r24-c nl2go-defau=
+lt-textstyle"> <div>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><strong>=E2=82=AC1 7=
+80 000</strong></p>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><a style=3D"color: #=
+be0027; text-decoration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.c=
+om/mk/cl/f/sh/SMK1E8tHeG8LAsxLHBVbl4O4u5sF/sBK0h4tiYu2M" target=3D"_blank" =
+rel=3D"noopener noreferrer">https://reluxestates.com/items/1006742</a></p>
+</div> </td> </tr>
+<tr>
+<td align=3D"center" class=3D"r25-c"> <table style=3D"table-layout: fixed; =
+width: 135px;" class=3D"r26-o" width=3D"135" role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody><tr class=3D"nl2go-responsive-hide">
+<td style=3D"font-size: 8px; line-height: 8px;" height=3D"8">=C2=AD</td> </=
+tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word;" class=3D"r27-i =
+nl2go-default-textstyle" valign=3D"top" align=3D"center" height=3D"18">    =
+ <a style=3D"font-style: normal; font-weight: bold; line-height: 1.15; text=
+-decoration: none; word-break: break-word; border-style: solid; word-wrap: =
+break-word; display: block; -webkit-text-size-adjust: none; background-colo=
+r: #be0027; border-color: #be0027; border-radius: 8px; border-width: 0px; c=
+olor: #ffffff; font-family: Fira Sans Extra Condensed, arial; font-size: 16=
+px; height: 18px; mso-hide: all; padding-bottom: 12px; padding-top: 12px; w=
+idth: 135px;" data-btn=3D"9" class=3D"r28-r default-button" href=3D"https:/=
+/cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SMK1E8tHeGFCd1mISLf5qtgosOSV/PX4HQYku_=
+ib7" target=3D"_blank" rel=3D"noopener noreferrer"> <span>More info</span><=
+/a>  </td> </tr>
+</tbody></table>
+</td> </tr>
+</tbody></table>
+</td> </tr></tbody></table>
+</th> </tr></tbody></table>
+</td> </tr></tbody></table>
+<table style=3D"table-layout: fixed; width: 100%;" class=3D"r0-o" align=3D"=
+center" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0"><tbody><tr>
+<td style=3D"padding-bottom: 20px; padding-top: 20px;" class=3D"r9-i"> <tab=
+le role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%"><tbody><tr>
+<th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" width=3D"5=
+0%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r5-o" widt=
+h=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr>
+<td style=3D"padding-right: 10px;" class=3D"r21-i" valign=3D"top"> <table r=
+ole=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%">
+<tbody><tr>
+<td style=3D"border-radius: 8px; font-size: 0px; line-height: 0px; valign: =
+top;" align=3D"center" class=3D"r33-c"> <a style=3D"color: #be0027; text-de=
+coration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/S=
+MK1E8tHeGM45AbFdVoZwizYqh2l/mfh3rSInATx7" target=3D"_blank" rel=3D"noopener=
+ noreferrer"> <img class=3D"iw-placeholder" style=3D"display: block; width:=
+ 100%; border-radius: 8px;" border=3D"0" width=3D"290" src=3D"data:image/gi=
+f;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA"></a> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r23-c nl2go-defau=
+lt-textstyle"> <div><p style=3D"margin: 0;"><span style=3D"font-family: Fir=
+a Sans Extra Condensed, arial; font-size: 16px;">3-bedroom Apartment next t=
+o the sea side</span></p></div> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r24-c nl2go-defau=
+lt-textstyle"> <div>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><strong>=E2=82=AC 2 =
+100 000</strong></p>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><a style=3D"color: #=
+be0027; text-decoration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.c=
+om/mk/cl/f/sh/SMK1E8tHeGSvXJQCofy42YIIozd1/vQ8-_-iCXF3X" target=3D"_blank" =
+rel=3D"noopener noreferrer">https://reluxestates.com/items/1007090</a>&nbsp=
+;</p>
+</div> </td> </tr>
+<tr>
+<td align=3D"center" class=3D"r25-c"> <table style=3D"table-layout: fixed; =
+width: 135px;" class=3D"r26-o" width=3D"135" role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody><tr class=3D"nl2go-responsive-hide">
+<td style=3D"font-size: 8px; line-height: 8px;" height=3D"8">=C2=AD</td> </=
+tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word;" class=3D"r27-i =
+nl2go-default-textstyle" valign=3D"top" align=3D"center" height=3D"18">    =
+ <a style=3D"font-style: normal; font-weight: bold; line-height: 1.15; text=
+-decoration: none; word-break: break-word; border-style: solid; word-wrap: =
+break-word; display: block; -webkit-text-size-adjust: none; background-colo=
+r: #be0027; border-color: #be0027; border-radius: 8px; border-width: 0px; c=
+olor: #ffffff; font-family: Fira Sans Extra Condensed, arial; font-size: 16=
+px; height: 18px; mso-hide: all; padding-bottom: 12px; padding-top: 12px; w=
+idth: 135px;" data-btn=3D"10" class=3D"r28-r default-button" href=3D"https:=
+//cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SMK1E8tHeGZmzSF9zq7Y8Nb2nIDH/11iWgGaZ=
+jBpA" target=3D"_blank" rel=3D"noopener noreferrer"> <span>More info</span>=
+</a>  </td> </tr>
+</tbody></table>
+</td> </tr>
+</tbody></table>
+</td> </tr></tbody></table>
+</th> <th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" widt=
+h=3D"50%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r5-o=
+" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0"><tbody><tr>
+<td style=3D"padding-left: 5px; padding-right: 5px;" class=3D"r21-i" valign=
+=3D"top"> <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%">
+<tbody><tr>
+<td style=3D"border-radius: 8px; font-size: 0px; line-height: 0px; valign: =
+top;" align=3D"center" class=3D"r2-c"> <a style=3D"color: #be0027; text-dec=
+oration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SM=
+K1E8tHeGgeRb47B0H2ECtmlanX/kgIL3zhURrZr" target=3D"_blank" rel=3D"noopener =
+noreferrer"> <img class=3D"iw-placeholder" style=3D"display: block; width: =
+100%; border-radius: 8px;" border=3D"0" width=3D"290" src=3D"data:image/gif=
+;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA"></a> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r23-c nl2go-defau=
+lt-textstyle"> <div><p style=3D"margin: 0;"><span style=3D"font-family: Fir=
+a Sans Extra Condensed, arial; font-size: 16px;">3 bedroom Apartments on a =
+seaside</span></p></div> </td> </tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 8px=
+; text-align: left; valign: top;" align=3D"left" class=3D"r24-c nl2go-defau=
+lt-textstyle"> <div>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><strong>=E2=82=AC 2 =
+900 000</strong></p>
+<p style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoratio=
+n-style: initial; text-decoration-thickness: initial;"><a style=3D"color: #=
+be0027; text-decoration: underline;" href=3D"https://cia4p.r.a.d.sendibm1.c=
+om/mk/cl/f/sh/SMK1E8tHeGnVtjt4MAQWK2CWjtNn/FqsDI5o139pc" target=3D"_blank" =
+rel=3D"noopener noreferrer">https://reluxestates.com/items/1006949</a>&nbsp=
+;</p>
+</div> </td> </tr>
+<tr>
+<td align=3D"center" class=3D"r25-c"> <table style=3D"table-layout: fixed; =
+width: 135px;" class=3D"r26-o" width=3D"135" role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody><tr class=3D"nl2go-responsive-hide">
+<td style=3D"font-size: 8px; line-height: 8px;" height=3D"8">=C2=AD</td> </=
+tr>
+<tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word;" class=3D"r27-i =
+nl2go-default-textstyle" valign=3D"top" align=3D"center" height=3D"18">    =
+ <a style=3D"font-style: normal; font-weight: bold; line-height: 1.15; text=
+-decoration: none; word-break: break-word; border-style: solid; word-wrap: =
+break-word; display: block; -webkit-text-size-adjust: none; background-colo=
+r: #be0027; border-color: #be0027; border-radius: 8px; border-width: 0px; c=
+olor: #ffffff; font-family: Fira Sans Extra Condensed, arial; font-size: 16=
+px; height: 18px; mso-hide: all; padding-bottom: 12px; padding-top: 12px; w=
+idth: 135px;" data-btn=3D"11" class=3D"r28-r default-button" href=3D"https:=
+//cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SMK1E8tHeGuNLsi1XKa0PrVGiBy3/uACJKs7S=
+WHwc" target=3D"_blank" rel=3D"noopener noreferrer"> <span>More info</span>=
+</a>  </td> </tr>
+</tbody></table>
+</td> </tr>
+</tbody></table>
+</td> </tr></tbody></table>
+</th> </tr></tbody></table>
+</td> </tr></tbody></table>
+<table style=3D"table-layout: fixed; width: 100%;" class=3D"r34-o" align=3D=
+"center" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0">
+<tbody><tr class=3D"nl2go-responsive-hide">
+<td style=3D"font-size: 20px; line-height: 20px;" height=3D"20">=C2=AD</td>=
+ </tr>
+<tr>
+<td style=3D"background-color: #f5f5f5; padding-bottom: 40px; padding-left:=
+ 16px; padding-right: 16px; padding-top: 40px;" class=3D"r35-i"> <table rol=
+e=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%"><tbody><tr>
+<th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" width=3D"1=
+00%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r19-o" al=
+ign=3D"left" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0"><tbody><tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; text-align: cent=
+er;" class=3D"r20-i nl2go-default-textstyle" valign=3D"top" align=3D"center=
+"> <div>
+<p style=3D"margin: 0;"><span style=3D"color: #be0027; font-size: 18px;"><s=
+trong>NOTE!</strong></span><span style=3D"color: #be0027;"> </span>You are =
+welcome to use this property for advertising <span style=3D"color: #be0027;=
+ font-size: 18px;"><strong>ONLY</strong></span><span style=3D"font-size: 18=
+px;"> </span>on your website,&nbsp;</p>
+<p style=3D"margin: 0;"><span style=3D"color: #be0027; font-size: 18px;"><s=
+trong>NOT </strong></span>on any other platforms such as Facebook, Bazaraki=
+, Telegram, and et=D1=81.</p>
+</div> </td> </tr></tbody></table>
+</th> </tr></tbody></table>
+</td> </tr>
+<tr class=3D"nl2go-responsive-hide">
+<td style=3D"font-size: 20px; line-height: 20px;" height=3D"20">=C2=AD</td>=
+ </tr>
+</tbody></table>
+<table style=3D"table-layout: fixed; width: 100%;" class=3D"r0-o" align=3D"=
+center" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0"><tbody><tr>
+<td class=3D"r36-i"> <table role=3D"presentation" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr>
+<th style=3D"font-weight: normal;" class=3D"r4-c" valign=3D"top" width=3D"1=
+00%"> <table style=3D"table-layout: fixed; width: 600px;" class=3D"r0-o" al=
+ign=3D"center" width=3D"600" role=3D"presentation" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0"><tbody><tr>
+<td style=3D"font-size: 20px; line-height: 20px; background-color: transpar=
+ent;" class=3D"r1-i" height=3D"20"> =C2=AD </td> </tr></tbody></table>
+</th> </tr></tbody></table>
+</td> </tr></tbody></table>
+<table style=3D"table-layout: fixed; width: 100%;" class=3D"r37-o" align=3D=
+"center" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0"><tbody><tr>
+<td style=3D"background-color: #414141; padding-bottom: 16px; padding-left:=
+ 32px; padding-right: 32px; padding-top: 16px;" class=3D"r38-i"> <table rol=
+e=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%"><tbody><tr>
+<th style=3D"font-weight: normal;" class=3D"r39-c" valign=3D"middle" width=
+=3D"58.33%"> <table style=3D"table-layout: fixed; width: 100%;" class=3D"r1=
+9-o" align=3D"left" width=3D"100%" role=3D"presentation" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0"><tbody><tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; line-height: 1.5; word-break: break-word; text-align: left=
+;" class=3D"r40-i nl2go-default-textstyle" valign=3D"top" align=3D"left"> <=
+div><h4 style=3D"margin: 0; color: #1f2d3d; font-family: Open Sans,arial; f=
+ont-size: 18px; word-break: break-word;" class=3D"default-heading4"><span s=
+tyle=3D"font-size: 12px; color: #ffffff;"><strong>ReLux Estates</strong></s=
+pan></h4></div> </td> </tr></tbody></table>
+<table style=3D"table-layout: fixed; width: 100%;" class=3D"r19-o" align=3D=
+"left" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; word-break: break-word; line-height: 1.2; padding-top: 8px=
+; text-align: left;" class=3D"r41-i nl2go-default-textstyle" valign=3D"top"=
+ align=3D"left"> <div>
+<p style=3D"margin: 0;"><span style=3D"font-size: 12px; color: #ffffff;">Ch=
+ristaki Kranou 12, Germasogeia,</span></p>
+<p style=3D"margin: 0;"><span style=3D"font-size: 12px; color: #ffffff;">40=
+41,&nbsp;Limassol</span></p>
+</div> </td> </tr></tbody></table>
+<table style=3D"table-layout: fixed; width: 100%;" class=3D"r19-o" align=3D=
+"left" width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; word-break: break-word; line-height: 1.2; padding-top: 8px=
+; text-align: left;" class=3D"r41-i nl2go-default-textstyle" valign=3D"top"=
+ align=3D"left"> <div><p style=3D"margin: 0;"><span style=3D"color: #ffffff=
+; font-size: 12px;">sale@reluxestates.com</span><br><span style=3D"color: #=
+ffffff; font-size: 12px;">+357 25 351888</span></p></div> </td> </tr></tbod=
+y></table>
+</th> <th style=3D"font-weight: normal;" class=3D"r42-c" valign=3D"middle" =
+width=3D"41.67%"> <table style=3D"table-layout: fixed; width: 100%;" class=
+=3D"r19-o" align=3D"left" width=3D"100%" role=3D"presentation" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0"><tbody><tr>
+<td style=3D"color: #414141; font-family: Fira Sans Extra Condensed,arial; =
+font-size: 16px; word-break: break-word; line-height: 1.1; text-align: righ=
+t;" class=3D"r43-i nl2go-default-textstyle" valign=3D"top" align=3D"right">=
+ <div>
+<p style=3D"margin: 0;"><a style=3D"color: #be0027; text-decoration: underl=
+ine;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SMK1E8tHeFudvdlj4=
+LW37LNit80l/BGdAFdHQO6OD" target=3D"_blank" rel=3D"noopener noreferrer"><sp=
+an style=3D"font-size: 12px;"><u>Privacy</u></span></a></p>
+<p style=3D"margin: 0;"><a style=3D"color: #be0027; text-decoration: underl=
+ine;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/cl/f/sh/SMK1E8tHeG1VNmagF=
+VfXDAgSrQb1/YKmeKV7W6Dli" target=3D"_blank" rel=3D"noopener noreferrer"><sp=
+an style=3D"font-size: 12px;"><u>Imprint</u></span></a></p>
+<p style=3D"margin: 0;"><a style=3D"color: #be0027; text-decoration: underl=
+ine;" href=3D"https://cia4p.r.a.d.sendibm1.com/mk/un/sh/6rqJ8GqndAnmP6wXlMl=
+wuY7IS8t/oPPNBxn8iaCF" target=3D"_blank" rel=3D"noopener noreferrer"><span =
+style=3D"font-size: 12px;"><u>Unsubscribe</u></span></a></p>
+</div> </td> </tr></tbody></table>
+</th> </tr></tbody></table>
+</td> </tr></tbody></table>
+</td> </tr></tbody></table>
+</td> </tr></tbody></table>  <div style=3D"font:normal 10px Arial; color:#c=
+cc; text-align:center; margin:20px auto 5px; width:200px;">=09<div style=3D=
+"margin:10px auto 0px; width:200px;">=09=09=09<a href=3D"https://cia4p.r.a.=
+d.sendibm1.com/tracking/?utm_campaign=3D06049a75e7addbf1b0e3827e2e51e958&am=
+p;utm_medium=3Demail&amp;utm_source=3Dlogo_mailin" target=3D"_blank" rel=3D=
+"noopener noreferrer">=09=09=09=09=09<img class=3D"iw-placeholder" height=
+=3D"48" width=3D"129" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAA=
+AQABAA" alt=3D"Mailin">=09=09=09</a>=09=09</div>=09</div>=20
+</div>
+</div>
+
+
+
+--b1_35a8a0dba9c6f91a6454a26e822514e5--
+
