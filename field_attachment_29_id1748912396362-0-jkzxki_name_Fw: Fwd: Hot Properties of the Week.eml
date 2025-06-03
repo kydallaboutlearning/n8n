@@ -1,0 +1,1014 @@
+Delivered-To: investiaprop@gmail.com
+Received: by 2002:a05:6f02:212:b0:84:c707:c888 with SMTP id 18csp286170rcn;
+        Thu, 8 May 2025 00:48:46 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGvSDdSGvpJF/3qiy0IZjVHLZmuCIYed5OA5P2PprKmqMon9sLY8lyEiiop/jV7KBI0W1VS
+X-Received: by 2002:a05:600c:3115:b0:43d:172:50b1 with SMTP id 5b1f17b1804b1-441d44dffc6mr51643525e9.29.1746690526126;
+        Thu, 08 May 2025 00:48:46 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1746690526; cv=none;
+        d=google.com; s=arc-20240605;
+        b=jUtrDoJrT8qnfMiAOHcWVY3uVma4L+IdlSRh0nBXNrP00lmL6XKDCpShanHG+4SYN3
+         MdIz7VzRuslgU86vBAJnOtQxQ5IH/cPBX766iPUDvKNrL8oYpGE6dj8hT0gkV/nME6yN
+         WEyOzmInDrqaBaVl5UFvEqgO3ecBbqu78bcoFYNyEuvc3pROOjkUVuJLzLSKuv/nkY5Q
+         LBc+Pxq1OYq7bgjv7UG5LXsZSkX7Lfi19ZT7BMm0rIsa5XOTP8iA5wXvICm2S4ZgF7Pc
+         Xtx5rchmn0zhhWd7tL5V+eRU51ez4E0EXMx2qAgZf7bVfMOPGrBn+AoEHhV16OfpEtxr
+         VOBw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:references:in-reply-to:message-id:subject:from:to:date
+         :dkim-signature:dkim-filter;
+        bh=DScZJdqzQMBb+IuGXHZmtua8xFCCjg7Iky0ZeMicvW4=;
+        fh=c7GOLEttmcAhHBfTqzHGnuPLTyHoLeZ5TAxRIybQ39c=;
+        b=dpORr9fYmObU43LtOmgOK7pz7DltmZR80DtM7kVihYq+I2mEuxYw6VaIkhHAGnw9Tc
+         uJPR/0Ea1yYy/t8wChLK5bAqcOP/Uhpp6TiVjp01CU5GXBhLNcsmdo5CDfmdhlwC/ikc
+         Z4aTsVqkqPtX17BKtJ1ajWVuyvMyHm9TLsi1ZpAbjbWU//ZXls+Hqk7P7g24hkNpcf5+
+         1x3eIqZpujXiW1ZYMUsoZIflJ2DJH7d9DHXMd3OsvvQHekoc1K+4zXoxUnRVOQtqfLVH
+         MpoXYlhDyXO+3s+L7usuKPH9qVSqQemXX6PBB2SYtpuV77URco8MXmItxgKg4J6mvGfz
+         padA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cytanet.com.cy header.s=mail header.b=gMIBxRHx;
+       spf=pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.215 as permitted sender) smtp.mailfrom=nasiafanari@cytanet.com.cy;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=cytanet.com.cy
+Return-Path: <nasiafanari@cytanet.com.cy>
+Received: from demokritos1a.cytanet.com.cy (demokritos1a.cytanet.com.cy. [195.14.130.215])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-3a0b388d8absi3124002f8f.474.2025.05.08.00.48.45
+        for <investiaprop@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 08 May 2025 00:48:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.215 as permitted sender) client-ip=195.14.130.215;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cytanet.com.cy header.s=mail header.b=gMIBxRHx;
+       spf=pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.215 as permitted sender) smtp.mailfrom=nasiafanari@cytanet.com.cy;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=cytanet.com.cy
+X-Virus-Scanned: amavis at cytanet.com.cy
+DKIM-Filter: OpenDKIM Filter v2.11.0 demokritos1a.cytanet.com.cy 3C0ED401D54
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cytanet.com.cy;
+	s=mail; t=1746690525;
+	bh=DScZJdqzQMBb+IuGXHZmtua8xFCCjg7Iky0ZeMicvW4=;
+	h=Date:To:From:Subject:In-Reply-To:References:From;
+	b=gMIBxRHx0nQlamOQ0GsXeiU9cQqQfmJtWcDd2QS3QX0syo6JCCJaIcywgqM5rnY++
+	 rNeJzklqdN9hNqKbrA5nhnAAySaawLBqO6EV+F5mY3XBHDypiIyHEbIteQuB7mG9kO
+	 VgvshjP4BKBIRs9Z5ho4lBNujzbMzs+AmrxvIvP8=
+X-Spam-Flag: NO
+X-Spam-Score: 0.046
+X-Spam-Level:
+X-Spam-Status: No, score=0.046 tagged_above=-10 required=5
+ tests=[ALL_TRUSTED=-1, BAYES_00=-1.9, CYT_RUL=0.001, CYT_RUL_1=0.001,
+ CYT_RUL_120=0.001, CYT_RUL_124=0.001, CYT_RUL_125=0.001, CYT_RUL_135=0.001,
+ CYT_RUL_146=0.001, CYT_RUL_47=0.001, FONT_INVIS_MSGID=2.5,
+ FROM_ICEWARP_WEBMAIL=0.001, HTML_IMAGE_RATIO_06=0.001, HTML_MESSAGE=0.001,
+ LOTS_OF_MONEY=0.001, T_KAM_HTML_FONT_INVALID=0.01, URIBL_GREY=0.424]
+ autolearn=no autolearn_force=no
+Received: from demokritos1a.cytanet.com.cy ([127.0.0.1])
+ by localhost (demokritos1a.cytanet.com.cy [127.0.0.1]) (amavis, port 10024)
+ with LMTP id DCglimbB7p93 for <investiaprop@gmail.com>;
+ Thu,  8 May 2025 10:48:43 +0300 (EEST)
+Received: from cytanet.com.cy?[62.228.14.11] (IcewarpPla5.pri.cytanet.com.cy [172.21.205.135])
+	by demokritos1a.cytanet.com.cy (Postfix) with ESMTP id A913C401D4B
+	for <investiaprop@gmail.com>; Thu,  8 May 2025 10:48:43 +0300 (EEST)
+Date: Thu, 08 May 2025 10:48:42 +0300
+To: investiaprop <investiaprop@gmail.com>
+From: nasiafanari <nasiafanari@cytanet.com.cy>
+Subject: Fw: Fwd: Hot Properties of the Week
+Message-ID: <fa3a9a0c2f0c9e6c55d0e8c0fc297b4e@cytanet.com.cy>
+X-Mailer: IceWarp Mailer 14.1.0.17 RHEL8 x64-Desktop
+x-icewarp-spellchecker: en
+In-Reply-To: <CAGh41yNda6hrgKe1a0=G2fGj9X86qxRaHkDyojUDqmHg=Hh6-g@mail.gmail.com>
+References: <234ba483115ca9c6de19a36ed.b9cf972c06.20250407054413.13ecec5c5a.f52fecb3@mail247.atl271.mcdlv.net>
+	<CAGh41yNda6hrgKe1a0=G2fGj9X86qxRaHkDyojUDqmHg=Hh6-g@mail.gmail.com>
+X-Priority: 3
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_4fedaa90f5d18f637a67492e8842959f"
+
+
+--b1_4fedaa90f5d18f637a67492e8842959f
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+----- Forwarded Message -----
+
+From: Investia company (investia@cyprusview.com)
+Date: 07/04/25 12:37
+To: Katerina Christodoulou (katerinainvestia@gmail.com), Nassia Athanasiou =
+(nasiafanari@cytanet.com.cy)
+Subject: Fwd: Hot Properties of the Week
+
+
+
+
+---------- Forwarded message ---------
+From: Vizus Developers <j.ivanova@vizus.com.cy>
+Date: Mon, Apr 7, 2025 at 8:44=E2=80=AFAM
+Subject: Hot Properties of the Week
+To: <investia@cyprusview.com>
+
+Top Deals for Your Clients=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+ March 2025
+Vizus Property Digest
+
+=20
+=20
+
+=20
+=20
+=20
+ Request prices
+=20
+=20
+Dear Associates,
+
+Stay updated with the latest opportunities and key developments from Vizus =
+Group! This week, we bring you exciting news:
+
+=F0=9F=94=B9=C2=A0Bella Vita Project =E2=80=93 A modern 20-apartment reside=
+ntial building in a prime location, within walking distance or a short driv=
+e to all essential amenities. With 1, 2, and 3-bedroom options, it presents=
+ a fantastic investment opportunity at the pre-construction stage.
+=F0=9F=94=B9=C2=A0Vista Business Center =E2=80=93 Price update! Please ensu=
+re all your listings and advertisements reflect the latest details.
+=F0=9F=94=B9 Arcadia Hills Villas =E2=80=93 Exclusive 3-level sea-view vill=
+as now available =E2=80=93 perfect for discerning buyers.
+
+Explore our latest listings and updates below, and let=E2=80=99s work toget=
+her to close more deals! Reach out for marketing materials or any additiona=
+l information.
+
+Looking forward to another successful week!
+
+=20
+=20
+
+=20
+=20
+ FOR SALE
+
+=20
+=20
+
+=20
+=20
+=20
+=20
+=E2=97=86
+bella vita
+residence
+Area - Mesa Geitonia
+=C2=A0
+Selection of 20 exquisitely designed
+apartments spanning across four floors, each unit is=C2=A0crafted to provid=
+e comfort, style=C2=A0and functionality.
+
+Status: off plan
+Delivery: September 2026
+Units available: 15
+Bedrooms: 1, 2, 3
+
+from=C2=A0
+=E2=82=AC300,000 + VAT
+
+
+
+=20
+=20
+=20
+=20
+=E2=97=86
+sakura
+residence
+Area - Potamos Germasogeias
+=C2=A0
+=F0=9F=93=A2=C2=A0UPDATE - 8 units available
+
+Status: off plan
+Delivery: August=C2=A02026
+Units available: 8
+Bedrooms: 1, 2
+
+
+=E2=82=AC400,000 + VAT
+
+
+
+=20
+=20
+=20
+=20
+=E2=97=86
+parkside
+residence II
+Area - Agios Athanasios, 650 m from the sea
+=C2=A0
+Exclusive opportunity: Last 3-Bedroom penthouse available!
+
+Status:=C2=A0ready
+Units available: 1
+Bedrooms: 3
+
+
+=E2=82=AC1,500,000 + VAT
+
+
+
+=20
+=20
+=20
+=20
+=E2=97=86
+arcadia=C2=A0
+hills villas
+Area - Agios Athanasios, next Foley's School
+=C2=A0
+Stunning three-level villas, offering breath-taking=C2=A0sea views and exqu=
+isite design.
+
+Status: off plan
+Units available: 1
+Bedrooms: 5
+
+
+=E2=82=AC4,500,000 + VAT
+
+
+
+=20
+=20
+ COMMERCIAL PROPERTIES
+
+=20
+=20
+=20
+=20
+=E2=97=86
+vista
+business center
+Area - City Center
+=C2=A0
+Six floors of open-plan offices
+Shell core condition for customization
+Flexible layout for various businesses
+Underground parking
+
+Status: off plan
+Delivery: 22 months
+Building For Sale
+
+=F0=9F=93=A2PRICE CHANGE
+=E2=82=AC7,000,000 + VAT
+
+
+
+=20
+=20
+
+=20
+=20
+ FOR RENT
+
+=20
+=20
+
+=20
+=20
+=20
+=20
+=E2=97=86
+sky tower
+2 bedroom apartment
+Area -=C2=A0Potamos Germasogeias
+=C2=A0
+Rental Conditions:
+Yearly contract
+2 months'=C2=A0security deposit
+1 month=C2=A0rent upfront
+
+=E2=82=AC4,500 pm+ common expenses
+
+
+
+=20
+=20
+
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+
+=20
+ Copyright =C2=A9 2025 Vizus Group, All rights reserved.
+You are receiving this email because you opted in via our website.
+
+Call us 7000 4888
+
+Vizus Group
+Office 33, 3rd Floor, Alpha Tower,
+Pavlou Nirvana - Aipeias Str.
+Limassol=C2=A03021
+
+Want to change how you receive these emails?
+You can=C2=A0unsubscribe from this list.=20
+
+
+
+
+
+
+=20
+ This email was sent to=C2=A0investia@cyprusview.com
+why did I get this? =C2=A0=C2=A0=C2=A0unsubscribe from this list =C2=A0=
+=C2=A0=C2=A0update subscription preferences
+Vizus Group =C2=B7 Office 11 1st Floor, Alpha Tower, 4, =C2=B7 Pavlou Nirva=
+na - Aipeias Str. =C2=B7 Limassol 3021 =C2=B7 Cyprus
+
+
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=
+=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=
+=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=
+=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=
+=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=
+=CD=8F =E2=80=87=EF=BB=BF=CD=8F
+
+
+
+--=C2=A0
+
+
+
+Phone: +357 99 206950
+Office: +357 24 634830=C2=A0
+Fax : +357 24 634833
+Website: http://cyprusview.com
+
+
+
+--b1_4fedaa90f5d18f637a67492e8842959f
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div class=3D"iw_mail" dir=3D"ltr" style=3D"font-size: 13px;"><div><br></di=
+v><div><br></div><div><br></div><div dir=3D"ltr" style=3D"font-size: 13px;f=
+ont-family:Roboto, Tahoma, Helvetica, sans-serif;" class=3D"iw-reply-block"=
+><div style=3D"color:#333333;"><div style=3D"display:none;">----- Forwarded=
+ Message -----</div><hr style=3D"width:100%;margin:10px 0;color:#888888;bac=
+kground-color:#888888;border-color:#DDDDDD;" width=3D"100%" size=3D"1"><div=
+ style=3D"line-height: 1.2rem;"><div>From: Investia company (<a rel=3D"noop=
+ener noreferrer" href=3D"mailto:investia@cyprusview.com" style=3D"color: rg=
+b(0, 136, 204); text-decoration: none;" target=3D"_blank">investia@cyprusvi=
+ew.com</a>)</div><div>Date: 07/04/25 12:37</div><div>To: Katerina Christodo=
+ulou (<a rel=3D"noopener noreferrer" href=3D"mailto:katerinainvestia@gmail.=
+com" style=3D"color: rgb(0, 136, 204); text-decoration: none;" target=3D"_b=
+lank">katerinainvestia@gmail.com</a>), Nassia Athanasiou (<a rel=3D"noopene=
+r noreferrer" href=3D"mailto:nasiafanari@cytanet.com.cy" style=3D"color: rg=
+b(0, 136, 204); text-decoration: none;" target=3D"_blank">nasiafanari@cytan=
+et.com.cy</a>)</div><div>Subject: <span style=3D"font-weight:bold;">Fwd: Ho=
+t Properties of the Week</span></div></div></div><br><div><div dir=3D"ltr">=
+<br><br><div class=3D"gmail_quote gmail_quote_container"><div dir=3D"ltr" c=
+lass=3D"gmail_attr">---------- Forwarded message ---------<br>From: <strong=
+ class=3D"gmail_sendername" dir=3D"auto">Vizus Developers</strong> <span di=
+r=3D"auto">&lt;<a rel=3D"noopener noreferrer" href=3D"mailto:j.ivanova@vizu=
+s.com.cy" target=3D"_blank">j.ivanova@vizus.com.cy</a>&gt;</span><br>Date: =
+Mon, Apr 7, 2025 at 8:44=E2=80=AFAM<br>Subject: Hot Properties of the Week<=
+br>To: &lt;<a rel=3D"noopener noreferrer" href=3D"mailto:investia@cyprusvie=
+w.com" target=3D"_blank">investia@cyprusview.com</a>&gt;</div><br><br><div =
+class=3D"msg2620857447650078479"><div style=3D"height:100%;margin:0;padding=
+:0;width:100%;"><span class=3D"m_2620857447650078479mcnPreviewText" style=
+=3D"display:none;font-size:0px;line-height:0px;max-height:0px;max-width:0px=
+;opacity:0;overflow:hidden;">Top Deals for Your Clients</span> <center><tab=
+le align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=
+=3D"100%" width=3D"100%" id=3D"m_2620857447650078479bodyTable" style=3D"bor=
+der-collapse:collapse;height:100%;margin:0;padding:0;width:100%;"><tbody><t=
+r><td align=3D"center" valign=3D"top" id=3D"m_2620857447650078479bodyCell" =
+style=3D"height:100%;margin:0;padding:0;width:100%;"><table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse: =
+collapse; width: 100%;"><tbody><tr><td align=3D"center" valign=3D"top" id=
+=3D"m_2620857447650078479templateHeader" style=3D"background:#141b4d none n=
+o-repeat center/cover;background-color:#141b4d;background-image:none;backgr=
+ound-repeat:no-repeat;background-position:center;background-size:cover;bord=
+er-top:0;border-bottom:0;padding-top:20px;padding-bottom:20px;"><table alig=
+n=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+" class=3D"m_2620857447650078479templateContainer" style=3D"border-collapse=
+:collapse;max-width:600px!important;"><tbody><tr><td valign=3D"top" class=
+=3D"m_2620857447650078479headerContainer" style=3D"background:#transparent =
+none no-repeat center/cover;background-color:#transparent;background-image:=
+none;background-repeat:no-repeat;background-position:center;background-size=
+:cover;border-top:0;border-bottom:0;padding-top:0;padding-bottom:0;"><table=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"m=
+in-width:100%;border-collapse:collapse;"><tbody><tr><td valign=3D"top" styl=
+e=3D"padding:9px;"><table align=3D"left" width=3D"100%" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" style=3D"min-width:100%;border-collapse:colla=
+pse;float:left;"><tbody><tr><td valign=3D"top" style=3D"padding-right:9px;p=
+adding-left:9px;padding-top:0;padding-bottom:0;text-align:center;"><img hei=
+ght=3D"auto" align=3D"center" alt=3D"" src=3D"data:image/gif;base64,R0lGODl=
+hAQABAAD/ACwAAAAAAQABAA" width=3D"408.1" style=3D"max-width: 1060px; paddin=
+g-bottom: 0px; vertical-align: bottom; border: 0px; outline: none; text-dec=
+oration: none; display: inline !important;" class=3D"m_2620857447650078479m=
+cnRetinaImage iw-placeholder"></td></tr></tbody></table></td></tr></tbody><=
+/table></td></tr></tbody></table></td></tr><tr><td align=3D"center" valign=
+=3D"top" id=3D"m_2620857447650078479templateBody" style=3D"background:#efee=
+e9 none no-repeat center/cover;background-color:#efeee9;background-image:no=
+ne;background-repeat:no-repeat;background-position:center;background-size:c=
+over;border-top:0;border-bottom:0;padding-top:36px;padding-bottom:54px;"><t=
+able align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%" class=3D"m_2620857447650078479templateContainer" style=3D"border=
+-collapse:collapse;max-width:600px!important;"><tbody><tr><td valign=3D"top=
+" class=3D"m_2620857447650078479bodyContainer" style=3D"background:#transpa=
+rent none no-repeat center/cover;background-color:#transparent;background-i=
+mage:none;background-repeat:no-repeat;background-position:center;background=
+-size:cover;border-top:0;border-bottom:0;padding-top:0;padding-bottom:0;"><=
+table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"min-width:100%;border-collapse:collapse;"><tbody><tr><td valign=3D"top"=
+ style=3D"padding-top:9px;"><table align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"max-width:100%;min-width:100%;border-coll=
+apse:collapse;float:left;" width=3D"100%" class=3D"m_2620857447650078479mcn=
+TextContentContainer"><tbody><tr><td valign=3D"top" class=3D"m_262085744765=
+0078479mcnTextContent" style=3D"padding:0px 18px 9px;color:#041b4d;font-fam=
+ily:Arial,&quot;Helvetica Neue&quot;,Helvetica,sans-serif;font-size:18px;li=
+ne-height:200%;word-break:break-word;text-align:left;"><div style=3D"text-a=
+lign:center;"><span style=3D"font-size:18px;">March 2025</span></div><div s=
+tyle=3D"text-align:center;"><strong><span style=3D"font-size:36px;">Vizus P=
+roperty Digest</span></strong></div></td></tr></tbody></table></td></tr></t=
+body></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"m_2620857447650078479mcnDividerBlock" style=3D"min-width=
+:100%;border-collapse:collapse;table-layout:fixed!important;"><tbody><tr><t=
+d style=3D"min-width:100%;padding:9px 18px 0px;"><table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;border=
+-collapse:collapse;"><tbody><tr><td><br></td></tr></tbody></table></td></tr=
+></tbody></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" style=3D"min-width:100%;border-collapse:collapse;"><tbody><tr>=
+<td valign=3D"top" style=3D"padding:0px;"><table align=3D"left" width=3D"10=
+0%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"min-width:100=
+%;border-collapse:collapse;float:left;"><tbody><tr><td valign=3D"top" style=
+=3D"padding-right:0px;padding-left:0px;padding-top:0;padding-bottom:0;text-=
+align:center;"><img height=3D"auto" align=3D"center" alt=3D"" src=3D"data:i=
+mage/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"540" style=3D"max-=
+width: 1080px; padding-bottom: 0px; vertical-align: bottom; border: 0px; ou=
+tline: none; text-decoration: none; display: inline !important;" class=3D"m=
+_2620857447650078479mcnRetinaImage iw-placeholder"></td></tr></tbody></tabl=
+e></td></tr></tbody></table><table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"min-width:100%;border-collapse:collapse;">=
+<tbody><tr><td style=3D"padding-top:0;padding-right:18px;padding-bottom:18p=
+x;padding-left:18px;" valign=3D"top" align=3D"center"><table border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-radius: 0=
+px; background-color: rgb(20, 27, 77); border-collapse: separate !important=
+; width: 100%;"><tbody><tr><td align=3D"center" valign=3D"middle" style=3D"=
+font-family:Helvetica;font-size:18px;padding:18px;"><a rel=3D"noopener nore=
+ferrer" class=3D"m_2620857447650078479mcnButton" title=3D"Request prices" h=
+ref=3D"mailto:j.ivanova@vizus.com.cy?subject=3DArcadia%20Hills%20Villas%20p=
+rices%20request&amp;body=3DHello%0A%0ACould%20you%20please%20send%20me%20a%=
+20full%20presentation%20of%20Arcadia%20Hills%20Villas%3F" style=3D"font-wei=
+ght:bold;letter-spacing:-0.5px;line-height:100%;text-align:center;text-deco=
+ration:none;color:#dde091;display:block;" target=3D"_blank">Request prices<=
+/a></td></tr></tbody></table></td></tr></tbody></table><table border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;=
+border-collapse:collapse;"><tbody><tr><td valign=3D"top" style=3D"padding-t=
+op:9px;"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"max-width:100%;min-width:100%;border-collapse:collapse;floa=
+t:left;" width=3D"100%" class=3D"m_2620857447650078479mcnTextContentContain=
+er"><tbody><tr><td valign=3D"top" class=3D"m_2620857447650078479mcnTextCont=
+ent" style=3D"padding:0px 18px 9px;color:#041b4d;word-break:break-word;font=
+-family:Helvetica;font-size:16px;line-height:150%;text-align:left;"><p styl=
+e=3D"color:#041b4d;margin:10px 0;padding:0;font-family:Helvetica;font-size:=
+16px;line-height:150%;text-align:left;"><strong>Dear Associates,</strong></=
+p><p style=3D"color:#041b4d;margin:10px 0;padding:0;font-family:Helvetica;f=
+ont-size:16px;line-height:150%;text-align:left;">Stay updated with the late=
+st opportunities and key developments from Vizus Group! This week, we bring=
+ you exciting news:</p><p style=3D"color:#041b4d;margin:10px 0;padding:0;fo=
+nt-family:Helvetica;font-size:16px;line-height:150%;text-align:left;">=
+=F0=9F=94=B9&nbsp;<strong>Bella Vita Project</strong> =E2=80=93 A modern 20=
+-apartment residential building in a prime location, within walking distanc=
+e or a short drive to all essential amenities. With 1, 2, and 3-bedroom opt=
+ions, it presents a fantastic investment opportunity at the pre-constructio=
+n stage.<br>=F0=9F=94=B9&nbsp;<strong>Vista Business Center</strong> =
+=E2=80=93 Price update! Please ensure all your listings and advertisements =
+reflect the latest details.<br>=F0=9F=94=B9 <strong>Arcadia Hills Villas</s=
+trong> =E2=80=93 Exclusive 3-level sea-view villas now available =E2=80=
+=93 perfect for discerning buyers.</p><p style=3D"color:#041b4d;margin:10px=
+ 0;padding:0;font-family:Helvetica;font-size:16px;line-height:150%;text-ali=
+gn:left;">Explore our latest listings and updates below, and let=E2=80=
+=99s work together to close more deals! Reach out for marketing materials o=
+r any additional information.</p><p style=3D"color:#041b4d;margin:10px 0;pa=
+dding:0;font-family:Helvetica;font-size:16px;line-height:150%;text-align:le=
+ft;">Looking forward to another successful week!</p></td></tr></tbody></tab=
+le></td></tr></tbody></table><table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" width=3D"100%" class=3D"m_2620857447650078479mcnDividerBlock" sty=
+le=3D"min-width:100%;border-collapse:collapse;table-layout:fixed!important;=
+"><tbody><tr><td style=3D"min-width:100%;padding:18px;"><table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%=
+;border-top:2px solid #041b4d;border-collapse:collapse;"><tbody><tr><td><br=
+></td></tr></tbody></table></td></tr></tbody></table><table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;bo=
+rder-collapse:collapse;"><tbody><tr><td valign=3D"top"><table align=3D"left=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"=
+min-width:100%;border-collapse:collapse;float:left;" class=3D"m_26208574476=
+50078479mcnBoxedTextContentContainer"><tbody><tr><td style=3D"padding-top:9=
+px;padding-left:18px;padding-bottom:9px;padding-right:18px;"><table border=
+=3D"0" cellspacing=3D"0" class=3D"m_2620857447650078479mcnTextContentContai=
+ner" width=3D"100%" style=3D"min-width:100%!important;background-color:#dbe=
+442;border-collapse:collapse;"><tbody><tr><td valign=3D"top" class=3D"m_262=
+0857447650078479mcnTextContent" style=3D"padding:18px;color:#041b4d;font-fa=
+mily:Helvetica;font-size:14px;font-weight:normal;line-height:150%;text-alig=
+n:center;word-break:break-word;"><div style=3D"text-align:center;"><strong>=
+<span style=3D"font-size:36px;">FOR SALE</span></strong></div></td></tr></t=
+body></table></td></tr></tbody></table></td></tr></tbody></table><table bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_262=
+0857447650078479mcnDividerBlock" style=3D"min-width:100%;border-collapse:co=
+llapse;table-layout:fixed!important;"><tbody><tr><td style=3D"min-width:100=
+%;padding:18px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" style=3D"min-width:100%;border-top:2px solid #041b4d;border-co=
+llapse:collapse;"><tbody><tr><td><br></td></tr></tbody></table></td></tr></=
+tbody></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"border-collapse: collapse; width: 100%;"><tbody><tr><td =
+valign=3D"top" style=3D"padding-top:9px;padding-right:18px;padding-bottom:9=
+px;padding-left:18px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" width=3D"100%" style=3D"border-collapse: collapse; width: 100%;"><tbody=
+><tr><td align=3D"center" valign=3D"top" style=3D"padding:0px;background-co=
+lor:#e6e5e2;border:1px none;"><table align=3D"left" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" class=3D"m_2620857447650078479mcnImageCardRightIm=
+ageContentContainer" width=3D"282" style=3D"border-collapse: collapse; floa=
+t: left; width: 100%;"><tbody><tr><td align=3D"left" valign=3D"top" style=
+=3D"padding-top:0px;padding-right:0;padding-bottom:0px;padding-left:0px;"><=
+img height=3D"auto" alt=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/A=
+CwAAAAAAQABAA" width=3D"280" style=3D"max-width: 560px; border: 0px; outlin=
+e: none; text-decoration: none; vertical-align: bottom;" class=3D"m_2620857=
+447650078479mcnImage iw-placeholder"></td></tr></tbody></table><table class=
+=3D"m_2620857447650078479mcnImageCardRightTextContentContainer" align=3D"ri=
+ght" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"264" style=
+=3D"border-collapse: collapse; float: right; width: 100%;"><tbody><tr><td v=
+align=3D"top" class=3D"m_2620857447650078479mcnTextContent" style=3D"paddin=
+g-right:18px;padding-top:18px;padding-bottom:18px;color:#041b4d;font-family=
+:Helvetica;font-size:14px;font-weight:normal;text-align:center;word-break:b=
+reak-word;line-height:150%;"><div style=3D"text-align:left;"><div><span sty=
+le=3D"font-size:24px;"><strong id=3D"m_2620857447650078479docs-internal-gui=
+d-85f4eb90-7fff-e06d-b772-f5f37aa48a66">=E2=97=86</strong></span><br><span =
+style=3D"font-size:26px;"><strong>bella vita<br>residence</strong></span><h=
+r><strong>Area - Mesa Geitonia</strong><br>&nbsp;</div><div style=3D"text-a=
+lign:left;">Selection of 20 exquisitely designed<br>apartments spanning acr=
+oss four floors, each unit is&nbsp;crafted to provide comfort, style&nbsp;a=
+nd functionality.<br><br><strong>Status: off plan</strong><br><strong>Deliv=
+ery: September 2026<br>Units available: 15<br>Bedrooms: 1, 2, 3</strong><br=
+><br><strong><span style=3D"font-size:18px;">from&nbsp;</span><br><span sty=
+le=3D"font-size:28px;">=E2=82=AC300,000 + VAT</span><br><br><span style=3D"=
+font-size:19px;"><a rel=3D"noopener noreferrer" href=3D"https://vizus-prope=
+rty.us4.list-manage.com/track/click?u=3D234ba483115ca9c6de19a36ed&amp;id=3D=
+7355d682ae&amp;e=3Db9cf972c06" style=3D"color:#007c89;font-weight:normal;te=
+xt-decoration:underline;" target=3D"_blank"><img height=3D"41" src=3D"data:=
+image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" style=3D"border: 0px; widt=
+h: 150px; height: 41px; margin: 0px; outline: none; text-decoration: none;"=
+ width=3D"150" class=3D"iw-placeholder"></a></span></strong></div></div></t=
+d></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>=
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" styl=
+e=3D"border-collapse: collapse; width: 100%;"><tbody><tr><td valign=3D"top"=
+ style=3D"padding-top:9px;padding-right:18px;padding-bottom:9px;padding-lef=
+t:18px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-collapse: collapse; width: 100%;"><tbody><tr><td align=
+=3D"center" valign=3D"top" style=3D"padding:0px;background-color:#e6e5e2;bo=
+rder:1px none;"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"m_2620857447650078479mcnImageCardRightImageContentCont=
+ainer" width=3D"282" style=3D"border-collapse: collapse; float: left; width=
+: 100%;"><tbody><tr><td align=3D"left" valign=3D"top" style=3D"padding-top:=
+0px;padding-right:0;padding-bottom:0px;padding-left:0px;"><img height=3D"au=
+to" alt=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" w=
+idth=3D"280" style=3D"max-width: 560px; border: 0px; outline: none; text-de=
+coration: none; vertical-align: bottom;" class=3D"m_2620857447650078479mcnI=
+mage iw-placeholder"></td></tr></tbody></table><table class=3D"m_2620857447=
+650078479mcnImageCardRightTextContentContainer" align=3D"right" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"264" style=3D"border-collaps=
+e: collapse; float: right; width: 100%;"><tbody><tr><td valign=3D"top" clas=
+s=3D"m_2620857447650078479mcnTextContent" style=3D"padding-right:18px;paddi=
+ng-top:18px;padding-bottom:18px;color:#041b4d;font-family:Helvetica;font-si=
+ze:14px;font-weight:normal;text-align:center;word-break:break-word;line-hei=
+ght:150%;"><div style=3D"text-align:left;"><div><span style=3D"font-size:24=
+px;"><strong id=3D"m_2620857447650078479docs-internal-guid-85f4eb90-7fff-e0=
+6d-b772-f5f37aa48a66">=E2=97=86</strong></span><br><span style=3D"font-size=
+:26px;"><strong>sakura<br>residence</strong></span><hr><strong>Area - Potam=
+os Germasogeias</strong><br>&nbsp;</div><div style=3D"text-align:left;">=
+=F0=9F=93=A2&nbsp;<span style=3D"color:#ff0000;"><strong>UPDATE - 8 units a=
+vailable</strong></span><br><br><strong>Status: off plan</strong><br><stron=
+g>Delivery: August&nbsp;2026<br>Units available: 8<br>Bedrooms: 1, 2</stron=
+g><br><br><br><strong><span style=3D"font-size:28px;">=E2=82=AC400,000 + VA=
+T</span><br><br><span style=3D"font-size:19px;"><a rel=3D"noopener noreferr=
+er" href=3D"https://vizus-property.us4.list-manage.com/track/click?u=3D234b=
+a483115ca9c6de19a36ed&amp;id=3D618e5d44d9&amp;e=3Db9cf972c06" style=3D"colo=
+r:#007c89;font-weight:normal;text-decoration:underline;" target=3D"_blank">=
+<img height=3D"41" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQA=
+BAA" style=3D"border: 0px; width: 150px; height: 41px; margin: 0px; outline=
+: none; text-decoration: none;" width=3D"150" class=3D"iw-placeholder"></a>=
+</span></strong></div></div></td></tr></tbody></table></td></tr></tbody></t=
+able></td></tr></tbody></table><table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%" style=3D"border-collapse: collapse; width: 100%;=
+"><tbody><tr><td valign=3D"top" style=3D"padding-top:9px;padding-right:18px=
+;padding-bottom:9px;padding-left:18px;"><table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse: collapse; wid=
+th: 100%;"><tbody><tr><td align=3D"center" valign=3D"top" style=3D"padding:=
+0px;background-color:#e6e5e2;border:1px none;"><table align=3D"left" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_2620857447650078479mc=
+nImageCardRightImageContentContainer" width=3D"282" style=3D"border-collaps=
+e: collapse; float: left; width: 100%;"><tbody><tr><td align=3D"left" valig=
+n=3D"top" style=3D"padding-top:0px;padding-right:0;padding-bottom:0px;paddi=
+ng-left:0px;"><img height=3D"auto" alt=3D"" src=3D"data:image/gif;base64,R0=
+lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"280" style=3D"max-width: 560px; bord=
+er: 0px; outline: none; text-decoration: none; vertical-align: bottom;" cla=
+ss=3D"m_2620857447650078479mcnImage iw-placeholder"></td></tr></tbody></tab=
+le><table class=3D"m_2620857447650078479mcnImageCardRightTextContentContain=
+er" align=3D"right" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"264" style=3D"border-collapse: collapse; float: right; width: 100%;"><t=
+body><tr><td valign=3D"top" class=3D"m_2620857447650078479mcnTextContent" s=
+tyle=3D"padding-right:18px;padding-top:18px;padding-bottom:18px;color:#041b=
+4d;font-family:Helvetica;font-size:14px;font-weight:normal;text-align:cente=
+r;word-break:break-word;line-height:150%;"><div style=3D"text-align:left;">=
+<div><span style=3D"font-size:24px;"><strong id=3D"m_2620857447650078479doc=
+s-internal-guid-85f4eb90-7fff-e06d-b772-f5f37aa48a66">=E2=97=86</strong></s=
+pan><br><span style=3D"font-size:26px;"><strong>parkside<br>residence II</s=
+trong></span><hr><strong>Area - Agios Athanasios, 650 m from the sea</stron=
+g><br>&nbsp;</div><div style=3D"text-align:left;">Exclusive opportunity: La=
+st 3-Bedroom penthouse available!<br><br><strong>Status:&nbsp;</strong><str=
+ong>ready<br>Units available: 1<br>Bedrooms: 3</strong><br><br><br><strong>=
+<span style=3D"font-size:28px;">=E2=82=AC1,500,000 + VAT</span><br><br><spa=
+n style=3D"font-size:19px;"><a rel=3D"noopener noreferrer" href=3D"https://=
+vizus-property.us4.list-manage.com/track/click?u=3D234ba483115ca9c6de19a36e=
+d&amp;id=3Daa56933e64&amp;e=3Db9cf972c06" style=3D"color:#007c89;font-weigh=
+t:normal;text-decoration:underline;" target=3D"_blank"><img height=3D"41" s=
+rc=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" style=3D"border=
+: 0px; width: 150px; height: 41px; margin: 0px; outline: none; text-decorat=
+ion: none;" width=3D"150" class=3D"iw-placeholder"></a></span></strong></di=
+v></div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbo=
+dy></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"border-collapse: collapse; width: 100%;"><tbody><tr><td val=
+ign=3D"top" style=3D"padding-top:9px;padding-right:18px;padding-bottom:9px;=
+padding-left:18px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"border-collapse: collapse; width: 100%;"><tbody><t=
+r><td align=3D"center" valign=3D"top" style=3D"padding:0px;background-color=
+:#e6e5e2;border:1px none;"><table align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" class=3D"m_2620857447650078479mcnImageCardRightIma=
+geContentContainer" width=3D"282" style=3D"border-collapse: collapse; float=
+: left; width: 100%;"><tbody><tr><td align=3D"left" valign=3D"top" style=3D=
+"padding-top:0px;padding-right:0;padding-bottom:0px;padding-left:0px;"><img=
+ height=3D"auto" alt=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwA=
+AAAAAQABAA" width=3D"280" style=3D"max-width: 1080px; border: 0px; outline:=
+ none; text-decoration: none; vertical-align: bottom;" class=3D"m_262085744=
+7650078479mcnImage iw-placeholder"></td></tr></tbody></table><table class=
+=3D"m_2620857447650078479mcnImageCardRightTextContentContainer" align=3D"ri=
+ght" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"264" style=
+=3D"border-collapse: collapse; float: right; width: 100%;"><tbody><tr><td v=
+align=3D"top" class=3D"m_2620857447650078479mcnTextContent" style=3D"paddin=
+g-right:18px;padding-top:18px;padding-bottom:18px;color:#041b4d;font-family=
+:Helvetica;font-size:14px;font-weight:normal;text-align:center;word-break:b=
+reak-word;line-height:150%;"><div style=3D"text-align:left;"><div><span sty=
+le=3D"font-size:24px;"><strong id=3D"m_2620857447650078479docs-internal-gui=
+d-85f4eb90-7fff-e06d-b772-f5f37aa48a66">=E2=97=86</strong></span><br><span =
+style=3D"font-size:26px;"><strong>arcadia&nbsp;<br>hills villas</strong></s=
+pan><hr><strong>Area - Agios Athanasios, next Foley's School</strong><br>&n=
+bsp;</div><div style=3D"text-align:left;">Stunning three-level villas, offe=
+ring breath-taking&nbsp;sea views and exquisite design.<br><br><strong>Stat=
+us: off plan</strong><br><strong>Units available: 1<br>Bedrooms: 5</strong>=
+<br><br><br><strong><span style=3D"font-size:28px;">=E2=82=AC4,500,000 + VA=
+T</span><br><br><a rel=3D"noopener noreferrer" href=3D"https://vizus-proper=
+ty.us4.list-manage.com/track/click?u=3D234ba483115ca9c6de19a36ed&amp;id=3De=
+44c486904&amp;e=3Db9cf972c06" style=3D"color:#007c89;font-weight:normal;tex=
+t-decoration:underline;" target=3D"_blank"><span style=3D"font-size:19px;">=
+<img height=3D"41" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQA=
+BAA" style=3D"border: 0px; width: 150px; height: 41px; margin: 0px; outline=
+: none; text-decoration: none;" width=3D"150" class=3D"iw-placeholder"></sp=
+an></a></strong></div></div></td></tr></tbody></table></td></tr></tbody></t=
+able></td></tr></tbody></table><table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%" style=3D"min-width:100%;border-collapse:collapse=
+;"><tbody><tr><td valign=3D"top"><table align=3D"left" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;border-=
+collapse:collapse;float:left;" class=3D"m_2620857447650078479mcnBoxedTextCo=
+ntentContainer"><tbody><tr><td style=3D"padding-top:9px;padding-left:18px;p=
+adding-bottom:9px;padding-right:18px;"><table border=3D"0" cellspacing=3D"0=
+" class=3D"m_2620857447650078479mcnTextContentContainer" width=3D"100%" sty=
+le=3D"min-width:100%!important;background-color:#041b4d;border-collapse:col=
+lapse;"><tbody><tr><td valign=3D"top" class=3D"m_2620857447650078479mcnText=
+Content" style=3D"padding:18px;color:#dbe442;font-family:Helvetica;font-siz=
+e:14px;font-weight:normal;text-align:center;word-break:break-word;line-heig=
+ht:150%;"><div style=3D"text-align:center;"><span style=3D"font-size:24px;"=
+><strong>COMMERCIAL PROPERTIES</strong></span></div></td></tr></tbody></tab=
+le></td></tr></tbody></table></td></tr></tbody></table><table border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse=
+: collapse; width: 100%;"><tbody><tr><td valign=3D"top" style=3D"padding-to=
+p:9px;padding-right:18px;padding-bottom:9px;padding-left:18px;"><table bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border=
+-collapse: collapse; width: 100%;"><tbody><tr><td align=3D"center" valign=
+=3D"top" style=3D"padding:0px;background-color:#e6e5e2;border:1px none;"><t=
+able align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=
+=3D"m_2620857447650078479mcnImageCardRightImageContentContainer" width=3D"2=
+82" style=3D"border-collapse: collapse; float: left; width: 100%;"><tbody><=
+tr><td align=3D"left" valign=3D"top" style=3D"padding-top:0px;padding-right=
+:0;padding-bottom:0px;padding-left:0px;"><img height=3D"auto" alt=3D"" src=
+=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"280" sty=
+le=3D"max-width: 560px; border: 0px; outline: none; text-decoration: none; =
+vertical-align: bottom;" class=3D"m_2620857447650078479mcnImage iw-placehol=
+der"></td></tr></tbody></table><table class=3D"m_2620857447650078479mcnImag=
+eCardRightTextContentContainer" align=3D"right" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"264" style=3D"border-collapse: collapse; flo=
+at: right; width: 100%;"><tbody><tr><td valign=3D"top" class=3D"m_262085744=
+7650078479mcnTextContent" style=3D"padding-right:18px;padding-top:18px;padd=
+ing-bottom:18px;color:#041b4d;font-family:Helvetica;font-size:14px;font-wei=
+ght:normal;text-align:center;word-break:break-word;line-height:150%;"><div =
+style=3D"text-align:left;"><div><span style=3D"font-size:24px;"><strong id=
+=3D"m_2620857447650078479docs-internal-guid-85f4eb90-7fff-e06d-b772-f5f37aa=
+48a66">=E2=97=86</strong></span><br><span style=3D"font-size:26px;"><strong=
+>vista<br>business center</strong></span><hr><strong>Area - City Center</st=
+rong><br>&nbsp;</div><div style=3D"text-align:left;"><span style=3D"font-si=
+ze:14px;">Six floors of open-plan offices<br>Shell core condition for custo=
+mization<br>Flexible layout for various businesses<br>Underground parking</=
+span><br><br><strong>Status: off plan</strong><br><strong>Delivery: 22 mont=
+hs<br>Building For Sale</strong><br><br>=F0=9F=93=A2<span style=3D"color:#f=
+f0000;"><strong>PRICE CHANGE</strong></span><br><strong><span style=3D"colo=
+r:#ff0000;"><span style=3D"font-size:28px;">=E2=82=AC7,000,000 + VAT</span>=
+</span><br><br><span style=3D"font-size:19px;"><a rel=3D"noopener noreferre=
+r" href=3D"https://vizus-property.us4.list-manage.com/track/click?u=3D234ba=
+483115ca9c6de19a36ed&amp;id=3Dabc7f7b6d2&amp;e=3Db9cf972c06" style=3D"color=
+:#007c89;font-weight:normal;text-decoration:underline;" target=3D"_blank"><=
+img height=3D"41" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQAB=
+AA" style=3D"border: 0px; width: 150px; height: 41px; margin: 0px; outline:=
+ none; text-decoration: none;" width=3D"150" class=3D"iw-placeholder"></a><=
+/span></strong></div></div></td></tr></tbody></table></td></tr></tbody></ta=
+ble></td></tr></tbody></table><table border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"100%" class=3D"m_2620857447650078479mcnDividerBlock" st=
+yle=3D"min-width:100%;border-collapse:collapse;table-layout:fixed!important=
+;"><tbody><tr><td style=3D"min-width:100%;padding:18px;"><table border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100=
+%;border-top:2px solid #041b4d;border-collapse:collapse;"><tbody><tr><td><b=
+r></td></tr></tbody></table></td></tr></tbody></table><table border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;b=
+order-collapse:collapse;"><tbody><tr><td valign=3D"top"><table align=3D"lef=
+t" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D=
+"min-width:100%;border-collapse:collapse;float:left;" class=3D"m_2620857447=
+650078479mcnBoxedTextContentContainer"><tbody><tr><td style=3D"padding-top:=
+9px;padding-left:18px;padding-bottom:9px;padding-right:18px;"><table border=
+=3D"0" cellspacing=3D"0" class=3D"m_2620857447650078479mcnTextContentContai=
+ner" width=3D"100%" style=3D"min-width:100%!important;background-color:#dbe=
+442;border-collapse:collapse;"><tbody><tr><td valign=3D"top" class=3D"m_262=
+0857447650078479mcnTextContent" style=3D"padding:18px;color:#041b4d;font-fa=
+mily:Helvetica;font-size:14px;font-weight:normal;text-align:center;word-bre=
+ak:break-word;line-height:150%;"><div style=3D"text-align:center;"><strong>=
+<span style=3D"font-size:36px;">FOR RENT</span></strong></div></td></tr></t=
+body></table></td></tr></tbody></table></td></tr></tbody></table><table bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_262=
+0857447650078479mcnDividerBlock" style=3D"min-width:100%;border-collapse:co=
+llapse;table-layout:fixed!important;"><tbody><tr><td style=3D"min-width:100=
+%;padding:18px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" style=3D"min-width:100%;border-top:2px solid #041b4d;border-co=
+llapse:collapse;"><tbody><tr><td><br></td></tr></tbody></table></td></tr></=
+tbody></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"border-collapse: collapse; width: 100%;"><tbody><tr><td =
+valign=3D"top" style=3D"padding-top:9px;padding-right:18px;padding-bottom:9=
+px;padding-left:18px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" width=3D"100%" style=3D"border-collapse: collapse; width: 100%;"><tbody=
+><tr><td align=3D"center" valign=3D"top" style=3D"padding:0px;background-co=
+lor:#e6e5e2;border:1px none;"><table align=3D"left" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" class=3D"m_2620857447650078479mcnImageCardRightIm=
+ageContentContainer" width=3D"282" style=3D"border-collapse: collapse; floa=
+t: left; width: 100%;"><tbody><tr><td align=3D"left" valign=3D"top" style=
+=3D"padding-top:0px;padding-right:0;padding-bottom:0px;padding-left:0px;"><=
+img height=3D"auto" alt=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/A=
+CwAAAAAAQABAA" width=3D"280" style=3D"max-width: 560px; border: 0px; outlin=
+e: none; text-decoration: none; vertical-align: bottom;" class=3D"m_2620857=
+447650078479mcnImage iw-placeholder"></td></tr></tbody></table><table class=
+=3D"m_2620857447650078479mcnImageCardRightTextContentContainer" align=3D"ri=
+ght" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"264" style=
+=3D"border-collapse: collapse; float: right; width: 100%;"><tbody><tr><td v=
+align=3D"top" class=3D"m_2620857447650078479mcnTextContent" style=3D"paddin=
+g-right:18px;padding-top:18px;padding-bottom:18px;color:#041b4d;font-family=
+:Helvetica;font-size:14px;font-weight:normal;text-align:center;word-break:b=
+reak-word;line-height:150%;"><div style=3D"text-align:left;"><div><span sty=
+le=3D"font-size:24px;"><strong id=3D"m_2620857447650078479docs-internal-gui=
+d-85f4eb90-7fff-e06d-b772-f5f37aa48a66">=E2=97=86</strong></span><br><span =
+style=3D"font-size:26px;"><strong>sky tower</strong></span><br><span style=
+=3D"font-size:24px;"><strong>2 bedroom apartment</strong></span><hr><strong=
+>Area -&nbsp;Potamos Germasogeias</strong><br>&nbsp;</div><div style=3D"tex=
+t-align:left;">Rental Conditions:<br>Yearly contract<br>2 months'&nbsp;secu=
+rity deposit<br>1 month&nbsp;rent upfront<br><br><strong><span style=3D"fon=
+t-size:24px;">=E2=82=AC4,500 pm</span></strong><span style=3D"font-size:13p=
+x;">+ common expenses</span><br><br><strong><span style=3D"font-size:19px;"=
+><a rel=3D"noopener noreferrer" href=3D"https://vizus-property.us4.list-man=
+age.com/track/click?u=3D234ba483115ca9c6de19a36ed&amp;id=3Dc3e72d0492&amp;e=
+=3Db9cf972c06" style=3D"color:#007c89;font-weight:normal;text-decoration:un=
+derline;" target=3D"_blank"><img height=3D"41" src=3D"data:image/gif;base64=
+,R0lGODlhAQABAAD/ACwAAAAAAQABAA" style=3D"border: 0px; width: 150px; height=
+: 41px; margin: 0px; outline: none; text-decoration: none;" width=3D"150" c=
+lass=3D"iw-placeholder"></a></span></strong></div></div></td></tr></tbody><=
+/table></td></tr></tbody></table></td></tr></tbody></table><table border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_262085744=
+7650078479mcnDividerBlock" style=3D"min-width:100%;border-collapse:collapse=
+;table-layout:fixed!important;"><tbody><tr><td style=3D"min-width:100%;padd=
+ing:18px 18px 0px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"min-width:100%;border-collapse:collapse;"><tbody><=
+tr><td><br></td></tr></tbody></table></td></tr></tbody></table></td></tr></=
+tbody></table></td></tr><tr><td align=3D"center" valign=3D"top" id=3D"m_262=
+0857447650078479templateFooter" style=3D"background:#141b4d none no-repeat =
+center/cover;background-color:#141b4d;background-image:none;background-repe=
+at:no-repeat;background-position:center;background-size:cover;border-top:0;=
+border-bottom:0;padding-top:45px;padding-bottom:63px;"><table align=3D"cent=
+er" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=
+=3D"m_2620857447650078479templateContainer" style=3D"border-collapse:collap=
+se;max-width:600px!important;"><tbody><tr><td valign=3D"top" class=3D"m_262=
+0857447650078479footerContainer" style=3D"background:transparent none no-re=
+peat center/cover;background-color:transparent;background-image:none;backgr=
+ound-repeat:no-repeat;background-position:center;background-size:cover;bord=
+er-top:0;border-bottom:0;padding-top:0;padding-bottom:0;"><table border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:10=
+0%;border-collapse:collapse;"><tbody><tr><td align=3D"center" valign=3D"top=
+" style=3D"padding:9px;"><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" style=3D"min-width:100%;border-collapse:collapse;"><t=
+body><tr><td align=3D"center" style=3D"padding-left:9px;padding-right:9px;"=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-co=
+llapse: collapse; width: 100%;"><tbody><tr><td align=3D"center" valign=3D"t=
+op" style=3D"padding-top:9px;padding-right:9px;padding-left:9px;"><table al=
+ign=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"bo=
+rder-collapse: collapse; width: 100%;"><tbody><tr><td align=3D"center" vali=
+gn=3D"top"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"display: inline; border-collapse: collapse; float: left; wi=
+dth: 100%;"><tbody><tr><td valign=3D"top" style=3D"padding-right:10px;paddi=
+ng-bottom:9px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" style=3D"border-collapse: collapse; width: 100%;"><tbody><tr><t=
+d align=3D"left" valign=3D"middle" style=3D"padding-top:5px;padding-right:1=
+0px;padding-bottom:5px;padding-left:9px;"><table align=3D"left" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"" style=3D"border-collapse: =
+collapse; float: left; width: 100%;"><tbody><tr><td style=3D"width: 24px;" =
+align=3D"center" valign=3D"middle"><a rel=3D"noopener noreferrer" href=3D"h=
+ttps://vizus-property.us4.list-manage.com/track/click?u=3D234ba483115ca9c6d=
+e19a36ed&amp;id=3Db26dc382e1&amp;e=3Db9cf972c06" target=3D"_blank"><img src=
+=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" alt=3D"Facebook V=
+izus Developers" style=3D"display: block; border: 0px; height: auto; outlin=
+e: none; text-decoration: none;" height=3D"24" width=3D"24" class=3D"iw-pla=
+ceholder"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr=
+></tbody></table><table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"display: inline; border-collapse: collapse; float: le=
+ft; width: 100%;"><tbody><tr><td valign=3D"top" style=3D"padding-right:10px=
+;padding-bottom:9px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" width=3D"100%" style=3D"border-collapse: collapse; width: 100%;"><tbody>=
+<tr><td align=3D"left" valign=3D"middle" style=3D"padding-top:5px;padding-r=
+ight:10px;padding-bottom:5px;padding-left:9px;"><table align=3D"left" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" style=3D"border-coll=
+apse: collapse; float: left; width: 100%;"><tbody><tr><td style=3D"width: 2=
+4px;" align=3D"center" valign=3D"middle"><a rel=3D"noopener noreferrer" hre=
+f=3D"https://vizus-property.us4.list-manage.com/track/click?u=3D234ba483115=
+ca9c6de19a36ed&amp;id=3D3aab04f761&amp;e=3Db9cf972c06" target=3D"_blank"><i=
+mg src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" alt=3D"Inst=
+agram vizus.developers" style=3D"display: block; border: 0px; height: auto;=
+ outline: none; text-decoration: none;" height=3D"24" width=3D"24" class=3D=
+"iw-placeholder"></a></td></tr></tbody></table></td></tr></tbody></table></=
+td></tr></tbody></table><table align=3D"left" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"display: inline; border-collapse: collapse; fl=
+oat: left; width: 100%;"><tbody><tr><td valign=3D"top" style=3D"padding-rig=
+ht:10px;padding-bottom:9px;"><table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" width=3D"100%" style=3D"border-collapse: collapse; width: 100%;">=
+<tbody><tr><td align=3D"left" valign=3D"middle" style=3D"padding-top:5px;pa=
+dding-right:10px;padding-bottom:5px;padding-left:9px;"><table align=3D"left=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" style=3D"bord=
+er-collapse: collapse; float: left; width: 100%;"><tbody><tr><td style=3D"w=
+idth: 24px;" align=3D"center" valign=3D"middle"><a rel=3D"noopener noreferr=
+er" href=3D"https://vizus-property.us4.list-manage.com/track/click?u=3D234b=
+a483115ca9c6de19a36ed&amp;id=3De09bfef643&amp;e=3Db9cf972c06" target=3D"_bl=
+ank"><img src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" alt=
+=3D"Website" style=3D"display: block; border: 0px; height: auto; outline: n=
+one; text-decoration: none;" height=3D"24" width=3D"24" class=3D"iw-placeho=
+lder"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></t=
+body></table><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" style=3D"display: inline; border-collapse: collapse; float: left; =
+width: 100%;"><tbody><tr><td valign=3D"top" style=3D"padding-right:10px;pad=
+ding-bottom:9px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%" style=3D"border-collapse: collapse; width: 100%;"><tbody><tr>=
+<td align=3D"left" valign=3D"middle" style=3D"padding-top:5px;padding-right=
+:10px;padding-bottom:5px;padding-left:9px;"><table align=3D"left" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" style=3D"border-collapse=
+: collapse; float: left; width: 100%;"><tbody><tr><td style=3D"width: 24px;=
+" align=3D"center" valign=3D"middle"><a rel=3D"noopener noreferrer" href=3D=
+"https://vizus-property.us4.list-manage.com/track/click?u=3D234ba483115ca9c=
+6de19a36ed&amp;id=3Da68bd68b5f&amp;e=3Db9cf972c06" target=3D"_blank"><img s=
+rc=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" alt=3D"WhatsApp=
+" style=3D"display: block; border: 0px; height: auto; outline: none; text-d=
+ecoration: none;" height=3D"24" width=3D"24" class=3D"iw-placeholder"></a><=
+/td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></tabl=
+e><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" st=
+yle=3D"display: inline; border-collapse: collapse; float: left; width: 100%=
+;"><tbody><tr><td valign=3D"top" style=3D"padding-right:0;padding-bottom:9p=
+x;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+style=3D"border-collapse: collapse; width: 100%;"><tbody><tr><td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top:5px;padding-right:10px;padding-=
+bottom:5px;padding-left:9px;"><table align=3D"left" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"" style=3D"border-collapse: collapse; fl=
+oat: left; width: 100%;"><tbody><tr><td style=3D"width: 24px;" align=3D"cen=
+ter" valign=3D"middle"><a rel=3D"noopener noreferrer" href=3D"https://vizus=
+-property.us4.list-manage.com/track/click?u=3D234ba483115ca9c6de19a36ed&amp=
+;id=3Dfae4029807&amp;e=3Db9cf972c06" target=3D"_blank"><img src=3D"data:ima=
+ge/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" alt=3D"LinkedIn" style=3D"dis=
+play: block; border: 0px; height: auto; outline: none; text-decoration: non=
+e;" height=3D"24" width=3D"24" class=3D"iw-placeholder"></a></td></tr></tbo=
+dy></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></=
+tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr=
+></tbody></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" class=3D"m_2620857447650078479mcnDividerBlock" style=3D"min-wi=
+dth:100%;border-collapse:collapse;table-layout:fixed!important;"><tbody><tr=
+><td style=3D"min-width:100%;padding:18px;"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;border-top:=
+2px solid #505050;border-collapse:collapse;"><tbody><tr><td><br></td></tr><=
+/tbody></table></td></tr></tbody></table><table border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;border-collaps=
+e:collapse;"><tbody><tr><td valign=3D"top" style=3D"padding-top:9px;"><tabl=
+e align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"=
+max-width:100%;min-width:100%;border-collapse:collapse;float:left;" width=
+=3D"100%" class=3D"m_2620857447650078479mcnTextContentContainer"><tbody><tr=
+><td valign=3D"top" class=3D"m_2620857447650078479mcnTextContent" style=3D"=
+padding:0px 18px 9px;color:#efeee9;font-family:Arial,&quot;Helvetica Neue&q=
+uot;,Helvetica,sans-serif;font-size:10px;word-break:break-word;line-height:=
+150%;text-align:center;">Copyright =C2=A9 2025 Vizus Group, All rights rese=
+rved.<br>You are receiving this email because you opted in via our website.=
+<br><br>Call us 7000 4888<br><br>Vizus Group<br>Office 33, 3rd Floor, Alpha=
+ Tower,<br>Pavlou Nirvana - Aipeias Str.<br>Limassol&nbsp;3021<br><br>Want =
+to change how you receive these emails?<br>You can&nbsp;<a rel=3D"noopener =
+noreferrer" style=3D"color:#ffffff;font-weight:normal;text-decoration:under=
+line;" target=3D"_blank">unsubscribe from this list</a><a rel=3D"noopener n=
+oreferrer" href=3D"mailto:admin@vizus.com.cy?subject=3DRequest%20to%20Unsub=
+scribe%20from%20Emails&amp;body=3DPlease%20remove%20my%20email%20address%20=
+from%20your%20mailing%20list%20and%20stop%20sending%20any%20further%20commu=
+nications." style=3D"color:#ffffff;font-weight:normal;text-decoration:under=
+line;" target=3D"_blank">.</a></td></tr></tbody></table></td></tr></tbody><=
+/table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbod=
+y></table></center> <center><br><br><br><br><br><br><table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" width=3D"100%" id=3D"m_2620857447650078479=
+canspamBarWrapper" style=3D"background-color: rgb(255, 255, 255); border-to=
+p: 1px solid rgb(229, 229, 229); width: 100%;"><tbody><tr><td align=3D"cent=
+er" valign=3D"top" style=3D"padding-top:20px;padding-bottom:20px;"><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=3D"m_2620857447650078479=
+canspamBar"><tbody><tr><td align=3D"center" valign=3D"top" style=3D"color:#=
+606060;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:15=
+0%;padding-right:20px;padding-bottom:5px;padding-left:20px;text-align:cente=
+r;">This email was sent to&nbsp;<a rel=3D"noopener noreferrer" href=3D"mail=
+to:investia@cyprusview.com" style=3D"color:#404040!important;" target=3D"_b=
+lank">investia@cyprusview.com</a><br><a rel=3D"noopener noreferrer" href=3D=
+"https://vizus-property.us4.list-manage.com/about?u=3D234ba483115ca9c6de19a=
+36ed&amp;id=3Da866b9b753&amp;e=3Db9cf972c06&amp;c=3D13ecec5c5a" style=3D"co=
+lor:#404040!important;" target=3D"_blank"><em>why did I get this?</em></a> =
+&nbsp;&nbsp;&nbsp;<a rel=3D"noopener noreferrer" href=3D"https://vizus-prop=
+erty.us4.list-manage.com/unsubscribe?u=3D234ba483115ca9c6de19a36ed&amp;id=
+=3Da866b9b753&amp;t=3Db&amp;e=3Db9cf972c06&amp;c=3D13ecec5c5a" style=3D"col=
+or:#404040!important;" target=3D"_blank">unsubscribe from this list</a> &nb=
+sp;&nbsp;&nbsp;<a rel=3D"noopener noreferrer" href=3D"https://vizus-propert=
+y.us4.list-manage.com/profile?u=3D234ba483115ca9c6de19a36ed&amp;id=3Da866b9=
+b753&amp;e=3Db9cf972c06&amp;c=3D13ecec5c5a" style=3D"color:#404040!importan=
+t;" target=3D"_blank">update subscription preferences</a><br>Vizus Group =
+=C2=B7 Office 11 1st Floor, Alpha Tower, 4, =C2=B7 Pavlou Nirvana - Aipeias=
+ Str. =C2=B7 Limassol 3021 =C2=B7 Cyprus<br><br></td></tr></tbody></table><=
+/td></tr></tbody></table></center></div><div style=3D"display:none;">=
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=
+=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=
+=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=
+=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=
+=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=
+=CD=8F =E2=80=87=EF=BB=BF=CD=8F</div><div style=3D"display:none;font-size:0=
+px;line-height:0px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;"=
+><img src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" height=
+=3D"1" width=3D"1" style=3D"display: none; font-size: 0px; line-height: 0px=
+; opacity: 0; overflow: hidden;" alt=3D"" class=3D"iw-placeholder"></div></=
+div></div><div><br></div><div><br></div><span class=3D"gmail_signature_pref=
+ix">--&nbsp;</span><br><div dir=3D"ltr" class=3D"gmail_signature" data-smar=
+tmail=3D"gmail_signature"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr=
+"><div><img style=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAA=
+AAQABAA" class=3D"iw-placeholder"><br></div><div>Phone: +357 99 206950</div=
+><div>Office: +357 24 634830&nbsp;<br>Fax : +357 24 634833</div><div>Websit=
+e: <a rel=3D"noopener noreferrer" href=3D"http://cyprusview.com" target=3D"=
+_blank">http://cyprusview.com</a></div><div><br></div></div></div></div></d=
+iv></div></div></div></div>
+
+
+--b1_4fedaa90f5d18f637a67492e8842959f--
+
