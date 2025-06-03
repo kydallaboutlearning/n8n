@@ -1,0 +1,555 @@
+Delivered-To: investiaprop@gmail.com
+Received: by 2002:a05:6f02:212:b0:84:c707:c888 with SMTP id 18csp286527rcn;
+        Thu, 8 May 2025 00:50:02 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IEXd4/HYRKeoru7sPB7jgvHl4c5UMAmV9+kqoht+X4wdQ2DyuSyAoYc4XOxnwuS0iYX5Wfr
+X-Received: by 2002:a05:6000:2506:b0:390:f9d0:5e3 with SMTP id ffacd0b85a97d-3a0b4a0297dmr5734362f8f.1.1746690602075;
+        Thu, 08 May 2025 00:50:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1746690602; cv=none;
+        d=google.com; s=arc-20240605;
+        b=Z6NgmZtoL111ZVS1WGikhVmftjRQeBmBI0UBp9mBARVY5kvpzx+CXFeV/uuKSgd3n0
+         588e4FNQrGrfuCql9OUcD7U2otcfwjF5uaMqSCtIobPEgOwx6VfMlzmf+hqw2ET1Uea/
+         5copMWa9s92iNKHDfK2ohqSOPFuHhp1zznIgLDdw3kfIRBOLU/UUGCY4vJ2dyV+6vaKI
+         w8W+/HYXv/8I+3XE/Wqe5rQ9t38/4U22ZhvEMtt1auZ1OqK/CGoMNKSn3ZT1y7dxX2EQ
+         OwUrPxjViz4eyQQQ2H22vQWAwQRH5h68hOV4qS5O70HxBrO/bX3EBg5SC1aJV8YkKESx
+         t6oQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:references:in-reply-to:message-id:subject:from:to:date
+         :dkim-signature:dkim-filter;
+        bh=khKZfw7zgwHE7ldQtEiqbG1yiAWDh2lvHUWoVC2YY64=;
+        fh=c7GOLEttmcAhHBfTqzHGnuPLTyHoLeZ5TAxRIybQ39c=;
+        b=Pu+LyVxcv9esF6qWXHwcyikB+F4z4IokBdiR1hbAQOY+A1DZ7h6CVaEvUr8dCCGTxH
+         ArlgvljjiWRlyBx7kmY8Sv045lQ3nDuBmSvHeX/XC9pPJber2O5ykCupaFj5Rz8Sg+FJ
+         hevCa31SCiMvj1DKcPTXT7Bq7mNBIxtgKXn63MivBvNSq8YdKbeE//XUFFshC1x6UZi5
+         yW0fma5yvitgAMk7iBdjBPRjB0YtZqxCP4qulNE2OzQkad7Hq/DqQaH2NKbxaggqpYiC
+         2D4oXgilhBYcAuMm/3BX56PVb94pmz2SYlhfgiWv+oM235v1qnskjQMfgsZE2NVvZj+v
+         g/8Q==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cytanet.com.cy header.s=mail header.b=jazqt1IV;
+       spf=pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.215 as permitted sender) smtp.mailfrom=nasiafanari@cytanet.com.cy;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=cytanet.com.cy
+Return-Path: <nasiafanari@cytanet.com.cy>
+Received: from demokritos1a.cytanet.com.cy (demokritos1a.cytanet.com.cy. [195.14.130.215])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-3a0b794a06bsi1668924f8f.25.2025.05.08.00.50.01
+        for <investiaprop@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 08 May 2025 00:50:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.215 as permitted sender) client-ip=195.14.130.215;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cytanet.com.cy header.s=mail header.b=jazqt1IV;
+       spf=pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.215 as permitted sender) smtp.mailfrom=nasiafanari@cytanet.com.cy;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=cytanet.com.cy
+X-Virus-Scanned: amavis at cytanet.com.cy
+DKIM-Filter: OpenDKIM Filter v2.11.0 demokritos1a.cytanet.com.cy 44EAC401D62
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cytanet.com.cy;
+	s=mail; t=1746690601;
+	bh=khKZfw7zgwHE7ldQtEiqbG1yiAWDh2lvHUWoVC2YY64=;
+	h=Date:To:From:Subject:In-Reply-To:References:From;
+	b=jazqt1IVosdHNRWqpRJyrbPUPjwsul+rEhaFwpltFFU6yVVZbA/wPiSEcxKW8oZ7G
+	 k3JNcKQr1f7PGImzAsjwN2LNX7wbU/sOrqc+ABsHsiTw9pUSVxqZjdQUyqoqCKCQ1L
+	 4r/3N8eRKx1opc6uYwbGoXh9xove6yMCI1+AXhUA=
+X-Spam-Flag: NO
+X-Spam-Score: -1.954
+X-Spam-Level:
+X-Spam-Status: No, score=-1.954 tagged_above=-10 required=5
+ tests=[ALL_TRUSTED=-1, BAYES_00=-1.9, CYT_RUL=0.001, CYT_RUL_1=0.001,
+ CYT_RUL_120=0.001, CYT_RUL_124=0.001, CYT_RUL_125=0.001, CYT_RUL_135=0.001,
+ CYT_RUL_146=0.001, CYT_RUL_47=0.001, FROM_ICEWARP_WEBMAIL=0.001,
+ HTML_IMAGE_RATIO_06=0.001, HTML_MESSAGE=0.001, LOTS_OF_MONEY=0.001,
+ SUBJ_ALL_CAPS=0.5, T_KAM_HTML_FONT_INVALID=0.01, URIBL_GREY=0.424]
+ autolearn=no autolearn_force=no
+Received: from demokritos1a.cytanet.com.cy ([127.0.0.1])
+ by localhost (demokritos1a.cytanet.com.cy [127.0.0.1]) (amavis, port 10024)
+ with LMTP id PTmIjWofYDDE for <investiaprop@gmail.com>;
+ Thu,  8 May 2025 10:50:00 +0300 (EEST)
+Received: from cytanet.com.cy?[62.228.14.11] (IcewarpPla5.pri.cytanet.com.cy [172.21.205.135])
+	by demokritos1a.cytanet.com.cy (Postfix) with ESMTP id 06AB4401D54
+	for <investiaprop@gmail.com>; Thu,  8 May 2025 10:50:00 +0300 (EEST)
+Date: Thu, 08 May 2025 10:49:58 +0300
+To: investiaprop <investiaprop@gmail.com>
+From: nasiafanari <nasiafanari@cytanet.com.cy>
+Subject: Fw: Fwd: D. ZAVOS GROUP - ROYAL COURT
+Message-ID: <4553150e14616232305448647446e32b@cytanet.com.cy>
+X-Mailer: IceWarp Mailer 14.1.0.17 RHEL8 x64-Desktop
+x-icewarp-spellchecker: en
+In-Reply-To: <CAGh41yOR-ZU3XwqCk59Ww0O52YaXdLLTOZ-tYk504wVtgQXDew@mail.gmail.com>
+References: <20571c4f3a91d4ad1207ef010.fa75064e3b.20250312135655.ba6cec2912.7d1eec93@mail96.atl31.mcdlv.net>
+	<CAGh41yOR-ZU3XwqCk59Ww0O52YaXdLLTOZ-tYk504wVtgQXDew@mail.gmail.com>
+X-Priority: 3
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_f2ceb0be7b172aa1b5fbb1956aef1032"
+
+
+--b1_f2ceb0be7b172aa1b5fbb1956aef1032
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+----- Forwarded Message -----
+
+From: Investia company (investia@cyprusview.com)
+Date: 25/03/25 19:27
+To: Katerina Christodoulou (katerinainvestia@gmail.com), Nassia Athanasiou =
+(nasiafanari@cytanet.com.cy)
+Subject: Fwd: D. ZAVOS GROUP - ROYAL COURT
+
+
+
+
+---------- Forwarded message ---------
+From: D. Zavos Group <sales@zavos.com>
+Date: Wed, Mar 12, 2025 at 3:57=E2=80=AFPM
+Subject: D. ZAVOS GROUP - ROYAL COURT
+To: <investia@cyprusview.com>
+
+
+=20
+=20
+=20
+=20
+=20
+=20
+ ROYAL COURT- 2BED APARTMENT FOR SALE
+
+=C2=A0
+Royal Court offers the perfect balance of city convenience and seaside tran=
+quility, situated in Germasogeia, just 3 kilometers from Limassol=E2=80=
+=99s vibrant city center and a stone=E2=80=99s throw from the stunning coas=
+tline.
+=C2=A0
+
+=20
+=20
+=20
+=20
+=20
+Royal Court =E2=80=93 Luxury Living in Germasogeia! =F0=9F=8F=A1
+
+=F0=9F=94=B9=C2=A0For Sale: Elegant 2-Bedroom Apartment
+=F0=9F=93=8D=C2=A0Location: Germasogeia, Limassol
+=F0=9F=92=B0=C2=A0Price: =E2=82=AC530,000 (No VAT)- =C2=A0includes furnitur=
+e, electrical appliances
+and air conditioning units.
+
+This is a rare opportunity to own a=C2=A0luxurious home in one of Limassol=
+=E2=80=99s most sought-after locations!
+
+
+=20
+=20
+=20
+=20
+=20
+=F0=9F=93=A9=C2=A0Contact us today for more details or to schedule a viewin=
+g.
+
+=20
+=20
+=20
+=20
+
+=20
+ Discover
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+
+=20
+=20
+=20
+ Copyright =C2=A9 2025 D.Zavos Group, All rights reserved.
+
+Our mailing address is:
+1 Griva Digeni Avenue,=C2=A0Zavos Kriel Court,=C2=A03035, Limassol, Cyprus
+Tel: +357 25818555 |=C2=A0sales@zavos.com
+
+Want to change how you receive these emails?
+You can update your preferences or unsubscribe from this list.
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=
+=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=
+=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=
+=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=
+=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=
+=CD=8F =E2=80=87=EF=BB=BF=CD=8F
+
+
+
+--=C2=A0
+
+
+
+Phone: +357 99 206950
+Office: +357 24 634830=C2=A0
+Fax : +357 24 634833
+Website: http://cyprusview.com
+
+
+
+--b1_f2ceb0be7b172aa1b5fbb1956aef1032
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div class=3D"iw_mail" dir=3D"ltr" style=3D"font-size: 13px;"><div><br></di=
+v><div><br></div><div><br></div><div dir=3D"ltr" style=3D"font-size: 13px;f=
+ont-family:Roboto, Tahoma, Helvetica, sans-serif;" class=3D"iw-reply-block"=
+><div style=3D"color:#333333;"><div style=3D"display:none;">----- Forwarded=
+ Message -----</div><hr style=3D"width:100%;margin:10px 0;color:#888888;bac=
+kground-color:#888888;border-color:#DDDDDD;" width=3D"100%" size=3D"1"><div=
+ style=3D"line-height: 1.2rem;"><div>From: Investia company (<a rel=3D"noop=
+ener noreferrer" href=3D"mailto:investia@cyprusview.com" style=3D"color: rg=
+b(0, 136, 204); text-decoration: none;" target=3D"_blank">investia@cyprusvi=
+ew.com</a>)</div><div>Date: 25/03/25 19:27</div><div>To: Katerina Christodo=
+ulou (<a rel=3D"noopener noreferrer" href=3D"mailto:katerinainvestia@gmail.=
+com" style=3D"color: rgb(0, 136, 204); text-decoration: none;" target=3D"_b=
+lank">katerinainvestia@gmail.com</a>), Nassia Athanasiou (<a rel=3D"noopene=
+r noreferrer" href=3D"mailto:nasiafanari@cytanet.com.cy" style=3D"color: rg=
+b(0, 136, 204); text-decoration: none;" target=3D"_blank">nasiafanari@cytan=
+et.com.cy</a>)</div><div>Subject: <span style=3D"font-weight:bold;">Fwd: D.=
+ ZAVOS GROUP - ROYAL COURT</span></div></div></div><br><div><div dir=3D"ltr=
+"><br><br><div class=3D"gmail_quote gmail_quote_container"><div dir=3D"ltr"=
+ class=3D"gmail_attr">---------- Forwarded message ---------<br>From: <stro=
+ng class=3D"gmail_sendername" dir=3D"auto">D. Zavos Group</strong> <span di=
+r=3D"auto">&lt;<a rel=3D"noopener noreferrer" href=3D"mailto:sales@zavos.co=
+m" target=3D"_blank">sales@zavos.com</a>&gt;</span><br>Date: Wed, Mar 12, 2=
+025 at 3:57=E2=80=AFPM<br>Subject: D. ZAVOS GROUP - ROYAL COURT<br>To: &lt;=
+<a rel=3D"noopener noreferrer" href=3D"mailto:investia@cyprusview.com" targ=
+et=3D"_blank">investia@cyprusview.com</a>&gt;</div><br><br><div class=3D"ms=
+g-5902002822851494937"><div style=3D"height:100%;margin:0;padding:0;width:1=
+00%;"><center><table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" height=3D"100%" width=3D"100%" id=3D"m_-5902002822851494937body=
+Table" style=3D"border-collapse:collapse;height:100%;margin:0;padding:0;wid=
+th:100%;"><tbody><tr><td align=3D"center" valign=3D"top" id=3D"m_-590200282=
+2851494937bodyCell" style=3D"height:100%;margin:0;padding:0;width:100%;"><t=
+able border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"border-collapse: collapse; width: 100%;"><tbody><tr><td align=3D"center=
+" valign=3D"top" id=3D"m_-5902002822851494937templateHeader" style=3D"backg=
+round:#ffffff none no-repeat center/cover;background-color:#ffffff;backgrou=
+nd-image:none;background-repeat:no-repeat;background-position:center;backgr=
+ound-size:cover;border-top:0;border-bottom:0;padding-top:0px;padding-bottom=
+:0px;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" class=3D"m_-5902002822851494937templateContainer" sty=
+le=3D"border-collapse:collapse;max-width:600px!important;"><tbody><tr><td v=
+align=3D"top" class=3D"m_-5902002822851494937headerContainer" style=3D"back=
+ground:transparent none no-repeat center/cover;background-color:transparent=
+;background-image:none;background-repeat:no-repeat;background-position:cent=
+er;background-size:cover;border-top:0;border-bottom:0;padding-top:0;padding=
+-bottom:0;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-collapse:collapse;"><tbody><tr><td=
+ valign=3D"top" style=3D"padding:9px;"><table align=3D"left" width=3D"100%"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"min-width:100%;b=
+order-collapse:collapse;float:left;"><tbody><tr><td valign=3D"top" style=3D=
+"padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-ali=
+gn:center;"><img height=3D"auto" align=3D"center" alt=3D"" src=3D"data:imag=
+e/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"338.4" style=3D"max-w=
+idth: 1973px; padding-bottom: 0px; vertical-align: bottom; border: 1px none=
+; border-radius: 7%; outline: none; text-decoration: none; display: inline =
+!important;" class=3D"m_-5902002822851494937mcnImage iw-placeholder"></td><=
+/tr></tbody></table></td></tr></tbody></table><table border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;border-co=
+llapse:collapse;"><tbody><tr><td valign=3D"top" style=3D"padding-top:9px;">=
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"max-width:100%;min-width:100%;border-collapse:collapse;float:left;" wi=
+dth=3D"100%" class=3D"m_-5902002822851494937mcnTextContentContainer"><tbody=
+><tr><td valign=3D"top" class=3D"m_-5902002822851494937mcnTextContent" styl=
+e=3D"padding-top:0;padding-right:18px;padding-bottom:9px;padding-left:18px;=
+word-break:break-word;color:#757575;font-family:Helvetica;font-size:16px;li=
+ne-height:150%;text-align:left;"><h3 style=3D"text-align:center;display:blo=
+ck;margin:0;padding:0;color:#444444;font-family:Helvetica;font-size:22px;fo=
+nt-style:normal;font-weight:bold;line-height:150%;letter-spacing:normal;">R=
+OYAL COURT- 2BED APARTMENT FOR SALE</h3><br><br>&nbsp;<p style=3D"text-alig=
+n:center;margin:10px 0;padding:0;color:#757575;font-family:Helvetica;font-s=
+ize:16px;line-height:150%;">Royal Court offers the perfect balance of city =
+convenience and seaside tranquility, situated in Germasogeia, just 3 kilome=
+ters from Limassol=E2=80=99s vibrant city center and a stone=E2=80=99s thro=
+w from the stunning coastline.</p><div style=3D"text-align:center;">&nbsp;<=
+/div></td></tr></tbody></table></td></tr></tbody></table><table border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collap=
+se: collapse; width: 100%;"><tbody class=3D"m_-5902002822851494937mcnImageG=
+roupBlockOuter"><tr><td valign=3D"top" style=3D"padding:9px;" class=3D"m_-5=
+902002822851494937mcnImageGroupBlockInner"><table align=3D"left" width=3D"2=
+73" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_-5902002822=
+851494937mcnImageGroupContentContainer" style=3D"border-collapse: collapse;=
+ float: left; width: 100%;"><tbody><tr><td class=3D"m_-5902002822851494937m=
+cnImageGroupContent" valign=3D"top" style=3D"padding-left:9px;padding-top:0=
+;padding-bottom:0;"><img height=3D"auto" alt=3D"" src=3D"data:image/gif;bas=
+e64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"250" style=3D"max-width: 250px=
+; padding-bottom: 0px; border: 0px; outline: none; text-decoration: none; v=
+ertical-align: bottom;" class=3D"m_-5902002822851494937mcnImage iw-placehol=
+der"></td></tr></tbody></table><table align=3D"right" width=3D"273" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_-5902002822851494937m=
+cnImageGroupContentContainer" style=3D"border-collapse: collapse; float: ri=
+ght; width: 100%;"><tbody><tr><td class=3D"m_-5902002822851494937mcnImageGr=
+oupContent" valign=3D"top" style=3D"padding-right:9px;padding-top:0;padding=
+-bottom:0;"><img height=3D"auto" alt=3D"" src=3D"data:image/gif;base64,R0lG=
+ODlhAQABAAD/ACwAAAAAAQABAA" width=3D"250" style=3D"max-width: 250px; paddin=
+g-bottom: 0px; border: 0px; outline: none; text-decoration: none; vertical-=
+align: bottom;" class=3D"m_-5902002822851494937mcnImage iw-placeholder"></t=
+d></tr></tbody></table></td></tr></tbody></table><table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;border=
+-collapse:collapse;"><tbody><tr><td valign=3D"top" style=3D"padding-top:9px=
+;"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" s=
+tyle=3D"max-width:100%;min-width:100%;border-collapse:collapse;float:left;"=
+ width=3D"100%" class=3D"m_-5902002822851494937mcnTextContentContainer"><tb=
+ody><tr><td valign=3D"top" class=3D"m_-5902002822851494937mcnTextContent" s=
+tyle=3D"padding-top:0;padding-right:18px;padding-bottom:9px;padding-left:18=
+px;word-break:break-word;color:#757575;font-family:Helvetica;font-size:16px=
+;line-height:150%;text-align:left;"><p style=3D"margin:10px 0;padding:0;col=
+or:#757575;font-family:Helvetica;font-size:16px;line-height:150%;text-align=
+:left;"><strong>Royal Court =E2=80=93 Luxury Living in Germasogeia! =
+=F0=9F=8F=A1</strong></p><p style=3D"margin:10px 0;padding:0;color:#757575;=
+font-family:Helvetica;font-size:16px;line-height:150%;text-align:left;">=
+=F0=9F=94=B9&nbsp;<strong>For Sale:</strong> Elegant 2-Bedroom Apartment<br=
+>=F0=9F=93=8D&nbsp;<strong>Location:</strong> <a rel=3D"noopener noreferrer=
+" href=3D"https://zavos.us5.list-manage.com/track/click?u=3D20571c4f3a91d4a=
+d1207ef010&amp;id=3Deb12bbde42&amp;e=3Dfa75064e3b" style=3D"color:#007c89;f=
+ont-weight:normal;text-decoration:underline;" target=3D"_blank">Germasogeia=
+, Limassol</a><br>=F0=9F=92=B0&nbsp;<strong>Price:</strong> =E2=82=AC530,00=
+0 (No VAT)- &nbsp;includes furniture, electrical appliances<br>and air cond=
+itioning units.</p><div style=3D"text-align:center;"><p style=3D"margin:10p=
+x 0;padding:0;color:#757575;font-family:Helvetica;font-size:16px;line-heigh=
+t:150%;text-align:left;">This is a rare opportunity to own a&nbsp;<strong>l=
+uxurious home in one of Limassol=E2=80=99s most sought-after locations!</st=
+rong></p></div></td></tr></tbody></table></td></tr></tbody></table><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"bor=
+der-collapse: collapse; width: 100%;"><tbody class=3D"m_-590200282285149493=
+7mcnImageGroupBlockOuter"><tr><td valign=3D"top" style=3D"padding:9px;" cla=
+ss=3D"m_-5902002822851494937mcnImageGroupBlockInner"><table align=3D"left" =
+width=3D"273" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_-=
+5902002822851494937mcnImageGroupContentContainer" style=3D"border-collapse:=
+ collapse; float: left; width: 100%;"><tbody><tr><td class=3D"m_-5902002822=
+851494937mcnImageGroupContent" valign=3D"top" style=3D"padding-left:9px;pad=
+ding-top:0;padding-bottom:0;"><img height=3D"auto" alt=3D"" src=3D"data:ima=
+ge/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"250" style=3D"max-wi=
+dth: 250px; padding-bottom: 0px; border: 0px; outline: none; text-decoratio=
+n: none; vertical-align: bottom;" class=3D"m_-5902002822851494937mcnImage i=
+w-placeholder"></td></tr></tbody></table><table align=3D"right" width=3D"27=
+3" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_-59020028228=
+51494937mcnImageGroupContentContainer" style=3D"border-collapse: collapse; =
+float: right; width: 100%;"><tbody><tr><td class=3D"m_-5902002822851494937m=
+cnImageGroupContent" valign=3D"top" style=3D"padding-right:9px;padding-top:=
+0;padding-bottom:0;"><img height=3D"auto" alt=3D"" src=3D"data:image/gif;ba=
+se64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"250" style=3D"max-width: 250p=
+x; padding-bottom: 0px; border: 0px; outline: none; text-decoration: none; =
+vertical-align: bottom;" class=3D"m_-5902002822851494937mcnImage iw-placeho=
+lder"></td></tr></tbody></table></td></tr></tbody></table><table border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:10=
+0%;border-collapse:collapse;"><tbody><tr><td valign=3D"top" style=3D"paddin=
+g-top:9px;"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"max-width:100%;min-width:100%;border-collapse:collapse;flo=
+at:left;" width=3D"100%" class=3D"m_-5902002822851494937mcnTextContentConta=
+iner"><tbody><tr><td valign=3D"top" class=3D"m_-5902002822851494937mcnTextC=
+ontent" style=3D"padding-top:0;padding-right:18px;padding-bottom:9px;paddin=
+g-left:18px;word-break:break-word;color:#757575;font-family:Helvetica;font-=
+size:16px;line-height:150%;text-align:left;"><p style=3D"margin:10px 0;padd=
+ing:0;color:#757575;font-family:Helvetica;font-size:16px;line-height:150%;t=
+ext-align:left;">=F0=9F=93=A9&nbsp;<strong>Contact us today</strong> for mo=
+re details or to schedule a viewing.</p></td></tr></tbody></table></td></tr=
+></tbody></table></td></tr></tbody></table></td></tr><tr><td align=3D"cente=
+r" valign=3D"top" id=3D"m_-5902002822851494937templateBody" style=3D"backgr=
+ound:#ffffff none no-repeat center/cover;background-color:#ffffff;backgroun=
+d-image:none;background-repeat:no-repeat;background-position:center;backgro=
+und-size:cover;border-top:0;border-bottom:0;padding-top:58px;padding-bottom=
+:58px;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" class=3D"m_-5902002822851494937templateContainer" sty=
+le=3D"border-collapse:collapse;max-width:600px!important;"><tbody><tr><td v=
+align=3D"top" class=3D"m_-5902002822851494937bodyContainer" style=3D"backgr=
+ound:transparent none no-repeat center/cover;background-color:transparent;b=
+ackground-image:none;background-repeat:no-repeat;background-position:center=
+;background-size:cover;border-top:0;border-bottom:0;padding-top:0;padding-b=
+ottom:0;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"=
+100%" class=3D"m_-5902002822851494937mcnDividerBlock" style=3D"min-width:10=
+0%;border-collapse:collapse;table-layout:fixed!important;"><tbody><tr><td s=
+tyle=3D"min-width:100%;padding:18px;"><table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;border-collapse:c=
+ollapse;"><tbody><tr><td><br></td></tr></tbody></table></td></tr></tbody></=
+table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+" style=3D"min-width:100%;border-collapse:collapse;"><tbody><tr><td style=
+=3D"padding-top:0;padding-right:18px;padding-bottom:18px;padding-left:18px;=
+" valign=3D"top" align=3D"center"><table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%" style=3D"border-radius: 19px; background-colo=
+r: rgb(255, 210, 73); border-collapse: separate !important; width: 100%;"><=
+tbody><tr><td align=3D"center" valign=3D"middle" style=3D"font-family:Helve=
+tica;font-size:18px;padding:18px;"><a rel=3D"noopener noreferrer" class=3D"=
+m_-5902002822851494937mcnButton" title=3D"Discover" href=3D"https://zavos.u=
+s5.list-manage.com/track/click?u=3D20571c4f3a91d4ad1207ef010&amp;id=3Dacce2=
+a33b7&amp;e=3Dfa75064e3b" style=3D"font-weight:bold;letter-spacing:-0.5px;l=
+ine-height:100%;text-align:center;text-decoration:none;color:#222222;displa=
+y:block;" target=3D"_blank">Discover</a></td></tr></tbody></table></td></tr=
+></tbody></table></td></tr></tbody></table></td></tr><tr><td align=3D"cente=
+r" valign=3D"top" id=3D"m_-5902002822851494937templateFooter" style=3D"back=
+ground:#333333 none no-repeat 50% 50%/cover;background-color:#333333;backgr=
+ound-image:none;background-repeat:no-repeat;background-position:50% 50%;bac=
+kground-size:cover;border-top:0;border-bottom:0;padding-top:45px;padding-bo=
+ttom:63px;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" width=3D"100%" class=3D"m_-5902002822851494937templateContainer" =
+style=3D"border-collapse:collapse;max-width:600px!important;"><tbody><tr><t=
+d valign=3D"top" class=3D"m_-5902002822851494937footerContainer" style=3D"b=
+ackground:transparent none no-repeat center/cover;background-color:transpar=
+ent;background-image:none;background-repeat:no-repeat;background-position:c=
+enter;background-size:cover;border-top:0;border-bottom:0;padding-top:0;padd=
+ing-bottom:0;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%" style=3D"min-width:100%;border-collapse:collapse;"><tbody><tr><t=
+d align=3D"center" valign=3D"top" style=3D"padding:9px;"><table border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100=
+%;border-collapse:collapse;"><tbody><tr><td align=3D"center" style=3D"paddi=
+ng-left:9px;padding-right:9px;"><table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%" style=3D"min-width:100%;border-collapse:collaps=
+e;"><tbody><tr><td align=3D"center" valign=3D"top" style=3D"padding-top:9px=
+;padding-right:9px;padding-left:9px;"><table align=3D"center" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse; wid=
+th: 100%;"><tbody><tr><td align=3D"center" valign=3D"top"><table align=3D"l=
+eft" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"display: inl=
+ine; border-collapse: collapse; float: left; width: 100%;"><tbody><tr><td v=
+align=3D"top" style=3D"padding-right:10px;padding-bottom:9px;"><table borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-=
+collapse: collapse; width: 100%;"><tbody><tr><td align=3D"left" valign=3D"m=
+iddle" style=3D"padding-top:5px;padding-right:10px;padding-bottom:5px;paddi=
+ng-left:9px;"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" width=3D"" style=3D"border-collapse: collapse; float: left; width=
+: 100%;"><tbody><tr><td style=3D"width: 24px;" align=3D"center" valign=3D"m=
+iddle"><a rel=3D"noopener noreferrer" href=3D"https://zavos.us5.list-manage=
+.com/track/click?u=3D20571c4f3a91d4ad1207ef010&amp;id=3Dee5f58c145&amp;e=3D=
+fa75064e3b" target=3D"_blank"><img src=3D"data:image/gif;base64,R0lGODlhAQA=
+BAAD/ACwAAAAAAQABAA" alt=3D"Facebook" style=3D"display: block; border: 0px;=
+ height: auto; outline: none; text-decoration: none;" height=3D"24" width=
+=3D"24" class=3D"iw-placeholder"></a></td></tr></tbody></table></td></tr></=
+tbody></table></td></tr></tbody></table><table align=3D"left" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"display: inline; border-collap=
+se: collapse; float: left; width: 100%;"><tbody><tr><td valign=3D"top" styl=
+e=3D"padding-right:10px;padding-bottom:9px;"><table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse: collapse=
+; width: 100%;"><tbody><tr><td align=3D"left" valign=3D"middle" style=3D"pa=
+dding-top:5px;padding-right:10px;padding-bottom:5px;padding-left:9px;"><tab=
+le align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"" style=3D"border-collapse: collapse; float: left; width: 100%;"><tbody><t=
+r><td style=3D"width: 24px;" align=3D"center" valign=3D"middle"><a rel=3D"n=
+oopener noreferrer" href=3D"https://zavos.us5.list-manage.com/track/click?u=
+=3D20571c4f3a91d4ad1207ef010&amp;id=3Dba4bd6737b&amp;e=3Dfa75064e3b" target=
+=3D"_blank"><img src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABA=
+A" alt=3D"Link" style=3D"display: block; border: 0px; height: auto; outline=
+: none; text-decoration: none;" height=3D"24" width=3D"24" class=3D"iw-plac=
+eholder"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr>=
+</tbody></table><table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"display: inline; border-collapse: collapse; float: lef=
+t; width: 100%;"><tbody><tr><td valign=3D"top" style=3D"padding-right:10px;=
+padding-bottom:9px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"100%" style=3D"border-collapse: collapse; width: 100%;"><tbody><=
+tr><td align=3D"left" valign=3D"middle" style=3D"padding-top:5px;padding-ri=
+ght:10px;padding-bottom:5px;padding-left:9px;"><table align=3D"left" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" style=3D"border-colla=
+pse: collapse; float: left; width: 100%;"><tbody><tr><td style=3D"width: 24=
+px;" align=3D"center" valign=3D"middle"><a rel=3D"noopener noreferrer" href=
+=3D"https://zavos.us5.list-manage.com/track/click?u=3D20571c4f3a91d4ad1207e=
+f010&amp;id=3D547b68bc26&amp;e=3Dfa75064e3b" target=3D"_blank"><img src=3D"=
+data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" alt=3D"Website" style=
+=3D"display: block; border: 0px; height: auto; outline: none; text-decorati=
+on: none;" height=3D"24" width=3D"24" class=3D"iw-placeholder"></a></td></t=
+r></tbody></table></td></tr></tbody></table></td></tr></tbody></table><tabl=
+e align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"=
+display: inline; border-collapse: collapse; float: left; width: 100%;"><tbo=
+dy><tr><td valign=3D"top" style=3D"padding-right:0;padding-bottom:9px;"><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"border-collapse: collapse; width: 100%;"><tbody><tr><td align=3D"left" =
+valign=3D"middle" style=3D"padding-top:5px;padding-right:10px;padding-botto=
+m:5px;padding-left:9px;"><table align=3D"left" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"" style=3D"border-collapse: collapse; float: =
+left; width: 100%;"><tbody><tr><td style=3D"width: 24px;" align=3D"center" =
+valign=3D"middle"><a rel=3D"noopener noreferrer" href=3D"https://zavos.us5.=
+list-manage.com/track/click?u=3D20571c4f3a91d4ad1207ef010&amp;id=3D086c7de8=
+3a&amp;e=3Dfa75064e3b" target=3D"_blank"><img src=3D"data:image/gif;base64,=
+R0lGODlhAQABAAD/ACwAAAAAAQABAA" alt=3D"LinkedIn" style=3D"display: block; b=
+order: 0px; height: auto; outline: none; text-decoration: none;" height=3D"=
+24" width=3D"24" class=3D"iw-placeholder"></a></td></tr></tbody></table></t=
+d></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>=
+</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></tab=
+le><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" c=
+lass=3D"m_-5902002822851494937mcnDividerBlock" style=3D"min-width:100%;bord=
+er-collapse:collapse;table-layout:fixed!important;"><tbody><tr><td style=3D=
+"min-width:100%;padding:18px;"><table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%" style=3D"min-width:100%;border-top:2px solid #ff=
+d249;border-collapse:collapse;"><tbody><tr><td><br></td></tr></tbody></tabl=
+e></td></tr></tbody></table><table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"min-width:100%;border-collapse:collapse;">=
+<tbody><tr><td valign=3D"top" style=3D"padding:9px;"><table align=3D"left" =
+width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"mi=
+n-width:100%;border-collapse:collapse;float:left;"><tbody><tr><td valign=3D=
+"top" style=3D"padding-right:9px;padding-left:9px;padding-top:0;padding-bot=
+tom:0;text-align:center;"><img height=3D"auto" align=3D"center" alt=3D"" sr=
+c=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" width=3D"92.4" s=
+tyle=3D"max-width: 165px; padding-bottom: 0px; vertical-align: bottom; bord=
+er: 0px; outline: none; text-decoration: none; display: inline !important;"=
+ class=3D"m_-5902002822851494937mcnImage iw-placeholder"></td></tr></tbody>=
+</table></td></tr></tbody></table><table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%" style=3D"min-width:100%;border-collapse:colla=
+pse;"><tbody><tr><td valign=3D"top" style=3D"padding-top:9px;"><table align=
+=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"max-wid=
+th:100%;min-width:100%;border-collapse:collapse;float:left;" width=3D"100%"=
+ class=3D"m_-5902002822851494937mcnTextContentContainer"><tbody><tr><td val=
+ign=3D"top" class=3D"m_-5902002822851494937mcnTextContent" style=3D"padding=
+-top:0;padding-right:18px;padding-bottom:9px;padding-left:18px;word-break:b=
+reak-word;color:#ffffff;font-family:Helvetica;font-size:12px;line-height:15=
+0%;text-align:center;"><span style=3D"color:#ffffff;"><em>Copyright =C2=
+=A9 2025 D.Zavos Group, All rights reserved.</em></span><br><br><strong>Our=
+ mailing address is:</strong><br>1 Griva Digeni Avenue,&nbsp;Zavos Kriel Co=
+urt,&nbsp;3035, Limassol, Cyprus<br>Tel: +357 25818555 |&nbsp;<a rel=3D"noo=
+pener noreferrer" href=3D"mailto:sales@zavos.com" target=3D"_blank">sales@z=
+avos.com</a><br><br>Want to change how you receive these emails?<br>You can=
+ <a rel=3D"noopener noreferrer" href=3D"https://zavos.us5.list-manage.com/p=
+rofile?u=3D20571c4f3a91d4ad1207ef010&amp;id=3Dedd8eec43b&amp;e=3Dfa75064e3b=
+&amp;c=3Dba6cec2912" style=3D"color:#ffffff;font-weight:normal;text-decorat=
+ion:underline;" target=3D"_blank">update your preferences</a> or <a rel=3D"=
+noopener noreferrer" href=3D"https://zavos.us5.list-manage.com/unsubscribe?=
+u=3D20571c4f3a91d4ad1207ef010&amp;id=3Dedd8eec43b&amp;t=3Db&amp;e=3Dfa75064=
+e3b&amp;c=3Dba6cec2912" style=3D"color:#ffffff;font-weight:normal;text-deco=
+ration:underline;" target=3D"_blank">unsubscribe from this list</a>.</td></=
+tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td=
+></tr></tbody></table></td></tr></tbody></table></center></div><div style=
+=3D"display:none;">=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=
+=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=
+=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=
+=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=
+=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=
+=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =
+=E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F</div><div style=3D"di=
+splay:none;font-size:0px;line-height:0px;max-height:0px;max-width:0px;opaci=
+ty:0;overflow:hidden;"><img src=3D"data:image/gif;base64,R0lGODlhAQABAAD/AC=
+wAAAAAAQABAA" height=3D"1" width=3D"1" style=3D"display: none; font-size: 0=
+px; line-height: 0px; opacity: 0; overflow: hidden;" alt=3D"" class=3D"iw-p=
+laceholder"></div></div></div><div><br></div><div><br></div><span class=3D"=
+gmail_signature_prefix">--&nbsp;</span><br><div dir=3D"ltr" class=3D"gmail_=
+signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div dir=3D"=
+ltr"><div dir=3D"ltr"><div><img style=3D"" src=3D"data:image/gif;base64,R0l=
+GODlhAQABAAD/ACwAAAAAAQABAA" class=3D"iw-placeholder"><br></div><div>Phone:=
+ +357 99 206950</div><div>Office: +357 24 634830&nbsp;<br>Fax : +357 24 634=
+833</div><div>Website: <a rel=3D"noopener noreferrer" href=3D"http://cyprus=
+view.com" target=3D"_blank">http://cyprusview.com</a></div><div><br></div><=
+/div></div></div></div></div></div></div></div>
+
+
+--b1_f2ceb0be7b172aa1b5fbb1956aef1032--
+
