@@ -1,0 +1,228 @@
+Delivered-To: investiaprop@gmail.com
+Received: by 2002:a05:6f02:212:b0:84:c707:c888 with SMTP id 18csp286719rcn;
+        Thu, 8 May 2025 00:50:38 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHXKThUbLiXFdBpPPJZbm6WaEnfIMvQCtF5Rx3OY6xLC+CyytOKbs0ah/mMrwVM2dil+IPD
+X-Received: by 2002:a05:600c:1c9e:b0:441:b698:3431 with SMTP id 5b1f17b1804b1-442d034bb7emr14616955e9.28.1746690637899;
+        Thu, 08 May 2025 00:50:37 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1746690637; cv=none;
+        d=google.com; s=arc-20240605;
+        b=UTxgxE6jSWodoBPErUbNnG3tYnHfXIzpXNc5BjGwosZWUaVUuKqqvcI+K/Zw5Fmfp/
+         Of40DYbbbYkjnWYAWP6UdU4dmXwpXxkatW/3kBpzjk/jraoklKM/sGAaqkHv+gd8apoe
+         7q1OzvJroSUsXhyKtgSFnM8XYCnFXPMPjKGFQUelLOWywDVN0HHvM+Su1DsfMb4U8ZIS
+         pDBCpkPGg8f2IGskRTXxbnMr7K9GhrHLRwlfmsXOOQ8qS2GDfRLh7NCbjdQ+LQetZka0
+         JPm/Vzz9EbaaJI1Sy/AAamJgP2RhwY68PEJwok7EbcCj6IwwXIjRTPXqV6vaBw4TR0gS
+         fJZg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:references:in-reply-to:message-id:subject:from:to:date
+         :dkim-signature:dkim-filter;
+        bh=yEBW846SeaJaFuOukRq19WESS6sO6K+9+rte8HCXjDc=;
+        fh=c7GOLEttmcAhHBfTqzHGnuPLTyHoLeZ5TAxRIybQ39c=;
+        b=IDsS7DkPKl8FX4oWNEf/CTjUtedOA1zs17+vazOskl6zV3+GeA8eFhXbKXapOqN4uM
+         9Uk2h8wPTOr7t6eYVagEb/VXi7Rou204yK16N/LR7KHLCjZljYoxHlAkuGHHg+SflQbz
+         7+SZsMKh6qUsNrTBJOTNtNGHjr8Nc8gkuCJ1pZh7BRA4VfuYAUDHOCd9ogZfe1GFWdXl
+         b3ZpXfvL8u7EcFzQxi/nTGlqIpcP5ZAT/KD9SlE42IEHQWpCjLfIUhUS9Jl5GdPuaOoH
+         t4KyuvoxTWqqml8rQPM4UtNxi952hTZ9fz0WAYkHoufAQCRF+BHXjucp4j5uLsEFBsI+
+         gsrA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cytanet.com.cy header.s=mail header.b=QIbSebJB;
+       spf=pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.215 as permitted sender) smtp.mailfrom=nasiafanari@cytanet.com.cy;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=cytanet.com.cy
+Return-Path: <nasiafanari@cytanet.com.cy>
+Received: from demokritos1a.cytanet.com.cy (demokritos1a.cytanet.com.cy. [195.14.130.215])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-3a0b12c6eebsi3809586f8f.716.2025.05.08.00.50.37
+        for <investiaprop@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 08 May 2025 00:50:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.215 as permitted sender) client-ip=195.14.130.215;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cytanet.com.cy header.s=mail header.b=QIbSebJB;
+       spf=pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.215 as permitted sender) smtp.mailfrom=nasiafanari@cytanet.com.cy;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=cytanet.com.cy
+X-Virus-Scanned: amavis at cytanet.com.cy
+DKIM-Filter: OpenDKIM Filter v2.11.0 demokritos1a.cytanet.com.cy 1D868401D65
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cytanet.com.cy;
+	s=mail; t=1746690637;
+	bh=yEBW846SeaJaFuOukRq19WESS6sO6K+9+rte8HCXjDc=;
+	h=Date:To:From:Subject:In-Reply-To:References:From;
+	b=QIbSebJBeak5cRMRrbk4LCfuUhVWX2mDzQj+mXxr6y/dFrgqEqqmTRmY8cfFig4IV
+	 z4vO1OUMgNtKgW28uV4ArRmPKPzd21qLOrbSvdMTSNwvQ6d7SxJPVLITThsdeZKB/Q
+	 AdBv7uT/RkBlfvuUAU3KAOCSLf4ucTVQiIRdbBaU=
+X-Spam-Flag: NO
+X-Spam-Score: -2.88
+X-Spam-Level:
+X-Spam-Status: No, score=-2.88 tagged_above=-10 required=5
+ tests=[ALL_TRUSTED=-1, BAYES_00=-1.9, CYT_RUL=0.001, CYT_RUL_1=0.001,
+ CYT_RUL_120=0.001, CYT_RUL_124=0.001, CYT_RUL_135=0.001, CYT_RUL_146=0.001,
+ CYT_RUL_47=0.001, FROM_ICEWARP_WEBMAIL=0.001, HTML_MESSAGE=0.001,
+ LOTS_OF_MONEY=0.001, T_REMOTE_IMAGE=0.01] autolearn=no autolearn_force=no
+Received: from demokritos1a.cytanet.com.cy ([127.0.0.1])
+ by localhost (demokritos1a.cytanet.com.cy [127.0.0.1]) (amavis, port 10024)
+ with LMTP id K_tEKe0CCWx5 for <investiaprop@gmail.com>;
+ Thu,  8 May 2025 10:50:36 +0300 (EEST)
+Received: from cytanet.com.cy?[62.228.14.11] (IcewarpPla5.pri.cytanet.com.cy [172.21.205.135])
+	by demokritos1a.cytanet.com.cy (Postfix) with ESMTP id 00AF3401D4B
+	for <investiaprop@gmail.com>; Thu,  8 May 2025 10:50:35 +0300 (EEST)
+Date: Thu, 08 May 2025 10:50:34 +0300
+To: investiaprop <investiaprop@gmail.com>
+From: nasiafanari <nasiafanari@cytanet.com.cy>
+Subject: Fw: Fwd: Update on Plot Price for Agios Tychonas
+Message-ID: <6d4b8390f01ca216b3babf8ffdc15354@cytanet.com.cy>
+X-Mailer: IceWarp Mailer 14.1.0.17 RHEL8 x64-Desktop
+x-icewarp-spellchecker: en
+In-Reply-To: <CACapho6jovqq-6L-szz5idNq+6=AG+VTaTwGv=dn49XSn551Qg@mail.gmail.com>
+References: <CAJabnK+8AVTZUrZ8ykUMV=LE3p69pgpMOZtZ0FKp2xuTuSXwsA@mail.gmail.com>
+	<CACapho6jovqq-6L-szz5idNq+6=AG+VTaTwGv=dn49XSn551Qg@mail.gmail.com>
+X-Priority: 3
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_b5cc74123fdf4c610aba3ffe33e9b502"
+
+
+--b1_b5cc74123fdf4c610aba3ffe33e9b502
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+----- Forwarded Message -----
+
+From: Akis Pittas (akis@investia.com.cy)
+Date: 13/03/25 17:56
+To: Katerina Christodoulou (katerina@investia.com.cy), nasiafanari (nasiafa=
+nari@cytanet.com.cy)
+Subject: Fwd: Update on Plot Price for Agios Tychonas
+
+
+
+
+---------- Forwarded message ---------
+From: Office General <office@chris-michael.com.cy>
+Date: Wed, Mar 12, 2025 at 1:11=E2=80=AFPM
+Subject: Update on Plot Price for Agios Tychonas
+To: Chris Michael <info@chris-michael.com.cy>
+
+
+
+Dear Associate,
+
+We would like to inform you that the price for the plot in Agios Tychonas h=
+as been updated. The current price is =E2=82=AC 4.500.000.=C2=A0
+
+Kindly check the price you have for the plot in Agios Tychonas from our com=
+pany and update it accordingly.
+
+https://chris-michael.com.cy/sales/property/limassol-property-large-plot-in=
+-prime-location14291/
+
+=C2=A0Plot in Agios Tychonas
+
+
+
+Kind regards
+Natalia Saleeva
+
+Administrator
+
+
+Amathus Avenue, Renanda Complex, Shop 3,
+P.O.Box 54415, 3724, Limassol, Cyprus
+T: + 357 25 313135 f: + 357 25 314557
+
+E:=C2=A0www.chris-michael.com.cy -=C2=A0www.accommodationcyprus.com
+
+
+
+
+
+
+--=C2=A0
+
+
+Phone: +357 99 206950
+Office: +357 24 634830=C2=A0
+Fax : +357 24 634833
+Website: http://cyprusview.com
+
+
+--b1_b5cc74123fdf4c610aba3ffe33e9b502
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div class=3D"iw_mail" dir=3D"ltr" style=3D"font-size: 13px;"><div><br></di=
+v><div><br></div><div><br></div><div dir=3D"ltr" style=3D"font-size: 13px;f=
+ont-family:Roboto, Tahoma, Helvetica, sans-serif;" class=3D"iw-reply-block"=
+><div style=3D"color:#333333;"><div style=3D"display:none;">----- Forwarded=
+ Message -----</div><hr style=3D"width:100%;margin:10px 0;color:#888888;bac=
+kground-color:#888888;border-color:#DDDDDD;" width=3D"100%" size=3D"1"><div=
+ style=3D"line-height: 1.2rem;"><div>From: Akis Pittas (<a rel=3D"noopener =
+noreferrer" href=3D"mailto:akis@investia.com.cy" style=3D"color: rgb(0, 136=
+, 204); text-decoration: none;" target=3D"_blank">akis@investia.com.cy</a>)=
+</div><div>Date: 13/03/25 17:56</div><div>To: Katerina Christodoulou (<a re=
+l=3D"noopener noreferrer" href=3D"mailto:katerina@investia.com.cy" style=3D=
+"color: rgb(0, 136, 204); text-decoration: none;" target=3D"_blank">katerin=
+a@investia.com.cy</a>), nasiafanari (<a rel=3D"noopener noreferrer" href=3D=
+"mailto:nasiafanari@cytanet.com.cy" style=3D"color: rgb(0, 136, 204); text-=
+decoration: none;" target=3D"_blank">nasiafanari@cytanet.com.cy</a>)</div><=
+div>Subject: <span style=3D"font-weight:bold;">Fwd: Update on Plot Price fo=
+r Agios Tychonas</span></div></div></div><br><div><div dir=3D"ltr"><br><br>=
+<div class=3D"gmail_quote gmail_quote_container"><div dir=3D"ltr" class=3D"=
+gmail_attr">---------- Forwarded message ---------<br>From: <strong class=
+=3D"gmail_sendername" dir=3D"auto">Office General</strong> <span dir=3D"aut=
+o">&lt;<a rel=3D"noopener noreferrer" href=3D"mailto:office@chris-michael.c=
+om.cy" target=3D"_blank">office@chris-michael.com.cy</a>&gt;</span><br>Date=
+: Wed, Mar 12, 2025 at 1:11=E2=80=AFPM<br>Subject: Update on Plot Price for=
+ Agios Tychonas<br>To: Chris Michael &lt;<a rel=3D"noopener noreferrer" hre=
+f=3D"mailto:info@chris-michael.com.cy" target=3D"_blank">info@chris-michael=
+.com.cy</a>&gt;</div><br><br><div dir=3D"ltr"><div><div><p>Dear Associate,<=
+/p><p>We would like to inform you that the price for the plot in Agios Tych=
+onas has been updated. The current price is =E2=82=AC 4.500.000.&nbsp;</p><=
+p>Kindly check the price you have for the plot in Agios Tychonas from our c=
+ompany and update it accordingly.</p></div><div><a rel=3D"noopener noreferr=
+er" href=3D"https://chris-michael.com.cy/sales/property/limassol-property-l=
+arge-plot-in-prime-location14291/" target=3D"_blank">https://chris-michael.=
+com.cy/sales/property/limassol-property-large-plot-in-prime-location14291/<=
+/a></div><div><br></div><div><br><div class=3D"gmail_chip gmail_drive_chip"=
+ style=3D"width:386px;height:20px;max-height:20px;background-color:rgb(245,=
+245,245);margin:6px 0px;padding:10px;font-variant-numeric:normal;font-varia=
+nt-east-asian:normal;font-variant-alternates:normal;font-size-adjust:none;f=
+ont-kerning:auto;font-feature-settings:normal;font-stretch:normal;font-size=
+:14px;line-height:20px;font-family:&quot;Google Sans&quot;,sans-serif;borde=
+r:1px solid rgb(221,221,221);"><a rel=3D"noopener noreferrer" href=3D"https=
+://drive.google.com/open?id=3D1vJT95cp1IPY0yWnXaD0ggYYnEMly6Bk8" style=3D"c=
+olor:rgb(32,33,36);display:inline-block;overflow:hidden;text-overflow:ellip=
+sis;text-decoration-line:none;border:none;width:386px;" target=3D"_blank"><=
+img height=3D"20px" alt=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/A=
+CwAAAAAAQABAA" style=3D"vertical-align: text-bottom; border: none; padding-=
+right: 10px;" class=3D"iw-placeholder">&nbsp;<span dir=3D"ltr" style=3D"ver=
+tical-align:bottom;text-decoration:none;">Plot in Agios Tychonas</span></a>=
+</div></div><br></div><div><div dir=3D"ltr" class=3D"gmail_signature" data-=
+smartmail=3D"gmail_signature"><div dir=3D"ltr"><div><span style=3D"font-fam=
+ily:Arial,sans-serif;font-size:16px;">Kind regards</span></div><div><div><s=
+pan style=3D"font-size:16px;font-family:Arial,sans-serif;">Natalia Saleeva<=
+/span></div><div><br></div><div><span style=3D"font-size:16px;">Administrat=
+or</span></div><div><span style=3D"font-size:16px;"><br></span></div><div><=
+span style=3D"font-size:16px;">Amathus Avenue, Renanda Complex, Shop 3,</sp=
+an></div><div><span style=3D"font-size:16px;font-family:Arial,sans-serif;">=
+P.O.Box 54415, 3724, Limassol, Cyprus</span></div><div><span style=3D"font-=
+size:16px;font-family:Arial,sans-serif;">T: + 357 25 313135 f: + 357 25 314=
+557</span><br></div><div><span style=3D"font-size:16px;font-family:Arial,sa=
+ns-serif;">E:&nbsp;<a rel=3D"noopener noreferrer" href=3D"http://www.chris-=
+michael.com.cy/" target=3D"_blank">www.chris-michael.com.cy</a> -&nbsp;<a r=
+el=3D"noopener noreferrer" href=3D"http://www.accommodationcyprus.com/" tar=
+get=3D"_blank">www.accommodationcyprus.com</a></span></div></div><div><br><=
+/div><div><img style=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwA=
+AAAAAQABAA" width=3D"200" height=3D"95" class=3D"iw-placeholder"><br></div>=
+</div></div></div></div></div><div><br></div><div><br></div><span class=3D"=
+gmail_signature_prefix">--&nbsp;</span><br><div dir=3D"ltr" class=3D"gmail_=
+signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div><img st=
+yle=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" class=
+=3D"iw-placeholder"></div><div>Phone: +357 99 206950</div><div>Office: +357=
+ 24 634830&nbsp;<br>Fax : +357 24 634833</div><div>Website: <a rel=3D"noope=
+ner noreferrer" href=3D"http://cyprusview.com" target=3D"_blank">http://cyp=
+rusview.com</a></div></div></div></div></div></div></div>
+
+
+--b1_b5cc74123fdf4c610aba3ffe33e9b502--
+
