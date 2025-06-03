@@ -1,0 +1,1093 @@
+Delivered-To: investiaprop@gmail.com
+Received: by 2002:a05:6f02:212:b0:84:c707:c888 with SMTP id 18csp286000rcn;
+        Thu, 8 May 2025 00:48:18 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGv/Yw3wJOZIj60gSAbeB7eb1o41hS21cJVhdDujCVsTn4dPOK3FPDyHZm9+/oy3lKVUOrH
+X-Received: by 2002:a05:600c:46c6:b0:43d:fa59:cc8f with SMTP id 5b1f17b1804b1-442d035011amr14301245e9.33.1746690498034;
+        Thu, 08 May 2025 00:48:18 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1746690498; cv=none;
+        d=google.com; s=arc-20240605;
+        b=G3L5MR5Xx7Cf3wPjzXyTqhICLzsNxLfVRvIfNUVAjxqeVigHNPCgLHLM7LQMAIdGbN
+         XAuaghOylS1TqSrwurjaSl7qUE5a46bUCfjWVVN/zahD6XAGZFHCTM/VrmKKVfCPwYJs
+         fqxhTV3g7fT7E2bVA26iG0tIho4pacjB3US9qumkkWnNx2vDBNlnv5DFhLaGuKV5JefA
+         PJFGPnyRo1FoETk85urJYUX2wb9z0m1UxbXVJ4pNDaEdO6DtkS40tCU1HERPi35924YB
+         TtIg4J+H3KvsAhMkaJuBCfHLSCfgKS6O2ndRHHNVNOj7F+OJ7DExqGXA4bpCrT73lJvL
+         HPdg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:references:in-reply-to:message-id:subject:from:to:date
+         :dkim-signature:dkim-filter;
+        bh=5Nv9zIo0Fgg0shn4RsnPR0qaduNYRwACnglWYZVVIUM=;
+        fh=c7GOLEttmcAhHBfTqzHGnuPLTyHoLeZ5TAxRIybQ39c=;
+        b=HlBbBXjRgi6hlEALPkLob36Yb9FEYcXeukPqNd2ex2hdxgD1Mw7XtAFzjMKX88eA3K
+         XWOIyHc2ry+yhd2Deb+WwhGg7Lf8dpcOpeGk4eorGFbrmp8PQWdbMEoDWpePEmLVc1MX
+         jadLeQ+xzxtDsfqIZ26TT8tdP3A8AYj9AZEfC6mr2eCefGuMgP1eEAVVCVdfL2kuGk3L
+         nkg3g2fXpIeAd9RwgkP+jFQnZ56wThdzq02vjszS7xqjpIfTwp0Zne7vFZZnR3U0yCwD
+         1F4hYOiqys79Vo1mT0rkLakuCrBvh2s0OlsaHC+xWwRs7BBQYZ5fsdgsltuDUySuJd0j
+         j/PA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cytanet.com.cy header.s=mail header.b="Ep/Uh81J";
+       spf=pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.214 as permitted sender) smtp.mailfrom=nasiafanari@cytanet.com.cy;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=cytanet.com.cy
+Return-Path: <nasiafanari@cytanet.com.cy>
+Received: from demokritos2.cytanet.com.cy (demokritos2.cytanet.com.cy. [195.14.130.214])
+        by mx.google.com with ESMTPS id 5b1f17b1804b1-442cd34bc01si14195275e9.111.2025.05.08.00.48.17
+        for <investiaprop@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 08 May 2025 00:48:18 -0700 (PDT)
+Received-SPF: pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.214 as permitted sender) client-ip=195.14.130.214;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cytanet.com.cy header.s=mail header.b="Ep/Uh81J";
+       spf=pass (google.com: domain of nasiafanari@cytanet.com.cy designates 195.14.130.214 as permitted sender) smtp.mailfrom=nasiafanari@cytanet.com.cy;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=cytanet.com.cy
+X-Virus-Scanned: amavis at cytanet.com.cy
+DKIM-Filter: OpenDKIM Filter v2.11.0 demokritos2.cytanet.com.cy 116A540EE69
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cytanet.com.cy;
+	s=mail; t=1746690497;
+	bh=5Nv9zIo0Fgg0shn4RsnPR0qaduNYRwACnglWYZVVIUM=;
+	h=Date:To:From:Subject:In-Reply-To:References:From;
+	b=Ep/Uh81JH9UdTOcciwbZEQvAtCCQstsXGnajdYf9KRG4i8tbyoSoXg/diVO9RssVy
+	 GZ2lLxkkfWj7BMVgrPmy5GheTYe1pvMOP8NnstCJC/uN+Vc8etUA4QyP1NLcnCtl+U
+	 m6y4dfnyp5NjoYJVz3OxXy8I8DOI89IoORiNmoGM=
+X-Spam-Flag: NO
+X-Spam-Score: 0.035
+X-Spam-Level:
+X-Spam-Status: No, score=0.035 tagged_above=-10 required=5
+ tests=[ALL_TRUSTED=-1, BAYES_00=-1.9, CYT_RUL=0.001, CYT_RUL_1=0.001,
+ CYT_RUL_120=0.001, CYT_RUL_124=0.001, CYT_RUL_125=0.001, CYT_RUL_135=0.001,
+ CYT_RUL_146=0.001, CYT_RUL_47=0.001, FONT_INVIS_MSGID=2.5,
+ FROM_ICEWARP_WEBMAIL=0.001, HTML_MESSAGE=0.001, LOTS_OF_MONEY=0.001,
+ URIBL_GREY=0.424] autolearn=no autolearn_force=no
+Received: from demokritos2.cytanet.com.cy ([127.0.0.1])
+ by localhost (demokritos2.cytanet.com.cy [127.0.0.1]) (amavis, port 10024)
+ with LMTP id MmSqFgadBZuL for <investiaprop@gmail.com>;
+ Thu,  8 May 2025 10:48:15 +0300 (EEST)
+Received: from cytanet.com.cy?[62.228.14.11] (IcewarpPla5.pri.cytanet.com.cy [172.21.205.135])
+	by demokritos2.cytanet.com.cy (Postfix) with ESMTP id 5D6D540EE53
+	for <investiaprop@gmail.com>; Thu,  8 May 2025 10:48:15 +0300 (EEST)
+Date: Thu, 08 May 2025 10:48:13 +0300
+To: investiaprop <investiaprop@gmail.com>
+From: nasiafanari <nasiafanari@cytanet.com.cy>
+Subject: =?UTF-8?Q?Fw:_Fwd:_9_VAT-Free_Apartments_in_Limassol=E2=80=99s_Historic_Centre_=E2=80=93_From_=E2=82=AC209,000?=
+Message-ID: <ad16d5e5d1a466720237a40be1d59b25@cytanet.com.cy>
+X-Mailer: IceWarp Mailer 14.1.0.17 RHEL8 x64-Desktop
+x-icewarp-spellchecker: en
+In-Reply-To: <CAGh41yPBFgFsH_sUbsy2iMSSXtpput8po2VT=9cXMnr83j2-ew@mail.gmail.com>
+References: <17b2fd0eefd460e7a0b20d589.26ef8c26e2.20250422071241.678224f548.18a6d481@mail104.suw13.rsgsv.net>
+	<CAGh41yPBFgFsH_sUbsy2iMSSXtpput8po2VT=9cXMnr83j2-ew@mail.gmail.com>
+X-Priority: 3
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_1ca52afd2fbf001afa65d64be8973e37"
+
+
+--b1_1ca52afd2fbf001afa65d64be8973e37
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+----- Forwarded Message -----
+
+From: Investia company (investia@cyprusview.com)
+Date: 22/04/25 10:50
+To: Katerina Christodoulou (katerinainvestia@gmail.com), Nassia Athanasiou =
+(nasiafanari@cytanet.com.cy), Emily Pitta (emily@investia.com.cy)
+Subject: Fwd: 9 VAT-Free Apartments in Limassol=E2=80=99s Historic Centre =
+=E2=80=93 From =E2=82=AC209,000
+
+
+
+
+---------- Forwarded message ---------
+From: Square One Property Developers <invest@squareone.com.cy>
+Date: Tue, Apr 22, 2025 at 10:12=E2=80=AFAM
+Subject: 9 VAT-Free Apartments in Limassol=E2=80=99s Historic Centre =
+=E2=80=93 From =E2=82=AC209,000
+To: Georgios <investia@cyprusview.com>
+
+
+9 VAT-Free Apartments in Limassol=E2=80=99s Historic Centre =E2=80=93 From =
+=E2=82=AC209,000=CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87=0A=CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F=0A=E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C=0A=C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0=0A=
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87=0A=CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87 =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =CD=8F =E2=80=8C =C2=A0 =
+=E2=80=87=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD=0A=C2=AD
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=
+=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=
+=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=
+=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=
+=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=
+=CD=8F =E2=80=87=EF=BB=BF=CD=8F
+
+
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+ HUGO Residences
+9=C2=A0VAT-Free=C2=A0Apartments in Limassol=E2=80=99s Historic Centre=C2=
+=A0
+
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+ Investment Opportunity in=C2=A0the Heart of Limassol=C2=A0
+
+A limited collection of just=C2=A09 meticulously designed apartments=C2=
+=A0nestled in Limassol=E2=80=99s most vibrant and walkable neighbourhood, j=
+ust steps from the iconic=C2=A0Anexartisias Street.
+
+This is your chance to own a property with=C2=A0no VAT=C2=A0=E2=80=93 a=
+=C2=A0resale-classified investment offering incredible value, prime locatio=
+n, and strong return
+Why Choose Hugo Residences?
+ -=20
+8 elegant one-bedroom apartments + 1 spacious two-bedroom unit
+
+ -=20
+No VAT=C2=A0=E2=80=93 classified as resale
+
+ -=20
+Prime city-centre location=C2=A0surrounded by shops, cafes & nightlife
+
+ -=20
+Exceptional rental demand=C2=A0in Limassol=E2=80=99s most sought-after urba=
+n area
+
+ -=20
+Timeless architecture=C2=A0with modern interiors
+
+ -=20
+Perfect for lifestyle buyers or high-performing rental investments
+
+ -=20
+7% rental yield guaranteed for 3 years=C2=A0=E2=80=93 with=C2=A0Moving Door=
+s=C2=A0as your long-term tenant
+
+
+=F0=9F=93=A9 Only a few units available=C2=A0invest@squareone.com.cy
+
+
+=20
+
+=20
+
+ Download Prices & Availability
+
+
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+ =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0
+=20
+=20
+ =20
+=20
+=20
+=20
+
+ Download Brochure
+
+
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+Copyright (C) 2025 Square One Property Partners. All rights reserved.
+You are receiving this email because you opted in via our website.
+
+Our mailing address is:
+Square One Property Partners 7, June 16th 1943 3022 =CE=9B=CE=B5=CE=BC=
+=CE=B5=CF=83=CF=8C=CF=82 3041 Cyprus
+
+Want to change how you receive these emails?
+You can=C2=A0update your preferences=C2=A0or=C2=A0unsubscribe.
+
+
+=20
+=20
+
+
+--=C2=A0
+
+
+
+Phone: +357 99 206950
+Office: +357 24 634830=C2=A0
+Fax : +357 24 634833
+Website: http://cyprusview.com
+
+
+
+--b1_1ca52afd2fbf001afa65d64be8973e37
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div class=3D"iw_mail" dir=3D"ltr" style=3D"font-size: 13px;"><div><br></di=
+v><div><br></div><div><br></div><div dir=3D"ltr" style=3D"font-size: 13px;f=
+ont-family:Roboto, Tahoma, Helvetica, sans-serif;" class=3D"iw-reply-block"=
+><div style=3D"color:#333333;"><div style=3D"display:none;">----- Forwarded=
+ Message -----</div><hr style=3D"width:100%;margin:10px 0;color:#888888;bac=
+kground-color:#888888;border-color:#DDDDDD;" width=3D"100%" size=3D"1"><div=
+ style=3D"line-height: 1.2rem;"><div>From: Investia company (<a rel=3D"noop=
+ener noreferrer" href=3D"mailto:investia@cyprusview.com" style=3D"color: rg=
+b(0, 136, 204); text-decoration: none;" target=3D"_blank">investia@cyprusvi=
+ew.com</a>)</div><div>Date: 22/04/25 10:50</div><div>To: Katerina Christodo=
+ulou (<a rel=3D"noopener noreferrer" href=3D"mailto:katerinainvestia@gmail.=
+com" style=3D"color: rgb(0, 136, 204); text-decoration: none;" target=3D"_b=
+lank">katerinainvestia@gmail.com</a>), Nassia Athanasiou (<a rel=3D"noopene=
+r noreferrer" href=3D"mailto:nasiafanari@cytanet.com.cy" style=3D"color: rg=
+b(0, 136, 204); text-decoration: none;" target=3D"_blank">nasiafanari@cytan=
+et.com.cy</a>), Emily Pitta (<a rel=3D"noopener noreferrer" href=3D"mailto:=
+emily@investia.com.cy" style=3D"color: rgb(0, 136, 204); text-decoration: n=
+one;" target=3D"_blank">emily@investia.com.cy</a>)</div><div>Subject: <span=
+ style=3D"font-weight:bold;">Fwd: 9 VAT-Free Apartments in Limassol=
+=E2=80=99s Historic Centre =E2=80=93 From =E2=82=AC209,000</span></div></di=
+v></div><br><div><div dir=3D"ltr"><br><br><div class=3D"gmail_quote gmail_q=
+uote_container"><div dir=3D"ltr" class=3D"gmail_attr">---------- Forwarded =
+message ---------<br>From: <strong class=3D"gmail_sendername" dir=3D"auto">=
+Square One Property Developers</strong> <span dir=3D"auto">&lt;<a rel=3D"no=
+opener noreferrer" href=3D"mailto:invest@squareone.com.cy" target=3D"_blank=
+">invest@squareone.com.cy</a>&gt;</span><br>Date: Tue, Apr 22, 2025 at 10:1=
+2=E2=80=AFAM<br>Subject: 9 VAT-Free Apartments in Limassol=E2=80=99s Histor=
+ic Centre =E2=80=93 From =E2=82=AC209,000<br>To: Georgios &lt;<a rel=3D"noo=
+pener noreferrer" href=3D"mailto:investia@cyprusview.com" target=3D"_blank"=
+>investia@cyprusview.com</a>&gt;</div><br><br><div class=3D"msg801701222079=
+0377858"><div><span class=3D"m_8017012220790377858mcnPreviewText" style=3D"=
+display:none;font-size:0px;line-height:0px;max-height:0px;max-width:0px;opa=
+city:0;overflow:hidden;">9 VAT-Free Apartments in Limassol=E2=80=99s Histor=
+ic Centre =E2=80=93 From =E2=82=AC209,000</span><div style=3D"display:none;=
+max-height:0px;overflow:hidden;">=CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=
+=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =CD=8F =E2=80=8C &nbsp; =E2=80=87 =CD=8F =
+=E2=80=8C &nbsp; =E2=80=87=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD</div><div style=3D"display:none;">=
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=
+=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=
+=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=
+=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=
+=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=
+=CD=8F =E2=80=87=EF=BB=BF=CD=8F</div><div style=3D"display:none;font-size:0=
+px;line-height:0px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;"=
+><img src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" height=
+=3D"1" width=3D"1" style=3D"display: none; font-size: 0px; line-height: 0px=
+; opacity: 0; overflow: hidden;" alt=3D"" class=3D"iw-placeholder"></div><c=
+enter><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100=
+%" width=3D"100%" id=3D"m_8017012220790377858bodyTable" style=3D"background=
+-color: rgb(255, 255, 255); width: 100%;"><tbody><tr><td class=3D"m_8017012=
+220790377858bodyCell" align=3D"center" valign=3D"top"><table id=3D"m_801701=
+2220790377858root" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%"><tbody><tr><td style=3D"background-color:transparent;" valign=3D"=
+top" align=3D"center"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" width=3D"100%" style=3D"max-width:660px;"><tbody><tr><td style=3D"backgr=
+ound-color:#ffffff;" valign=3D"top"><table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><td style=3D"ba=
+ckground-position:center;background-repeat:no-repeat;background-size:cover;=
+" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%"><tbody><tr><td style=3D"padding-top: 0px; padding-bottom: 0px;=
+ width: 100%;" valign=3D"top" class=3D"m_8017012220790377858mceColumn" cols=
+pan=3D"12"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%"><tbody><tr><td style=3D"background-color:#000000;padding-top:12px;pa=
+dding-bottom:12px;padding-right:0;padding-left:0;" valign=3D"top" align=3D"=
+center" id=3D"m_8017012220790377858blockContainerId-3"><a rel=3D"noopener n=
+oreferrer" href=3D"https://squareone.us9.list-manage.com/track/click?u=3D17=
+b2fd0eefd460e7a0b20d589&amp;id=3D07436220c6&amp;e=3D26ef8c26e2" style=3D"di=
+splay:block;" target=3D"_blank"><span class=3D"m_8017012220790377858mceImag=
+eBorder" style=3D"border:0;border-radius:0;vertical-align:top;margin:0;"><i=
+mg width=3D"330" height=3D"auto" style=3D"width: 330px; height: auto; borde=
+r-radius: 0px; display: block; max-width: 330px !important;" alt=3D"" src=
+=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" class=3D"m_801701=
+2220790377858mceLogo iw-placeholder"></span></a></td></tr></tbody></table><=
+/td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></tabl=
+e></td></tr></tbody><tbody><tr><td style=3D"background-color:transparent;" =
+valign=3D"top" align=3D"center" class=3D"m_8017012220790377858mceSectionBod=
+y"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" s=
+tyle=3D"max-width:660px;"><tbody><tr><td style=3D"background-color:#ffffff;=
+" valign=3D"top"><table align=3D"center" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%"><tbody><tr><td style=3D"background-position:c=
+enter;background-repeat:no-repeat;background-size:cover;" valign=3D"top"><t=
+able border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody=
+><tr><td style=3D"padding-top: 0px; padding-bottom: 0px; width: 100%;" vali=
+gn=3D"top" class=3D"m_8017012220790377858mceColumn" colspan=3D"12"><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><=
+td style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"=
+ valign=3D"top" id=3D"m_8017012220790377858blockContainerId-7"><table width=
+=3D"100%" style=3D"border: 0px; border-radius: 0px; border-collapse: separa=
+te; width: 100%;"><tbody><tr><td style=3D"padding-left:24px;padding-right:2=
+4px;padding-top:12px;padding-bottom:12px;" class=3D"m_8017012220790377858mc=
+eTextBlockContainer"><div class=3D"m_8017012220790377858mceText" id=3D"m_80=
+17012220790377858dataBlockId-7" style=3D"width:100%;"><h1><span style=3D"co=
+lor:#000000;">HUGO Residences<br><span style=3D"font-size:20px;"><span styl=
+e=3D"font-weight:normal;">9</span></span></span><span style=3D"color:rgb(0,=
+0,0);"><span style=3D"font-size:20px;"><span style=3D"font-weight:normal;">=
+&nbsp;</span>VAT-Free<span style=3D"font-weight:normal;">&nbsp;Apartments i=
+n Limassol=E2=80=99s Historic Centre&nbsp;</span></span></span></h1></div><=
+/td></tr></tbody></table></td></tr><tr><td valign=3D"top" id=3D"m_801701222=
+0790377858gutterContainerId-18"><table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%" style=3D"border-collapse: separate; width: 100%=
+;"><tbody><tr><td style=3D"padding-top:8px;padding-bottom:8px;padding-right=
+:8px;padding-left:8px;" valign=3D"top" id=3D"m_8017012220790377858blockCont=
+ainerId-18"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" width=3D"100%" id=3D"m_8017012220790377858section_9c3dc66f51da780=
+c1a0eb23af340de0e"><tbody><tr><td style=3D"background-position:center;backg=
+round-repeat:no-repeat;background-size:cover;" valign=3D"top"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><td st=
+yle=3D"width: 100%;" valign=3D"top" class=3D"m_8017012220790377858mceColumn=
+" colspan=3D"12"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%"><tbody><tr><td valign=3D"top" align=3D"center" id=3D"m_8017012=
+220790377858blockContainerId--7"><table align=3D"center" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><td style=3D"backg=
+round-position:center;background-repeat:no-repeat;background-size:cover;pad=
+ding-top:0px;padding-bottom:0px;" valign=3D"top"><table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"24" width=3D"100%"><tbody><tr><td style=3D"paddi=
+ng-top: 0px; padding-bottom: 0px; width: 100%;" valign=3D"top" class=3D"m_8=
+017012220790377858mceColumn" colspan=3D"12"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><td style=3D"padding-top=
+:12px;padding-bottom:12px;padding-right:16px;padding-left:16px;" valign=3D"=
+top" align=3D"center" id=3D"m_8017012220790377858blockContainerId-12"><a re=
+l=3D"noopener noreferrer" href=3D"https://squareone.us9.list-manage.com/tra=
+ck/click?u=3D17b2fd0eefd460e7a0b20d589&amp;id=3D5658824d2a&amp;e=3D26ef8c26=
+e2" style=3D"display:block;" target=3D"_blank"><span class=3D"m_80170122207=
+90377858mceImageBorder" style=3D"border:0;border-radius:0;vertical-align:to=
+p;margin:0;"><img width=3D"628" height=3D"auto" style=3D"width: 628px; heig=
+ht: auto; border-radius: 0px; display: block; max-width: 628px !important;"=
+ alt=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" clas=
+s=3D"m_8017012220790377858mceImage iw-placeholder"></span></a></td></tr><tr=
+><td style=3D"padding-top:12px;padding-bottom:12px;padding-right:16px;paddi=
+ng-left:16px;" valign=3D"top" class=3D"m_8017012220790377858mceBlockContain=
+er" align=3D"center" id=3D"m_8017012220790377858blockContainerId-11"><table=
+ width=3D"100%" style=3D"border: 0px; border-radius: 0px; border-collapse: =
+separate; width: 100%;"><tbody><tr><td style=3D"padding-left:0;padding-righ=
+t:0;padding-top:0;padding-bottom:0;" class=3D"m_8017012220790377858mceTextB=
+lockContainer"><div class=3D"m_8017012220790377858mceText" id=3D"m_80170122=
+20790377858dataBlockId-8" style=3D"width:100%;"><h3 style=3D"text-align:lef=
+t;"><strong><span style=3D"color:rgb(0,0,0);">Investment Opportunity in</sp=
+an><span style=3D"color:#000000;">&nbsp;the Heart of Limassol&nbsp;</span><=
+/strong></h3><p class=3D"m_8017012220790377858mcePastedContent"><br></p><p =
+style=3D"text-align:left;"><span style=3D"color:rgb(0,0,0);">A limited coll=
+ection of just&nbsp;</span><strong><span style=3D"color:#000000;">9 meticul=
+ously designed apartments</span></strong><span style=3D"color:rgb(0,0,0);">=
+&nbsp;nestled in Limassol=E2=80=99s most vibrant and walkable neighbourhood=
+, just steps from the iconic&nbsp;</span><strong><span style=3D"color:#0000=
+00;">Anexartisias Street</span></strong><span style=3D"color:rgb(0,0,0);">.=
+</span></p><p style=3D"text-align:left;"><span style=3D"color:#000000;">Thi=
+s is your chance to own a property with&nbsp;</span><strong><span style=3D"=
+color:#000000;">no VAT</span></strong><span style=3D"color:#000000;">&nbsp;=
+=E2=80=93 a&nbsp;</span><strong><span style=3D"color:#000000;">resale-class=
+</span>ified investment</strong> offering incredible value, prime location,=
+ and strong return</p><h3 style=3D"text-align:left;"><strong><span style=3D=
+"color:#000000;">Why Choose Hugo Residences?</span></strong></h3><ul><li st=
+yle=3D"color:#000000;text-align:left;"><p style=3D"text-align:left;"><stron=
+g><span style=3D"color:#000000;">8 elegant one-bedroom apartments + 1 spaci=
+ous two-bedroom unit</span></strong></p></li><li style=3D"color:#000000;tex=
+t-align:left;"><p style=3D"text-align:left;"><strong><span style=3D"color:#=
+000000;">No VAT</span></strong><span style=3D"color:#000000;">&nbsp;=
+=E2=80=93 classified as resale</span></p></li><li style=3D"color:#000000;te=
+xt-align:left;"><p style=3D"text-align:left;"><strong><span style=3D"color:=
+#000000;">Prime city-centre location</span></strong><span style=3D"color:#0=
+00000;">&nbsp;surrounded by shops, cafes &amp; nightlife</span></p></li><li=
+ style=3D"color:#000000;text-align:left;"><p style=3D"text-align:left;"><st=
+rong><span style=3D"color:#000000;">Exceptional rental demand</span></stron=
+g><span style=3D"color:#000000;">&nbsp;in Limassol=E2=80=99s most sought-af=
+ter urban area</span></p></li><li style=3D"color:#000000;text-align:left;">=
+<p style=3D"text-align:left;"><strong><span style=3D"color:#000000;">Timele=
+ss architecture</span></strong><span style=3D"color:#000000;">&nbsp;with mo=
+dern interiors</span></p></li><li style=3D"color:#000000;text-align:left;">=
+<p style=3D"text-align:left;"><strong><span style=3D"color:#000000;">Perfec=
+t for lifestyle buyers or high-performing rental investments</span></strong=
+></p></li><li style=3D"color:#000000;text-align:left;"><p style=3D"text-ali=
+gn:left;"><strong><span style=3D"color:#000000;">7% rental yield guaranteed=
+ for 3 years</span></strong><span style=3D"color:#000000;">&nbsp;=E2=80=
+=93 with&nbsp;</span><strong><span style=3D"color:#000000;">Moving Doors</s=
+pan></strong><span style=3D"color:#000000;">&nbsp;as your long-term tenant<=
+/span></p><p class=3D"m_8017012220790377858mcePastedContent"><br></p><p sty=
+le=3D"text-align:left;"><span style=3D"color:#000000;">=F0=9F=93=A9 Only a =
+few units available</span><em><span style=3D"color:#000000;">&nbsp;</span><=
+/em><strong><span style=3D"color:#000000;"><a rel=3D"noopener noreferrer" h=
+ref=3D"mailto:invest@squareone.com.cy" target=3D"_blank">invest@squareone.c=
+om.cy</a></span></strong></p></li></ul></div></td></tr></tbody></table><tab=
+le border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><=
+tr><td valign=3D"top" height=3D"20"><br></td></tr></tbody></table></td></tr=
+></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><=
+/tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></t=
+d></tr></tbody></table></td></tr><tr><td style=3D"padding-top:12px;padding-=
+bottom:12px;padding-right:24px;padding-left:24px;" valign=3D"top" align=3D"=
+center" id=3D"m_8017012220790377858blockContainerId-47"><div><br></div><tab=
+le align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=
+=3D"m_8017012220790377858mceButtonContainer"><tbody><tr class=3D"m_80170122=
+20790377858mceStandardButton"><td style=3D"background-color:#ffffff;border-=
+radius:0;text-align:center;" valign=3D"top" class=3D"m_8017012220790377858m=
+ceButton"><a href=3D"https://squareone.us9.list-manage.com/track/click?u=3D=
+17b2fd0eefd460e7a0b20d589&amp;id=3Dbc2202d5e3&amp;e=3D26ef8c26e2" class=3D"=
+m_8017012220790377858mceButtonLink" style=3D"background-color:#ffffff;borde=
+r-radius:0;border:2px solid #000000;color:#000000;display:block;font-family=
+:'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;font-size:14px;font-we=
+ight:normal;font-style:normal;padding:16px 24px;text-decoration:none;min-wi=
+dth:30px;text-align:center;direction:ltr;letter-spacing:0px;" rel=3D"noopen=
+er noreferrer" target=3D"_blank">Download Prices &amp; Availability</a></td=
+></tr></tbody></table><div><br></div><table align=3D"center" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" class=3D"m_8017012220790377858mceButtonC=
+ontainer"><tbody><tr></tr></tbody></table></td></tr><tr><td valign=3D"top" =
+id=3D"m_8017012220790377858gutterContainerId-42"><table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse: sepa=
+rate; width: 100%;"><tbody><tr><td style=3D"padding-top:8px;padding-bottom:=
+8px;padding-right:0;padding-left:0;" valign=3D"top" id=3D"m_801701222079037=
+7858blockContainerId-42"><table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" id=3D"m_8017012220790377858section_=
+b4c80341bdc22fb1c1644a4399d41dd3"><tbody><tr><td style=3D"background-positi=
+on:center;background-repeat:no-repeat;background-size:cover;" valign=3D"top=
+"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><t=
+body><tr><td style=3D"width: 100%;" valign=3D"top" class=3D"m_8017012220790=
+377858mceColumn" colspan=3D"12"><table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%"><tbody><tr><td valign=3D"top" align=3D"center" =
+id=3D"m_8017012220790377858blockContainerId--12"><table align=3D"center" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><t=
+d style=3D"background-position:center;background-repeat:no-repeat;backgroun=
+d-size:cover;" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"100%"><tbody><tr><td style=3D"width: 100%;" valign=3D"t=
+op" class=3D"m_8017012220790377858mceColumn" colspan=3D"12"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><td va=
+lign=3D"top" id=3D"m_8017012220790377858blockContainerId-41"><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+><tbody><tr><td style=3D"background-position:center;background-repeat:no-re=
+peat;background-size:cover;padding-top:0px;padding-bottom:0px;" valign=3D"t=
+op">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tabl=
+e border=3D"0" cellpadding=3D"0" cellspacing=3D"24" width=3D"100%" style=3D=
+"table-layout: fixed; width: 100%;"><colgroup><col span=3D"1" width=3D"8.33=
+3333333333332%"></colgroup><colgroup><col span=3D"1" width=3D"8.33333333333=
+3332%"></colgroup><colgroup><col span=3D"1" width=3D"8.333333333333332%"></=
+colgroup><colgroup><col span=3D"1" width=3D"8.333333333333332%"></colgroup>=
+<colgroup><col span=3D"1" width=3D"8.333333333333332%"></colgroup><colgroup=
+><col span=3D"1" width=3D"8.333333333333332%"></colgroup><colgroup><col spa=
+n=3D"1" width=3D"8.333333333333332%"></colgroup><colgroup><col span=3D"1" w=
+idth=3D"8.333333333333332%"></colgroup><colgroup><col span=3D"1" width=3D"8=
+.333333333333332%"></colgroup><colgroup><col span=3D"1" width=3D"8.33333333=
+3333332%"></colgroup><colgroup><col span=3D"1" width=3D"8.333333333333332%"=
+></colgroup><colgroup><col span=3D"1" width=3D"8.333333333333332%"></colgro=
+up><tbody><tr><td style=3D"padding-top: 0px; padding-bottom: 0px; width: 50=
+%;" valign=3D"top" class=3D"m_8017012220790377858mceColumn" colspan=3D"6"><=
+table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbod=
+y><tr><td style=3D"padding-top:12px;padding-bottom:12px;padding-right:0;pad=
+ding-left:0;" valign=3D"top" align=3D"center" id=3D"m_8017012220790377858bl=
+ockContainerId-39"><a rel=3D"noopener noreferrer" href=3D"https://squareone=
+.us9.list-manage.com/track/click?u=3D17b2fd0eefd460e7a0b20d589&amp;id=3D9e6=
+89f19be&amp;e=3D26ef8c26e2" style=3D"display:block;" target=3D"_blank"><spa=
+n class=3D"m_8017012220790377858mceImageBorder" style=3D"border:0;border-ra=
+dius:0;vertical-align:top;margin:0;"><img width=3D"330" height=3D"auto" sty=
+le=3D"width: 330px; height: auto; border-radius: 0px; display: block; max-w=
+idth: 330px !important;" alt=3D"" src=3D"data:image/gif;base64,R0lGODlhAQAB=
+AAD/ACwAAAAAAQABAA" class=3D"m_8017012220790377858mceImage iw-placeholder">=
+</span></a></td></tr><tr><td style=3D"padding-top:12px;padding-bottom:12px;=
+padding-right:0;padding-left:0;" valign=3D"top" align=3D"center" id=3D"m_80=
+17012220790377858blockContainerId-45"><a rel=3D"noopener noreferrer" href=
+=3D"https://squareone.us9.list-manage.com/track/click?u=3D17b2fd0eefd460e7a=
+0b20d589&amp;id=3D30ea501b0e&amp;e=3D26ef8c26e2" style=3D"display:block;" t=
+arget=3D"_blank"><span class=3D"m_8017012220790377858mceImageBorder" style=
+=3D"border:0;border-radius:0;vertical-align:top;margin:0;"><img width=3D"33=
+0" height=3D"auto" style=3D"width: 330px; height: auto; border-radius: 0px;=
+ display: block; max-width: 330px !important;" alt=3D"" src=3D"data:image/g=
+if;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" class=3D"m_8017012220790377858mce=
+Image iw-placeholder"></span></a></td></tr></tbody></table></td><td style=
+=3D"padding-top: 0px; padding-bottom: 0px; width: 50%;" valign=3D"top" clas=
+s=3D"m_8017012220790377858mceColumn" colspan=3D"6"><table border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><td style=3D"padd=
+ing-top:12px;padding-bottom:12px;padding-right:0;padding-left:0;" valign=3D=
+"top" align=3D"center" id=3D"m_8017012220790377858blockContainerId-43"><a r=
+el=3D"noopener noreferrer" href=3D"https://squareone.us9.list-manage.com/tr=
+ack/click?u=3D17b2fd0eefd460e7a0b20d589&amp;id=3D9e611c9448&amp;e=3D26ef8c2=
+6e2" style=3D"display:block;" target=3D"_blank"><span class=3D"m_8017012220=
+790377858mceImageBorder" style=3D"border:0;border-radius:0;vertical-align:t=
+op;margin:0;"><img width=3D"330" height=3D"auto" style=3D"width: 330px; hei=
+ght: auto; border-radius: 0px; display: block; max-width: 330px !important;=
+" alt=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" cla=
+ss=3D"m_8017012220790377858mceImage iw-placeholder"></span></a></td></tr><t=
+r><td style=3D"padding-top:12px;padding-bottom:12px;padding-right:0;padding=
+-left:0;" valign=3D"top" align=3D"center" id=3D"m_8017012220790377858blockC=
+ontainerId-46"><a rel=3D"noopener noreferrer" href=3D"https://squareone.us9=
+.list-manage.com/track/click?u=3D17b2fd0eefd460e7a0b20d589&amp;id=3D37a5da5=
+0ec&amp;e=3D26ef8c26e2" style=3D"display:block;" target=3D"_blank"><span cl=
+ass=3D"m_8017012220790377858mceImageBorder" style=3D"border:0;border-radius=
+:0;vertical-align:top;margin:0;"><img width=3D"330" height=3D"auto" style=
+=3D"width: 330px; height: auto; border-radius: 0px; display: block; max-wid=
+th: 330px !important;" alt=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAA=
+D/ACwAAAAAAQABAA" class=3D"m_8017012220790377858mceImage iw-placeholder"></=
+span></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tb=
+ody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr><=
+/tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></t=
+r></tbody></table></td></tr></tbody></table></td></tr><tr><td style=3D"padd=
+ing-top:12px;padding-bottom:12px;padding-right:24px;padding-left:24px;" val=
+ign=3D"top" align=3D"center" id=3D"m_8017012220790377858blockContainerId-48=
+"><div><br></div><table align=3D"center" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" class=3D"m_8017012220790377858mceButtonContainer"><tbody><tr=
+ class=3D"m_8017012220790377858mceStandardButton"><td style=3D"background-c=
+olor:#ffffff;border-radius:0;text-align:center;" valign=3D"top" class=3D"m_=
+8017012220790377858mceButton"><a href=3D"https://squareone.us9.list-manage.=
+com/track/click?u=3D17b2fd0eefd460e7a0b20d589&amp;id=3D971b011173&amp;e=3D2=
+6ef8c26e2" class=3D"m_8017012220790377858mceButtonLink" style=3D"background=
+-color:#ffffff;border-radius:0;border:2px solid #000000;color:#000000;displ=
+ay:block;font-family:'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;fo=
+nt-size:14px;font-weight:normal;font-style:normal;padding:16px 24px;text-de=
+coration:none;min-width:30px;text-align:center;direction:ltr;letter-spacing=
+:0px;" rel=3D"noopener noreferrer" target=3D"_blank">Download Brochure</a><=
+/td></tr></tbody></table><div><br></div><table align=3D"center" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_8017012220790377858mceButt=
+onContainer"><tbody><tr></tr></tbody></table></td></tr><tr><td style=3D"pad=
+ding-top:12px;padding-bottom:12px;padding-right:0;padding-left:0;" valign=
+=3D"top" align=3D"center" id=3D"m_8017012220790377858blockContainerId-38"><=
+a rel=3D"noopener noreferrer" href=3D"https://squareone.us9.list-manage.com=
+/track/click?u=3D17b2fd0eefd460e7a0b20d589&amp;id=3Ddb54ec2ac6&amp;e=3D26ef=
+8c26e2" style=3D"display:block;" target=3D"_blank"><span class=3D"m_8017012=
+220790377858mceImageBorder" style=3D"border:0;border-radius:0;vertical-alig=
+n:top;margin:0;"><img width=3D"659.9999999999999" height=3D"auto" style=3D"=
+width: 660px; height: auto; border-radius: 0px; display: block; max-width: =
+660px !important;" alt=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/AC=
+wAAAAAAQABAA" class=3D"m_8017012220790377858mceImage iw-placeholder"></span=
+></a></td></tr><tr><td style=3D"background-color:#000000;padding-top:24px;p=
+adding-bottom:24px;padding-right:24px;padding-left:24px;" valign=3D"top" id=
+=3D"m_8017012220790377858blockContainerId-29"><table align=3D"center" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><td s=
+tyle=3D"background-color:#000000;background-position:center;background-repe=
+at:no-repeat;background-size:cover;padding-top:0px;padding-bottom:0px;" val=
+ign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"24" width=
+=3D"100%"><tbody><tr><td style=3D"width: 100%;" valign=3D"top" class=3D"m_8=
+017012220790377858mceColumn" colspan=3D"12"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><td valign=3D"top" id=3D=
+"m_8017012220790377858blockContainerId--9"><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td valign=3D"middle"=
+ align=3D"center"><table align=3D"left" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" style=3D"display: inline; float: left; width: 100%;"><tbody><=
+tr><td style=3D"padding: 3px 12px; width: 40px;" valign=3D"top" align=3D"ce=
+nter"><a href=3D"https://squareone.us9.list-manage.com/track/click?u=3D17b2=
+fd0eefd460e7a0b20d589&amp;id=3Da1a8b822ba&amp;e=3D26ef8c26e2" rel=3D"noopen=
+er noreferrer" target=3D"_blank"><img style=3D"" width=3D"40" height=3D"40"=
+ alt=3D"Website icon" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAA=
+AQABAA" class=3D"iw-placeholder"></a></td></tr></tbody></table><table align=
+=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"display=
+: inline; float: left; width: 100%;"><tbody><tr><td style=3D"padding: 3px 1=
+2px; width: 40px;" valign=3D"top" align=3D"center"><a href=3D"mailto:invest=
+@squareone.com.cy" rel=3D"noopener noreferrer" target=3D"_blank"><img style=
+=3D"" width=3D"40" height=3D"40" alt=3D"Email icon" src=3D"data:image/gif;b=
+ase64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" class=3D"iw-placeholder"></a></td></t=
+r></tbody></table><table align=3D"left" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" style=3D"display: inline; float: left; width: 100%;"><tbody><=
+tr><td style=3D"padding: 3px 12px; width: 40px;" valign=3D"top" align=3D"ce=
+nter"><a href=3D"https://squareone.us9.list-manage.com/track/click?u=3D17b2=
+fd0eefd460e7a0b20d589&amp;id=3D34a8272f11&amp;e=3D26ef8c26e2" rel=3D"noopen=
+er noreferrer" target=3D"_blank"><img style=3D"" width=3D"40" height=3D"40"=
+ alt=3D"Facebook icon" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAA=
+AAQABAA" class=3D"iw-placeholder"></a></td></tr></tbody></table><table alig=
+n=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"displa=
+y: inline; float: left; width: 100%;"><tbody><tr><td style=3D"padding: 3px =
+12px; width: 40px;" valign=3D"top" align=3D"center"><a href=3D"https://squa=
+reone.us9.list-manage.com/track/click?u=3D17b2fd0eefd460e7a0b20d589&amp;id=
+=3D6460470952&amp;e=3D26ef8c26e2" rel=3D"noopener noreferrer" target=3D"_bl=
+ank"><img style=3D"" width=3D"40" height=3D"40" alt=3D"Instagram icon" src=
+=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" class=3D"iw-place=
+holder"></a></td></tr></tbody></table><table align=3D"left" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" style=3D"display: inline; float: left; wi=
+dth: 100%;"><tbody><tr><td style=3D"padding: 3px 12px; width: 40px;" valign=
+=3D"top" align=3D"center"><a href=3D"https://squareone.us9.list-manage.com/=
+track/click?u=3D17b2fd0eefd460e7a0b20d589&amp;id=3D2b0d023771&amp;e=3D26ef8=
+c26e2" rel=3D"noopener noreferrer" target=3D"_blank"><img style=3D"" width=
+=3D"40" height=3D"40" alt=3D"LinkedIn icon" src=3D"data:image/gif;base64,R0=
+lGODlhAQABAAD/ACwAAAAAAQABAA" class=3D"iw-placeholder"></a></td></tr></tbod=
+y></table><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"display: inline; float: left; width: 100%;"><tbody><tr><td =
+style=3D"padding: 3px 12px; width: 40px;" valign=3D"top" align=3D"center"><=
+a href=3D"https://squareone.us9.list-manage.com/track/click?u=3D17b2fd0eefd=
+460e7a0b20d589&amp;id=3Dde23baba8b&amp;e=3D26ef8c26e2" rel=3D"noopener nore=
+ferrer" target=3D"_blank"><img style=3D"" width=3D"40" height=3D"40" alt=3D=
+"YouTube icon" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA"=
+ class=3D"iw-placeholder"></a></td></tr></tbody></table></td></tr></tbody><=
+/table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbod=
+y></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></t=
+body></table></td></tr></tbody></table></td></tr></tbody><tbody><tr><td sty=
+le=3D"background-color:transparent;" valign=3D"top" align=3D"center" class=
+=3D"m_8017012220790377858mceSectionFooter"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"max-width:660px;"><tbody><=
+tr><td style=3D"background-color:#ffffff;" valign=3D"top"><table align=3D"c=
+enter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbo=
+dy><tr><td style=3D"background-position:center;background-repeat:no-repeat;=
+background-size:cover;" valign=3D"top"><table border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" width=3D"100%"><tbody><tr><td style=3D"padding-top: 0px=
+; padding-bottom: 0px; width: 100%;" valign=3D"top" class=3D"m_801701222079=
+0377858mceColumn" colspan=3D"12"><table border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%"><tbody><tr><td style=3D"background-color:#ffff=
+ff;padding-top:8px;padding-bottom:8px;padding-right:8px;padding-left:8px;" =
+valign=3D"top" id=3D"m_8017012220790377858blockContainerId-34"><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ id=3D"m_8017012220790377858section_cc0d347eb0c1a4c815d303f9d4dd686f" class=
+=3D"m_8017012220790377858mceFooterSection"><tbody><tr><td style=3D"backgrou=
+nd-color:#ffffff;background-position:center;background-repeat:no-repeat;bac=
+kground-size:cover;padding-top:0px;padding-bottom:0px;" valign=3D"top"><tab=
+le border=3D"0" cellpadding=3D"0" cellspacing=3D"12" width=3D"100%"><tbody>=
+<tr><td style=3D"padding-top: 0px; padding-bottom: 0px; width: 100%;" valig=
+n=3D"top" class=3D"m_8017012220790377858mceColumn" colspan=3D"12"><table bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><t=
+d style=3D"background-color:#ffffff;padding-top:12px;padding-bottom:12px;pa=
+dding-right:16px;padding-left:16px;" valign=3D"top" align=3D"center" id=3D"=
+m_8017012220790377858blockContainerId-32"><a rel=3D"noopener noreferrer" hr=
+ef=3D"https://squareone.us9.list-manage.com/track/click?u=3D17b2fd0eefd460e=
+7a0b20d589&amp;id=3D8fd638d333&amp;e=3D26ef8c26e2" style=3D"display:block;"=
+ target=3D"_blank"><span class=3D"m_8017012220790377858mceImageBorder" styl=
+e=3D"border:0;border-radius:0;vertical-align:top;margin:0;"><img width=3D"2=
+37" height=3D"auto" style=3D"width: 237px; height: auto; border-radius: 0px=
+; display: block; max-width: 237px !important;" alt=3D"Logo" src=3D"data:im=
+age/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" class=3D"m_80170122207903778=
+58mceLogo iw-placeholder"></span></a></td></tr><tr><td style=3D"padding-top=
+:0;padding-bottom:0;padding-right:0;padding-left:0;" valign=3D"top" align=
+=3D"center" id=3D"m_8017012220790377858blockContainerId-33"><table width=3D=
+"100%" style=3D"border: 0px; border-radius: 0px; border-collapse: separate;=
+ width: 100%;"><tbody><tr><td style=3D"padding-left:16px;padding-right:16px=
+;padding-top:12px;padding-bottom:12px;" class=3D"m_8017012220790377858mceTe=
+xtBlockContainer"><div class=3D"m_8017012220790377858mceText" id=3D"m_80170=
+12220790377858dataBlockId-33" style=3D"display:inline-block;width:100%;"><p=
+><em><span style=3D"color:#000000;">Copyright (C) 2025 Square One Property =
+Partners. All rights reserved.</span></em><span style=3D"color:#000000;"><b=
+r>You are receiving this email because you opted in via our website.<br><br=
+>Our mailing address is:<br>Square One Property Partners
+7, June 16th 1943 3022
+=CE=9B=CE=B5=CE=BC=CE=B5=CF=83=CF=8C=CF=82 3041
+Cyprus<br><br>Want to change how you receive these emails?<br>You can&nbsp;=
+</span><a rel=3D"noopener noreferrer" href=3D"https://squareone.us9.list-ma=
+nage.com/profile?u=3D17b2fd0eefd460e7a0b20d589&amp;id=3Db344b900f6&amp;e=3D=
+26ef8c26e2&amp;c=3D678224f548" style=3D"color:#000000;" target=3D"_blank">u=
+pdate your preferences</a><span style=3D"color:#000000;">&nbsp;or&nbsp;</sp=
+an><a rel=3D"noopener noreferrer" href=3D"https://squareone.us9.list-manage=
+.com/unsubscribe?u=3D17b2fd0eefd460e7a0b20d589&amp;id=3Db344b900f6&amp;t=3D=
+b&amp;e=3D26ef8c26e2&amp;c=3D678224f548" style=3D"color:#000000;" target=3D=
+"_blank">unsubscribe</a><span style=3D"color:#000000;">.</span></p></div></=
+td></tr></tbody></table></td></tr><tr><td valign=3D"top" align=3D"center" i=
+d=3D"m_8017012220790377858blockContainerId--4"><table align=3D"center" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><td =
+style=3D"background-position:center;background-repeat:no-repeat;background-=
+size:cover;padding-top:0px;padding-bottom:0px;" valign=3D"top"><table borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"24" width=3D"100%"><tbody></tbody>=
+</table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbo=
+dy></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></=
+tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr=
+></tbody></table></td></tr></tbody></table></center></div></div></div><div>=
+<br></div><div><br></div><span class=3D"gmail_signature_prefix">--&nbsp;</s=
+pan><br><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_=
+signature"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div><img sty=
+le=3D"" src=3D"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAA" class=
+=3D"iw-placeholder"><br></div><div>Phone: +357 99 206950</div><div>Office: =
++357 24 634830&nbsp;<br>Fax : +357 24 634833</div><div>Website: <a rel=3D"n=
+oopener noreferrer" href=3D"http://cyprusview.com" target=3D"_blank">http:/=
+/cyprusview.com</a></div><div><br></div></div></div></div></div></div></div=
+></div></div>
+
+
+--b1_1ca52afd2fbf001afa65d64be8973e37--
+
